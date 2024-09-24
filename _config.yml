@@ -25,8 +25,8 @@ author:
   name             : "Your Sidebar Name"
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
-  location         : "Guangzhou, China"
-  employer         : "Guangdong University of Technology (GDUT)"
+  location         : "China"
+  employer         : "Guangdong University of Technology"
   uri              : # URL
   email            : "yuzhu.ji@gdut.edu.cn" 
 
