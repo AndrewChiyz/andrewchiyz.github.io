@@ -26,12 +26,11 @@ Work experience
   * Supervisor: Professor Cham Tat-Jen
 
 * Oct 2019: Research Assistant
-  * School of Computer Science, Harbin Institute of Technology
+  * School of Computer Science and Technology, Harbin Institute of Technology
   * Supervisor: Professor Haijun Zhang
 
 * Spring 2018: Research Intern
   * Tencent AI Lab
-  * Duties included: Semi-supervised segmentation, Salient object segmentation
   * Supervisor: Dr. Zequn Jie and Dr. Lin Ma
   
 
@@ -57,5 +56,5 @@ Teaching
 Service and leadership
 ======
 * Reviewer of TNNLS, TMM, TETCI, Information Sciences, Pattern Recognition, Neurocomputing, Neural Computing & Applications
-- Reviewer of CVPR, ICCV, ECCV, ACMMM, ECAI, etc.
+* Reviewer of CVPR, ICCV, ECCV, ACMMM, ECAI, etc.
 
