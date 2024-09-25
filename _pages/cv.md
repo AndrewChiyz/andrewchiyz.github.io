@@ -9,37 +9,31 @@ redirect_from:
 
 {% include base_path %}
 
-Education
+📖 Educations
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* *2015.03 - 2019.10*, Doctor, Harbin Institute of Technology, Shenzhen.
+* *2012.09 - 2014.12*, Master, Harbin Institute of Technology, Shenzhen.
+* *2007.09 - 2011.07*, Bachelor, PLA Information Engineering University,Zhengzhou.
+
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* May 2022: Associate Profressor 
+  * School of Computer Science and Technology, Guangdong University of Technology
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Dec 2020: Research Fellow
+  * School of Computer Science and Engineering (SCSE), Nanyang Technological University
+  * Supervisor: Professor Cham Tat-Jen
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Oct 2019: Research Assistant
+  * School of Computer Science, Harbin Institute of Technology
+  * Supervisor: Professor Haijun Zhang
+
+* Spring 2018: Research Intern
+  * Tencent AI Lab
+  * Duties included: Semi-supervised segmentation, Salient object segmentation
+  * Supervisor: Dr. Zequn Jie and Dr. Lin Ma
   
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
 
 Publications
 ======
@@ -58,7 +52,10 @@ Teaching
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
+
+
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Reviewer of TNNLS, TMM, TETCI, Information Sciences, Pattern Recognition, Neurocomputing, Neural Computing & Applications
+- Reviewer of CVPR, ICCV, ECCV, ACMMM, ECAI, etc.
+
