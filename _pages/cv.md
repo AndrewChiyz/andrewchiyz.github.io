@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-📖 Educations
+Educations
 ======
 * *2015.03 - 2019.10*, Doctor, Harbin Institute of Technology, Shenzhen.
 * *2012.09 - 2014.12*, Master, Harbin Institute of Technology, Shenzhen.
@@ -34,7 +34,7 @@ Work experience
   * Supervisor: Dr. Zequn Jie and Dr. Lin Ma
   
 
-Publications
+<!-- Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
@@ -50,7 +50,7 @@ Teaching
 ======
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}</ul> -->
 
 
 Service and leadership
