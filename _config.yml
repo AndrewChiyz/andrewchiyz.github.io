@@ -8,9 +8,9 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Andrew Yuzhu Ji (姬玉柱)"
+title                    : "Yuzhu (Andrew) Ji (姬玉柱)"
 title_separator          : "-"
-name                     : &name "Yuzhu Ji"
+name                     : &name "Yuzhu Ji (Andrew)"
 description              : &description "School of Computer Science and Technology, Guangdong University of Technology (GDUT)"
 url                      : https://andrewchiyz.github.io # the base hostname & protocol for your site e.g. "https://andrewchiyz.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -25,7 +25,7 @@ author:
   name             : # "Your Sidebar Name"
   pronouns         : # example: "she/her"  
   bio              : # "Short biography for the left-hand sidebar"
-  location         : "China"
+  location         : "Guangzhou, China"
   employer         : "Guangdong University of Technology"
   uri              : # URL
   email            : "yuzhu.ji@gdut.edu.cn" 
@@ -83,8 +83,8 @@ publication_category:
   conferences:
     title: 'Conference Papers'
 
-# Site Settings
-teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+# Site Settings # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser                   :  ./images/500x300.png
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true

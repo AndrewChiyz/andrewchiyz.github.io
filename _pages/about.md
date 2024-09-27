@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Yuzhu Ji is an associate professor at [School of Computer Science and Technology in Guangdong University of Technology](https://cs.gdut.edu.cn/). Before that, he spent one year at [SCSE](https://www.ntu.edu.sg/scse) in [Nanyang Technological University](https://www.ntu.edu.sg/), where he worked as a Research Fellow with Prof. [Tat-Jen Cham](https://personal.ntu.edu.sg/astjcham/bio.html). He received his PhD degree from the [School of Computer Science and Technology at Harbin Institute of Technology](http://cs.hitsz.edu.cn/), Shenzhen, supervised by Prof. [Haijun Zhang](https://www.dl2link.com/). His research interests are mainly in computer vision, with a current focus on **video analysis and synthesis, human motion transfer, salient object segmentation and medical image analysis**.
+Yuzhu Ji is an associate professor at [School of Computer Science and Technology in Guangdong University of Technology](https://cs.gdut.edu.cn/). Before that, he spent one year at [SCSE](https://www.ntu.edu.sg/scse) in [Nanyang Technological University](https://www.ntu.edu.sg/), where he worked as a Research Fellow with Prof. [Tat-Jen Cham](https://personal.ntu.edu.sg/astjcham/bio.html). He received his PhD degree from the [School of Computer Science and Technology at Harbin Institute of Technology](http://cs.hitsz.edu.cn/), Shenzhen, supervised by Prof. [Haijun Zhang](https://www.dl2link.com/). His research interests are mainly in computer vision, with a current focus on **Human-centric video analysis and synthesis, Image segmentation and Medical image analysis**.
 
 
 🔥 News
@@ -15,7 +15,7 @@ Yuzhu Ji is an associate professor at [School of Computer Science and Technology
 - *2024.09*: 🎉 Two papers are accepted by BIBM 2024 (CCF-B), Congrats to Qingsheng, Xiaopeng.
 - *2024.07*: 🎉 One papers are accepted by ECAI 2024 (CCF-B).
 - *2024.05*: 🎉 One paper is accepted by KDD 2024 (CCF-A), Congrats to Junyang.
-- *2023.08*: 🎉 Two papers are accepted by PRCV 2023 (CCF-C), Congrats to Shi-Ting
+- *2023.08*: 🎉 Two papers are accepted by PRCV 2023 (CCF-C), Congrats to ShiTing
 - *2023.05*: 🎉 One paper is accepted by ECAI 2023 (CCF-B), Congrats to ZhiPeng
 
 <!-- 
