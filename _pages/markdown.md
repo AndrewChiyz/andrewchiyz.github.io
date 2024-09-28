@@ -1,293 +1,76 @@
 ---
 permalink: /markdown/
-title: "Markdown"
+title: "关于招生"
 author_profile: true
 redirect_from: 
   - /md/
   - /markdown.html
 ---
 
-## Locations of key files/directories
+## 写在前面
+
+本人课题组招收对计算机视觉和机器学习方向感兴趣的 **【硕士研究生（含推免生）】** 和 **【本科科研生】**。欢迎感兴趣的同学通过邮件联系！邮件请附件：1）个人简历（含英语四六级成绩）、2）相关参加科研经历（如有），3）感兴趣的研究方向和未来规划（读博，读硕）。联系后，一般先进行简短面谈（可线上/线下）初步互相了解，本人会解答相关问题，了解双方意向，之后可视情况安排入组体验（本科科研生）。
+
+
+## 本科科研生
+- 一般招收对象
+  - 广东工业大学计算机学院1~3年级本科生，有志于继续在国内或前往海外攻读硕士或博士研究生。
+- 要求：
+  - 有志于未来从事计算机视觉相关领域学术研究的同学，有计划继续攻读硕士、博士学位的同学。
+  - 确定研究课题后，需入组科研，并每周定期进行论文或科研进度汇报（需制作汇报PPT）
+  - 计划加入科研组的同学需要修读或自学先导课程：
+    * 线性代数
+    * 概论论
+    * 机器学习
+    * 深度学习基础
+
+    推荐阅读或在线学习以下资料：
+    * 斯坦福大学的cs231n课程：[Convolutional Neural Networks for Visual Recognition](https://cs231n.github.io) 
+    * 南京大学，周志华老师，机器学习（西瓜书教材）
+    * Coursera，吴恩达老师，[Machine Learning](https://www.bilibili.com/video/BV1Bq421A74G/?spm_id_from=333.337.search-card.all.click&vd_source=98ca7c7fad502df1203709e0fa1b2a31)
+    * MIT, Gilbert Strang, [Linear Algebra | Machine Learning](https://www.bilibili.com/video/BV1a7411M7wH/?spm_id_from=333.337.search-card.all.click&vd_source=98ca7c7fad502df1203709e0fa1b2a31)
+
+  - 预期成果形式
+    * 组内以纵向科研为主，即发表高水平学术论文（Top/中科院SCI一区期刊论文、CCF-A/B类Top会议论文）。有了科研成果后，可组织申请发明专利、指导学术论文类科研竞赛等。在此过程中，锻炼同学们的表达、写作、逻辑思考及代码能力等。
+
+- 入组体验过程：
+  - 为了让计划入组科研的同学体验课题组内日常工作模式，确保每位入组同学都充分确定自己的选择，入组前会布置一次入组前任务，并在规定的时间内完成后，和我进行一次一对一汇报与讨论。具体内容如下：
+  - **论文汇报：** 在一周内，阅读指定论文或自选论文，并制作PPT从以下几个方面进行10-15分钟的个人汇报：
+    * 该论文属于什么期刊/会议，分级如何（弄清中科院SCI分区、JCR SCI分区、影响因子、CCF列表分级）；
+    * 论文要解决的核心问题是什么和动机是什么；
+    * 论文中总结的现有解决方法大致分为哪几类，核心思想是什么；
+    * 论文所提出方法的核心技术原理和运行流程；
+    * 用自己的话简单概括该论文所提出方法的原理（讲30秒），以及论文所提出方法的先进性、创新性或核心洞见（讲30秒）。
+
+  - **结果复现：** 在一周内，阅读指定论文或自选论文，并通过代码复现实验结果。并通过PPT进行代码逻辑的汇报。
+
+
+## 硕士研究生（含推免生）
+- 一般招收对象
+  - 入学广东工业大学计算机学院的学术型、专业型硕士研究生。毕业后有志于继续从事科研相关工作、进入公司从事研发工作、以及继续攻读国内或海外博士学位的同学。
+- 研究领域：计算机视觉与机器学习
+- 要求：
+  - 有志于未来从事计算机视觉相关领域学术研究的同学、计划继续攻读博士学位的同学。
+  - 确定研究课题后，每周定期进行论文或科研进度汇报（需制作汇报PPT）
+  - 计划加入科研组的同学需要修读或自学先导课程：
+    * 线性代数
+    * 概论论
+    * 机器学习
+    * 深度学习基础
+
+    如没有相关基础，推荐在入学前阅读或在线学习以下资料：
+    * 斯坦福大学的cs231n课程：[Convolutional Neural Networks for Visual Recognition](https://cs231n.github.io) 
+    * 南京大学，周志华老师，机器学习（西瓜书教材）
+    * Coursera，吴恩达老师，[Machine Learning](https://www.bilibili.com/video/BV1Bq421A74G/?spm_id_from=333.337.search-card.all.click&vd_source=98ca7c7fad502df1203709e0fa1b2a31)
+    * MIT, Gilbert Strang, [Linear Algebra | Machine Learning](https://www.bilibili.com/video/BV1a7411M7wH/?spm_id_from=333.337.search-card.all.click&vd_source=98ca7c7fad502df1203709e0fa1b2a31)
+
+  - 预期成果形式
+    * 组内以纵向科研为主，即发表高水平学术论文（Top/中科院SCI一区期刊论文、CCF-A/B类Top会议论文）。有了科研成果后，可组织申请发明专利、指导学术论文类科研竞赛等。在此过程中，锻炼同学们的表达、写作、逻辑思考及代码能力等。
+
+## 
+
+## 总结
+科研是一门艺术，而做科研是一个痛苦且快乐的过程。痛苦在于攻坚问题的过程通常不是一帆风顺的，甚至以失败为常态；快乐在于获取灵感、实施、提出问题并解决问题，取得有效结果，更重要的是论文接收时的喜悦。好的idea和论文的产出需要时间打磨、完善、优化。此过程中，同学们需要有毅力、抗压能力，以及坚持不懈的努力才能完成。期待同学们有所收获和取得成就。
 
-* Basic config options: _config.yml
-* Top navigation bar config: _data/navigation.yml
-* Single pages: _pages/
-* Collections of pages are .md or .html files in:
-  * _publications/
-  * _portfolio/
-  * _posts/
-  * _teaching/
-  * _talks/
-* Footer: _includes/footer.html
-* Static files (like PDFs): /files/
-* Profile image (can set in _config.yml): images/profile.png
 
-## Tips and hints
-
-* Name a file ".md" to have it render in markdown, name it ".html" to render in HTML.
-* Go to the [commit list](https://github.com/academicpages/academicpages.github.io/commits/master) (on your repo) to find the last version Github built with Jekyll. 
-  * Green check: successful build
-  * Orange circle: building
-  * Red X: error
-  * No icon: not built
-* Academic Pages uses [Jekyll Kramdown](https://jekyllrb.com/docs/configuration/markdown/), GitHub Flavored Markdown (GFM) parser, which is similar to the version of Markdown used on GitHub, but may have some minor differences. 
-  * Some of emoji supported on GitHub should be supposed via the [Jemoji](https://github.com/jekyll/jemoji) plugin :computer:.
-  * The best list of the supported emoji can be found in the [Emojis for Jekyll via Jemoji](https://www.fabriziomusacchio.com/blog/2021-08-16-emojis_for_Jekyll/#computer) blog post.
-
-## Resources
- * [Liquid syntax guide](https://shopify.github.io/liquid/tags/control-flow/)
- * [MathJax Documentation](https://docs.mathjax.org/en/latest/)
-
-## MathJax 
-
-Support for MathJax Version 3.0 is included in the template:
-
-$$
-\displaylines{
-\nabla \cdot E= \frac{\rho}{\epsilon_0} \\\
-\nabla \cdot B=0 \\\
-\nabla \times E= -\partial_tB \\\
-\nabla \times B  = \mu_0 \left(J + \varepsilon_0 \partial_t E \right)
-}
-$$
-
-The default delimiters of `$$...$$` and `\\[...\\]` are supported for displayed mathematics, while `\\(...\\)` should be used for in-line mathematics (ex., \\(a^2 + b^2 = c^2\\))
-
-**Note** that since Academic Pages uses Markdown which cases some interference with MathJax and LaTeX for escaping characters and new lines, although [some workarounds exist](https://math.codidact.com/posts/278763/278772#answer-278772).
-
-## Markdown guide
-
-Academic Pages uses [kramdown](https://kramdown.gettalong.org/index.html) for Markdown rendering, which has some differences from other Markdown implementations such as GitHub's. In addition to this guide, please see the [kramdown Syntax page](https://kramdown.gettalong.org/syntax.html) for full documentation.  
-
-### Header three
-
-#### Header four
-
-##### Header five
-
-###### Header six
-
-## Blockquotes
-
-Single line blockquote:
-
-> Quotes are cool.
-
-## Tables
-
-### Table 1
-
-| Entry            | Item   |                                                              |
-| --------         | ------ | ------------------------------------------------------------ |
-| [John Doe](#)    | 2016   | Description of the item in the list                          |
-| [Jane Doe](#)    | 2019   | Description of the item in the list                          |
-| [Doe Doe](#)     | 2022   | Description of the item in the list                          |
-
-### Table 2
-
-| Header1 | Header2 | Header3 |
-|:--------|:-------:|--------:|
-| cell1   | cell2   | cell3   |
-| cell4   | ce
-ll5   | cell6   |
-|-----------------------------|
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|=============================|
-| Foot1   | Foot2   | Foot3   |
-
-## Definition Lists
-
-Definition List Title
-:   Definition list division.
-
-Startup
-:   A startup company or startup is a company or temporary organization designed to search for a repeatable and scalable business model.
-
-#dowork
-:   Coined by Rob Dyrdek and his personal body guard Christopher "Big Black" Boykins, "Do Work" works as a self motivator, to motivating your friends.
-
-Do It Live
-:   I'll let Bill O'Reilly [explain](https://www.youtube.com/watch?v=O_HyZ5aW76c "We'll Do It Live") this one.
-
-## Unordered Lists (Nested)
-
-  * List item one 
-      * List item one 
-          * List item one
-          * List item two
-          * List item three
-          * List item four
-      * List item two
-      * List item three
-      * List item four
-  * List item two
-  * List item three
-  * List item four
-
-## Ordered List (Nested)
-
-  1. List item one 
-      1. List item one 
-          1. List item one
-          2. List item two
-          3. List item three
-          4. List item four
-      2. List item two
-      3. List item three
-      4. List item four
-  2. List item two
-  3. List item three
-  4. List item four
-
-## Buttons
-
-Make any link standout more when applying the `.btn` class.
-
-## Notices
-
-Basic notices or call-outs are supported using the following syntax:
-
-```markdown
-**Watch out!** You can also add notices by appending `{: .notice}` to the line following paragraph.
-{: .notice}
-```
-
-which wil render as:
-
-**Watch out!** You can also add notices by appending `{: .notice}` to the line following paragraph.
-{: .notice}
-
-### Footnotes
-
-Footnotes can be useful for clarifying points in the text, or citing information.[^1] Markdown support numeric footnotes, as well as text as long as the values are unique.[^note]
-
-```markdown
-This is the regular text.[^1] This is more regular text.[^note]
-
-[^1]: This is the footnote itself.
-[^note]: This is another footnote.
-```
-
-[^1]: Such as this footnote.
-[^note]: When using text for footnotes markers, no spaces are permitted in the name.
-
-## HTML Tags
-
-### Address Tag
-
-<address>
-  1 Infinite Loop<br /> Cupertino, CA 95014<br /> United States
-</address>
-
-### Anchor Tag (aka. Link)
-
-This is an example of a [link](http://github.com "Github").
-
-### Abbreviation Tag
-
-The abbreviation CSS stands for "Cascading Style Sheets".
-
-*[CSS]: Cascading Style Sheets
-
-### Cite Tag
-
-"Code is poetry." ---<cite>Automattic</cite>
-
-### Code Tag
-
-You will learn later on in these tests that `word-wrap: break-word;` will be your best friend.
-
-You can also write larger blocks of code with syntax highlighting supported for some languages, such as Python:
-
-```python
-print('Hello World!')
-```
-
-or R:
-
-```R
-print("Hello World!", quote = FALSE)
-```
-
-### Details Tag (collapsible sections)
-
-The HTML `<details>` tag works well with Markdown and allows you to include collapsible sections, see [W3Schools](https://www.w3schools.com/tags/tag_details.asp) for more information on how to use the tag.
-
-<details>
-  <summary>Collapsed by default</summary>
-  This section was collapsed by default!
-</details>
-
-The source code:
-
-```HTML
-<details>
-  <summary>Collapsed by default</summary>
-  This section was collapsed by default!
-</details>
-```
-
-Or, you can leave a section open by default by including the `open` attribute in the tag:
-
-<details open>
-  <summary>Open by default</summary>
-  This section is open by default thanks to open in the &lt;details open&gt; tag!
-</details>
-
-
-### Emphasize Tag
-
-The emphasize tag should _italicize_ text.
-
-### Insert Tag
-
-This tag should denote <ins>inserted</ins> text.
-
-### Keyboard Tag
-
-This scarcely known tag emulates <kbd>keyboard text</kbd>, which is usually styled like the `<code>` tag.
-
-### Preformatted Tag
-
-This tag styles large blocks of code.
-
-<pre>
-.post-title {
-  margin: 0 0 5px;
-  font-weight: bold;
-  font-size: 38px;
-  line-height: 1.2;
-  and here's a line of some really, really, really, really long text, just to see how the PRE tag handles it and to find out how it overflows;
-}
-</pre>
-
-### Quote Tag
-
-<q>Developers, developers, developers&#8230;</q> &#8211;Steve Ballmer
-
-### Strike Tag
-
-This tag will let you <strike>strikeout text</strike>.
-
-### Strong Tag
-
-This tag shows **bold text**.
-
-### Subscript Tag
-
-Getting our science styling on with H<sub>2</sub>O, which should push the "2" down.
-
-### Superscript Tag
-
-Still sticking with science and Isaac Newton's E = MC<sup>2</sup>, which should lift the 2 up.
-
-### Variable Tag
-
-This allows you to denote <var>variables</var>.
-
-***
-**Footnotes**
-
-The footnotes in the page will be returned following this line, return to the section on <a href="#footnotes">Markdown Footnotes</a>.
 
