@@ -1,7 +1,7 @@
 ---
 title: "Machine Learning and Data Mining"
 collection: teaching
-type: "Workshop"
+type: "Undergraduate course"
 permalink: /teaching/2024-fall-teaching-2
 venue: "School of Computer Science and Technology, Guangdong University of Technology"
 date: 2024-09-01
