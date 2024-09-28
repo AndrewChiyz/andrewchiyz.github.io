@@ -22,11 +22,11 @@ repository               : "andrewchiyz/andrewchiyz.github.io"
 author:
   # Biographic information
   avatar           : "android-chrome-512x512.png"
-  name             : # "Your Sidebar Name"
+  name             : "Yuzhu Ji (Andrew)"
   pronouns         : # example: "she/her"  
   bio              : # "Short biography for the left-hand sidebar"
   location         : "Guangzhou, China"
-  employer         : "Guangdong University of Technology"
+  employer         : "School of Computer Science and Technology, Guangdong University of Technology"
   uri              : # URL
   email            : "yuzhu.ji@gdut.edu.cn" 
 
