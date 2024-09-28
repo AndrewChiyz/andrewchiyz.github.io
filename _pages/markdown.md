@@ -28,10 +28,10 @@ redirect_from:
     * 斯坦福大学的cs231n课程：[Convolutional Neural Networks for Visual Recognition](https://cs231n.github.io) 
     * 南京大学，周志华老师，机器学习（西瓜书教材）
     * Coursera，吴恩达老师，[Machine Learning](https://www.bilibili.com/video/BV1Bq421A74G/?spm_id_from=333.337.search-card.all.click&vd_source=98ca7c7fad502df1203709e0fa1b2a31)
-    * MIT, Gilbert Strang, [Linear Algebra | Machine Learning](https://www.bilibili.com/video/BV1a7411M7wH/?spm_id_from=333.337.search-card.all.click&vd_source=98ca7c7fad502df1203709e0fa1b2a31)
+    * MIT，Gilbert Strang，[Linear Algebra Machine Learning](https://www.bilibili.com/video/BV1a7411M7wH/?spm_id_from=333.337.search-card.all.click&vd_source=98ca7c7fad502df1203709e0fa1b2a31)
 
-  - 预期成果形式
-    * 组内以纵向科研为主，即发表高水平学术论文（Top/中科院SCI一区期刊论文、CCF-A/B类Top会议论文）。有了科研成果后，可组织申请发明专利、指导学术论文类科研竞赛等。在此过程中，锻炼同学们的表达、写作、逻辑思考及代码能力等。
+- 预期成果形式
+  * 组内以纵向科研为主，即发表高水平学术论文（Top/中科院SCI一区期刊论文、CCF-A/B类Top会议论文）。有了科研成果后，可组织申请发明专利、指导学术论文类科研竞赛等。在此过程中，锻炼同学们的表达、写作、逻辑思考及代码能力等。
 
 - 入组体验过程：
   - 为了让计划入组科研的同学体验课题组内日常工作模式，确保每位入组同学都充分确定自己的选择，入组前会布置一次入组前任务，并在规定的时间内完成后，和我进行一次一对一汇报与讨论。具体内容如下：
@@ -62,12 +62,11 @@ redirect_from:
     * 斯坦福大学的cs231n课程：[Convolutional Neural Networks for Visual Recognition](https://cs231n.github.io) 
     * 南京大学，周志华老师，机器学习（西瓜书教材）
     * Coursera，吴恩达老师，[Machine Learning](https://www.bilibili.com/video/BV1Bq421A74G/?spm_id_from=333.337.search-card.all.click&vd_source=98ca7c7fad502df1203709e0fa1b2a31)
-    * MIT, Gilbert Strang, [Linear Algebra | Machine Learning](https://www.bilibili.com/video/BV1a7411M7wH/?spm_id_from=333.337.search-card.all.click&vd_source=98ca7c7fad502df1203709e0fa1b2a31)
+    * MIT，Gilbert Strang，[Linear Algebra Machine Learning](https://www.bilibili.com/video/BV1a7411M7wH/?spm_id_from=333.337.search-card.all.click&vd_source=98ca7c7fad502df1203709e0fa1b2a31)
 
-  - 预期成果形式
-    * 组内以纵向科研为主，即发表高水平学术论文（Top/中科院SCI一区期刊论文、CCF-A/B类Top会议论文）。有了科研成果后，可组织申请发明专利、指导学术论文类科研竞赛等。在此过程中，锻炼同学们的表达、写作、逻辑思考及代码能力等。
+- 预期成果形式
+  * 组内以纵向科研为主，即发表高水平学术论文（Top/中科院SCI一区期刊论文、CCF-A/B类Top会议论文）。有了科研成果后，可组织申请发明专利、指导学术论文类科研竞赛等。在此过程中，锻炼同学们的表达、写作、逻辑思考及代码能力等。
 
-## 
 
 ## 总结
 科研是一门艺术，而做科研是一个痛苦且快乐的过程。痛苦在于攻坚问题的过程通常不是一帆风顺的，甚至以失败为常态；快乐在于获取灵感、实施、提出问题并解决问题，取得有效结果，更重要的是论文接收时的喜悦。好的idea和论文的产出需要时间打磨、完善、优化。此过程中，同学们需要有毅力、抗压能力，以及坚持不懈的努力才能完成。期待同学们有所收获和取得成就。
