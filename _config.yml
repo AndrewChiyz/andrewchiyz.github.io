@@ -8,9 +8,9 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Yuzhu (Andrew) Ji (姬玉柱)"
+title                    : "Yuzhu Ji"
 title_separator          : "-"
-name                     : &name "Yuzhu Ji (Andrew)"
+name                     : &name "Yuzhu Ji"
 description              : &description "School of Computer Science and Technology, Guangdong University of Technology (GDUT)"
 url                      : https://andrewchiyz.github.io # the base hostname & protocol for your site e.g. "https://andrewchiyz.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
