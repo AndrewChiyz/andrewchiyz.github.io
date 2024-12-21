@@ -27,6 +27,7 @@ redirect_from:
     * 深度学习基础
 
     推荐阅读或在线学习以下资料：
+    * 南京大学，周志华老师：[如何做研究与写论文](https://zhuanlan.zhihu.com/p/98747105)
     * 斯坦福大学的cs231n课程：[Convolutional Neural Networks for Visual Recognition](https://cs231n.github.io) 
     * 南京大学，周志华老师，机器学习（西瓜书教材）
     * Coursera，吴恩达老师，[Machine Learning](https://www.bilibili.com/video/BV1Bq421A74G/?spm_id_from=333.337.search-card.all.click&vd_source=98ca7c7fad502df1203709e0fa1b2a31)
@@ -61,6 +62,7 @@ redirect_from:
     * 深度学习基础
 
     如没有相关基础，推荐在入学前阅读或在线学习以下资料：
+    * 南京大学，周志华老师：[如何做研究与写论文](https://zhuanlan.zhihu.com/p/98747105)
     * 斯坦福大学的cs231n课程：[Convolutional Neural Networks for Visual Recognition](https://cs231n.github.io) 
     * 南京大学，周志华老师，机器学习（西瓜书教材）
     * Coursera，吴恩达老师，[Machine Learning](https://www.bilibili.com/video/BV1Bq421A74G/?spm_id_from=333.337.search-card.all.click&vd_source=98ca7c7fad502df1203709e0fa1b2a31)
