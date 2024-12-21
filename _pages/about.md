@@ -9,6 +9,7 @@ redirect_from:
 
 Yuzhu Ji is an associate professor at [School of Computer Science and Technology in Guangdong University of Technology](https://cs.gdut.edu.cn/). Before that, he spent one year at SCSE in [Nanyang Technological University](https://www.ntu.edu.sg/), where he worked as a Research Fellow with Prof. [Tat-Jen Cham](https://personal.ntu.edu.sg/astjcham/bio.html). He received his PhD degree from the [School of Computer Science and Technology at Harbin Institute of Technology](http://cs.hitsz.edu.cn/), Shenzhen, supervised by Prof. [Haijun Zhang](https://www.dl2link.com/). His research interests are mainly in computer vision, with a current focus on **Human-centric video analysis and synthesis, Image segmentation and Medical image analysis**.
 
+<br/>
 
 🔥 News
 ========================

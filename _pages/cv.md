@@ -21,7 +21,7 @@ Work experience
 * May 2022: Associate Profressor 
   * School of Computer Science and Technology, Guangdong University of Technology
 
-* Dec 2020: Research Fellow
+* Dec 2020: PostdocResearch Fellow
   * School of Computer Science and Engineering (SCSE), Nanyang Technological University
   * Supervisor: Professor Cham Tat-Jen
 
