@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Yuzhu Ji"
 title_separator          : "-"
 name                     : &name "Yuzhu Ji"
-description              : &description "School of Computer Science and Technology, Guangdong University of Technology (GDUT)"
+description              : &description "GDUT"
 url                      : https://andrewchiyz.github.io # the base hostname & protocol for your site e.g. "https://andrewchiyz.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "andrewchiyz/andrewchiyz.github.io"
@@ -26,7 +26,7 @@ author:
   pronouns         : # example: "she/her"  
   bio              : # "Short biography for the left-hand sidebar"
   location         : "Guangzhou, China"
-  employer         : "Guangdong University of Technology"
+  employer         : "GDUT"
   uri              : # URL
   email            : "yuzhu.ji@gdut.edu.cn" 
 
