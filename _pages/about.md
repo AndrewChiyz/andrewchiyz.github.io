@@ -13,13 +13,13 @@ Yuzhu Ji is an associate professor at [School of Computer Science and Technology
 
 🔥 News
 ========================
-- *2024.12*: 🎉 Two papers are accepted by ICASSP 2025 (CCF-B).
-- *2024.11*: 🎉 One paper are accepted by TMM 2024 (CCF-B).
-- *2024.09*: 🎉 Two papers are accepted by BIBM 2024 (CCF-B), Congrats to Qingsheng, Xiaopeng.
-- *2024.07*: 🎉 One paper is accepted by ECAI 2024 (CCF-B).
-- *2024.05*: 🎉 One paper is accepted by KDD 2024 (CCF-A), Congrats to Junyang.
-- *2023.08*: 🎉 Two papers are accepted by PRCV 2023 (CCF-C), Congrats to ShiTing
-- *2023.05*: 🎉 One paper is accepted by ECAI 2023 (CCF-B), Congrats to ZhiPeng
+- __2024.12__: 🎉 Two papers are accepted by ICASSP 2025 (CCF-B).
+- __2024.11__: 🎉 One paper are accepted by TMM 2024 (CCF-B).
+- __2024.09__: 🎉 Two papers are accepted by BIBM 2024 (CCF-B), Congrats to Qingsheng, Xiaopeng.
+- __2024.07__: 🎉 One paper is accepted by ECAI 2024 (CCF-B).
+- __2024.05__: 🎉 One paper is accepted by KDD 2024 (CCF-A), Congrats to Junyang.
+- __2023.08__: 🎉 Two papers are accepted by PRCV 2023 (CCF-C), Congrats to ShiTing
+- __2023.05__: 🎉 One paper is accepted by ECAI 2023 (CCF-B), Congrats to ZhiPeng
 
 <!-- 
 This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
