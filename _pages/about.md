@@ -14,10 +14,10 @@ Yuzhu Ji is an associate professor at School of Computer Science and Technology 
 🔥 News
 ========================
 - __2024.12__: 🎉 Two papers are accepted by ICASSP 2025 (CCF-B).
-- __2024.11__: 🎉 One paper are accepted by TMM 2024 (CCF-B).
+- __2024.11__: 🎉 One paper is accepted by IEEE T-MM 2024 (CCF-B).
 - __2024.09__: 🎉 Two papers are accepted by BIBM 2024 (CCF-B), Congrats to Qingsheng, Xiaopeng.
 - __2024.07__: 🎉 One paper is accepted by ECAI 2024 (CCF-B).
-- __2024.05__: 🎉 One paper is accepted by KDD 2024 (CCF-A), Congrats to Junyang.
+- __2024.05__: 🎉 One paper is accepted by SIGKDD 2024 (CCF-A), Congrats to Junyang.
 - __2023.08__: 🎉 Two papers are accepted by PRCV 2023 (CCF-C), Congrats to ShiTing
 - __2023.05__: 🎉 One paper is accepted by ECAI 2023 (CCF-B), Congrats to ZhiPeng
 
