@@ -14,11 +14,4 @@ The integration of big data and machine learning analysis has introduced unprece
 
 Through this course, students will learn to apply machine learning techniques to analyze and mine big data, addressing real-world economic challenges. The course emphasizes building practical problem-solving skills and enhancing data analysis capabilities, laying a strong foundation for developing professional expertise.
 
-Heading 1
-======
 
-Heading 2
-======
-
-Heading 3
-======
