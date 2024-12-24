@@ -2,9 +2,9 @@
 title: "One-shot Human Motion Transfer via Occlusion-Robust Flow Prediction and Neural Texturing"
 collection: publications
 category: manuscripts
-permalink: /publication/2024-10-15-paper-title-number-4
+permalink: /publication/2024-11-4-paper-title-number-4
 excerpt: ''
-date: 2024-10-15
+date: 2024-11-4
 venue: 'IEEE Transactions on Multimedia'
 slidesurl: ''
 paperurl: 'https://andrewchiyz.github.io/vision.ohmt.rfnt/'
