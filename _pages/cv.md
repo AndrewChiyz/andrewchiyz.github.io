@@ -19,18 +19,18 @@ Educations
 Work experience
 ======
 * May 2022: Associate Profressor 
-  * School of Computer Science and Technology, Guangdong University of Technology
+  * School of Computer Science and Technology, Guangdong University of Technology, Guangzhou, China
 
-* Dec 2020: PostdocResearch Fellow
-  * School of Computer Science and Engineering (SCSE), Nanyang Technological University
+* Dec 2020: Postdoc Research Fellow
+  * College of Computing and Data Science, Nanyang Technological University, Singapore 
   * Supervisor: Professor Cham Tat-Jen
 
 * Oct 2019: Research Assistant
-  * School of Computer Science and Technology, Harbin Institute of Technology
+  * School of Computer Science and Technology, Harbin Institute of Technology, Shenzhen, China
   * Supervisor: Professor Haijun Zhang
 
 * Spring 2018: Research Intern
-  * Tencent AI Lab
+  * Tencent AI Lab, Shenzhen, China
   * Supervisor: Dr. Zequn Jie and Dr. Lin Ma
   
 
