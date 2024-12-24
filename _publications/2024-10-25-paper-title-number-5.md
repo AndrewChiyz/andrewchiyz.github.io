@@ -5,7 +5,7 @@ category: conferences
 permalink: /publication/2024-10-25-paper-title-number-5
 excerpt: ''
 date: 2024-10-25
-venue: 'GitHub Journal of Bugs'
+venue: 'European Conference on Artificial Intelligence (ECAI)'
 paperurl: 'https://andrewchiyz.github.io/vision.medseg.cpnet/'
 citation: 'Yuzhu Ji, Mingshan Sun, Yiqun Zhang, Haijun Zhang. CPNet: 3D Semantic Relation and Geometry Context Prior Network for Multi-Organ Segmentation. ECAI 2024: 153-160.'
 ---
