@@ -1,5 +1,5 @@
 ---
-title: "CFNet: {A} Coarse-to-Fine Framework for Coronary Artery Segmentation"
+title: "CFNet: A Coarse-to-Fine Framework for Coronary Artery Segmentation"
 collection: publications
 category: conferences
 permalink: /publication/2024-8-19-paper-title-number-3

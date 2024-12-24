@@ -13,7 +13,7 @@ Educations
 ======
 * *2015.03 - 2019.10*, Doctor, Harbin Institute of Technology, Shenzhen.
 * *2012.09 - 2014.12*, Master, Harbin Institute of Technology, Shenzhen.
-* *2007.09 - 2011.07*, Bachelor, PLA Information Engineering University,Zhengzhou.
+* *2007.09 - 2011.07*, Bachelor, PLA Information Engineering University, Zhengzhou.
 
 
 Work experience
@@ -53,7 +53,7 @@ Teaching
   {% endfor %}</ul> -->
 
 
-Service and leadership
+Research Services
 ======
 * Reviewer of TNNLS, TMM, TETCI, Information Sciences, Pattern Recognition, Neurocomputing, Neural Computing & Applications
 * Reviewer of CVPR, ICCV, ECCV, ACMMM, ECAI, etc.
