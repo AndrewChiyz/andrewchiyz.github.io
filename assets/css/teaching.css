@@ -6,17 +6,17 @@
 .page__content .teaching-archive__year{font-size:1.3rem;margin:0 0 .85rem;padding-bottom:.5rem;scroll-margin-top:1.5rem}
 .teaching-archive .teaching-archive__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.85rem;align-items:stretch}
 .teaching-archive .teaching-archive__grid>.teaching-archive__item{width:100%;max-width:none;align-self:stretch;justify-self:stretch}
-.teaching-archive .teaching-archive__item .archive__item{display:grid;grid-template-columns:108px minmax(0,1fr);grid-template-rows:auto auto auto 1fr;column-gap:.85rem;height:100%;min-height:148px;max-height:none;overflow:visible;padding:.85rem;border-left-width:4px;transition:box-shadow .15s ease,border-color .15s ease}
+.teaching-archive .teaching-archive__item .archive__item{display:flex;flex-direction:column;height:100%;min-height:148px;max-height:none;overflow:visible;padding:.85rem;border-left-width:4px;transition:box-shadow .15s ease,border-color .15s ease}
 .teaching-archive .teaching-archive__item .archive__item:hover{border-color:#aec6e4;box-shadow:0 5px 17px #25406c12}
 .teaching-archive .teaching-card__meta{gap:.4rem;margin-bottom:.45rem;align-items:center}
 .teaching-card__repeat{font-size:.78rem;color:#61768e}
 .page__content .teaching-archive .archive__item-title{font-size:1.03rem;line-height:1.45;margin:0 0 .4rem;letter-spacing:0;overflow-wrap:normal}
 .page__content .teaching-archive .archive__item-title a{font-weight:600}
 .page__content .teaching-card__school{font-size:.8rem;color:#6c7e91;line-height:1.5;margin:0 0 .5rem;text-align:left}
-.page__content .teaching-card__link{margin-top:.25rem;font-size:.83rem;align-self:end;justify-self:start;text-decoration:none;color:#365f8c}
-.teaching-archive .archive__item>.teaching-card__meta,.teaching-archive .archive__item>.archive__item-title,.teaching-archive .archive__item>.teaching-card__school,.teaching-archive .archive__item>.teaching-card__link{grid-column:2;min-width:0}
+.page__content .teaching-card__link{margin-top:auto;font-size:.83rem;align-self:flex-start;text-decoration:none;color:#365f8c}
+.teaching-archive .archive__item>.teaching-card__meta,.teaching-archive .archive__item>.archive__item-title,.teaching-archive .archive__item>.teaching-card__school,.teaching-archive .archive__item>.teaching-card__link{min-width:0}
 .teaching-card__link span{margin-left:.3rem}
-.page__content .teaching-card__poster{display:block;grid-column:1;grid-row:1/span 4;align-self:start;width:100%;max-width:108px;margin:0;border-radius:6px;overflow:hidden;background:#edf3fa;line-height:0}
+.page__content .teaching-card__poster{display:block;align-self:center;flex:none;width:100%;max-width:240px;margin:0 auto .8rem;border-radius:6px;overflow:hidden;background:#edf3fa;line-height:0}
 .page__content .teaching-card__poster img{display:block;width:100%;height:auto;margin:0;object-fit:contain;max-width:100%}
 .page__content .teaching-card__poster:focus-visible{outline:3px solid #7e9fc5;outline-offset:3px}
 .page__content .course-poster{width:100%;max-width:480px;margin:.35rem auto 1.4rem}
@@ -28,5 +28,4 @@
 .teaching-archive .teaching-archive__item--active .archive__item{border-left:4px solid #b94a59;background:linear-gradient(180deg,#fff7f8,#fff)}
 .teaching-archive .teaching-archive__item--active .archive__item:hover{border-left-color:#a63d4a}
 @media(max-width:680px){.teaching-archive .teaching-archive__grid{grid-template-columns:minmax(0,1fr)}.teaching-archive .teaching-archive__item .archive__item{min-height:140px}.page__content .teaching-archive__year{font-size:1.2rem}.teaching-years{gap:.4rem}}
-@media(max-width:420px){.teaching-archive .teaching-archive__item .archive__item{grid-template-columns:84px minmax(0,1fr);column-gap:.7rem}.page__content .teaching-card__poster{max-width:84px}}
 @media(prefers-reduced-motion:reduce){.teaching-archive .teaching-archive__item .archive__item{transition:none}}

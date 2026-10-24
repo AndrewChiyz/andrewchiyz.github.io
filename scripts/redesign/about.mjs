@@ -5,7 +5,7 @@ export function renderAbout(data,zh) {
  const emphasis=zh?[
   '青年百人 A 类副教授、硕士生导师','IEEE 高级会员',
   '计算机视觉','视频分析与合成','人体动作迁移','物体位姿估计','显著性物体检测','医学图像分割',
-  '40 余篇','多项发明专利','主持国家级、省部级科研项目 4 项','广州计算机学会理事'
+  '40 余篇','主持国家级、省部级科研项目 4 项','广州计算机学会理事'
  ]:[
   "Associate Professor and master's supervisor",'Senior Member of IEEE',
   'computer vision','video analysis and synthesis','human motion transfer','object pose estimation','salient object detection','medical image segmentation',

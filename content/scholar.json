@@ -662,9 +662,9 @@
       "id": "ai-chip",
       "titleZh": "智能芯片原理与应用",
       "poster": {
-        "src": "/images/teaching/ai-chip.png",
-        "width": 1672,
-        "height": 941
+        "src": "/images/teaching/ai-chip.jpg",
+        "width": 682,
+        "height": 384
       }
     },
     {
@@ -674,9 +674,9 @@
       "id": "machine-learning",
       "titleZh": "机器学习与数据挖掘",
       "poster": {
-        "src": "/images/teaching/machine-learning-data-mining.png",
-        "width": 1672,
-        "height": 941
+        "src": "/images/teaching/machine-learning-data-mining.jpg",
+        "width": 682,
+        "height": 384
       }
     },
     {
@@ -686,9 +686,9 @@
       "id": "computer-vision",
       "titleZh": "计算机视觉",
       "poster": {
-        "src": "/images/teaching/computer-vision.png",
-        "width": 1672,
-        "height": 941
+        "src": "/images/teaching/computer-vision.jpg",
+        "width": 682,
+        "height": 384
       }
     },
     {
@@ -699,9 +699,9 @@
       "body": "Artificial Intelligence was taught at Guangdong University of Technology in the 2024–2025 academic year.",
       "bodyZh": "2024–2025 学年于广东工业大学开设的人工智能课程。",
       "poster": {
-        "src": "/images/teaching/artificial-intelligence.png",
-        "width": 1672,
-        "height": 941
+        "src": "/images/teaching/artificial-intelligence.jpg",
+        "width": 682,
+        "height": 384
       }
     },
     {
@@ -712,9 +712,9 @@
       "body": "Fundamentals of Artificial Intelligence: Science and Engineering was taught at Guangdong University of Technology in the 2025–2026 academic year, with two course offerings.",
       "bodyZh": "2025–2026 学年于广东工业大学开设的人工智能基础：科学与工程课程，包含两次开课记录。",
       "poster": {
-        "src": "/images/teaching/ai-science-engineering.png",
-        "width": 1672,
-        "height": 941
+        "src": "/images/teaching/ai-science-engineering.jpg",
+        "width": 682,
+        "height": 384
       }
     },
     {
@@ -725,9 +725,9 @@
       "body": "Fundamentals of Artificial Intelligence: Humanities and Science is taught at Guangdong University of Technology in the 2026–2027 academic year.",
       "bodyZh": "2026–2027 学年于广东工业大学开设的人工智能基础：人文与科学课程。",
       "poster": {
-        "src": "/images/teaching/ai-humanities-science.png",
-        "width": 1672,
-        "height": 941
+        "src": "/images/teaching/ai-humanities-science.jpg",
+        "width": 682,
+        "height": 384
       }
     }
   ],
@@ -893,7 +893,7 @@
       "orgZh": "解放军信息工程大学，郑州"
     }
   ],
-  "avatar": "/images/JYZ1.png",
+  "avatar": "/images/JYZ1.jpg",
   "cv": "/files/Yuzhu-Ji-CV.pdf",
   "membership": "Senior Member, IEEE",
   "researchInterests": [
