@@ -9,7 +9,7 @@ export function renderAbout(data,zh) {
  ]:[
   "Associate Professor and master's supervisor",'Senior Member of IEEE',
   'computer vision','video analysis and synthesis','human motion transfer','object pose estimation','salient object detection','medical image segmentation',
-  'over 40 papers','multiple invention patent applications','four national and provincial/ministerial research projects','council member of the Guangzhou Computer Society'
+  'over 40 papers','multiple invention patent applications','the National Natural Science Foundation of China (NSFC)','the Natural Science Foundation of Guangdong Province','council member of the Guangzhou Computer Society'
  ];
  let html=esc(text);
  for(const phrase of emphasis)html=html.replaceAll(esc(phrase),`<strong>${esc(phrase)}</strong>`);
