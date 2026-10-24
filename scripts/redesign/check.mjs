@@ -17,7 +17,7 @@ for(const file of ['main.css','custom-theme.css']) {
   assert(fs.existsSync(path.resolve(path.dirname(filename),resource)),`Missing theme resource ${resource}`);
  }
 }
-assert(fs.readFileSync('licenses/keke921-MIT.txt','utf8').includes('Copyright (c) 2016 Michael Rose'),'Missing upstream license');
+assert(fs.readFileSync('licenses/theme-MIT.txt','utf8').includes('Copyright (c) 2016 Michael Rose'),'Missing upstream license');
 assert(fs.existsSync('.nojekyll'),'Missing static publishing marker');
 for(const obsolete of ['Gemfile','_config.yml','_layouts','_includes','_sass'])assert(!fs.existsSync(obsolete),`Old framework remains: ${obsolete}`);
 for(const [url,html] of Object.entries(routes)) {

@@ -54,6 +54,11 @@ for(const [file,url,target] of [['scholar-about.html','/about/','/'],['scholar-a
  const html=`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=${target}"><title>Yuzhu Ji</title><link rel="canonical" href="https://andrewchiyz.github.io${target}"></head><body><a href="${target}">Continue →</a></body></html>`;
  outputs[url]=html;
 }
+for(const zh of [false,true]) {
+ const url=zh?'/zh/sitemap/':'/sitemap/';
+ const content='<ul>'+Object.keys(names).map(key=>'<li><a href="'+href(key,zh)+'">'+esc(names[key][+zh])+'</a></li>').join('')+'</ul>';
+ outputs[url]=renderShell({key:'home',zh,title:'Sitemap',content,data,url,languageUrl:zh?'/sitemap/':'/zh/sitemap/',detail:true});
+}
 for(const [url,html] of Object.entries(outputs)) {
  const rel=url.endsWith('.html')?url.slice(1):path.join(url.slice(1),'index.html');
  const destination=path.resolve(root,rel);

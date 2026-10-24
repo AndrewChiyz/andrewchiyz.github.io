@@ -48,3 +48,7 @@
 6 门课程均已配图，两个语言版本的 13 张年度课程卡片全部展示对应海报。
 
 `original-content.json` 保留旧简介、CV 与完整招生原文，只作内容参考，不再用于渲染网站。网站没有编造新增成果、团队成员或荣誉。
+
+## Footer and visits
+
+The footer records the build date in Asia/Shanghai and links to bilingual sitemaps. Theme notices are preserved verbatim in `licenses/theme-MIT.txt`. A compact total-page-view widget uses the original Busuanzi service (https://busuanzi.ibruce.info/), loaded asynchronously only on the production hostname. The service receives visitor requests for counting; historical traffic before integration is not reconstructed. Unavailable counts display an em dash.
