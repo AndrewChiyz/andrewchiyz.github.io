@@ -17,7 +17,8 @@ body{position:relative;min-height:100vh;padding-bottom:0;margin-bottom:0}
 .masthead .masthead__lang-switch .language-switch{font-size:.78rem;margin:0;padding:.3rem 0;font-weight:500}
 .masthead .masthead__lang-switch .language-switch:before{display:none}
 .masthead .greedy-nav .menu-toggle{display:none;position:static;width:auto;height:auto;padding:.35rem .65rem;flex:none;font-size:1.1rem}
-.author__avatar img{object-fit:cover;aspect-ratio:1}
+.author__avatar img{object-fit:contain;aspect-ratio:auto;height:auto}
+.author__membership{display:inline-block;font-size:.85em;color:#5b7189;margin-top:.35rem}
 .author__urls a{overflow-wrap:anywhere}
 .author__urls .fas,.author__urls .fab{color:#53779a}
 .page__content .eyebrow{font-size:.73rem;letter-spacing:1.1px;color:#60758c;margin-bottom:.6rem}

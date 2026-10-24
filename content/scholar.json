@@ -4,56 +4,646 @@
   "dblp": "https://dblp.org/pid/169/2012.html",
   "papers": [
     {
-      "title": "CPNet: 3D Semantic Relation and Geometry Context Prior Network for Multi-organ Segmentation",
-      "citation": "Yuzhu Ji, Mingshan Sun, Yiqun Zhang, Haijun Zhang. CPNet: 3D Semantic Relation and Geometry Context Prior Network for Multi-Organ Segmentation. ECAI 2024: 153-160.",
+      "title": "Coarse-To-Fine Graph Reasoning for 3D Hand Mesh Reconstruction",
+      "authors": "Dan Fu, Wai Keung Wong, Lunke Fei, Tingting Chai, Yuzhu Ji, Qinghua Zhu",
+      "venue": "IEEE International Conference on Multimedia and Expo, ICME 2025, Nantes, France, June 30 - July 4, 2025",
+      "year": 2025,
+      "type": "conference",
+      "short": "ICME",
+      "citation": "Dan Fu, Wai Keung Wong, Lunke Fei, Tingting Chai, Yuzhu Ji, Qinghua Zhu. Coarse-To-Fine Graph Reasoning for 3D Hand Mesh Reconstruction. IEEE International Conference on Multimedia and Expo, ICME 2025, Nantes, France, June 30 - July 4, 2025, 1–6, 2025.",
+      "permalink": "/publication/2025-d6ec38f57b14",
+      "selected": false,
+      "url": "https://doi.org/10.1109/ICME59968.2025.11209021",
+      "source": {
+        "provider": "Author-provided BibTeX",
+        "file": "mypapers.bib",
+        "record": "https://dblp.org/rec/conf/icmcs/FuWFCJZ25.bib"
+      },
+      "pages": "1--6",
+      "publisher": "IEEE",
+      "doi": "10.1109/ICME59968.2025.11209021"
+    },
+    {
+      "title": "Learning Self-Growth Maps for Fast and Accurate Imbalanced Streaming Data Clustering",
+      "authors": "Yiqun Zhang, Sen Feng, Pengkai Wang, Zexi Tan, Xiaopeng Luo, Yuzhu Ji, Rong Zou, Yiu-Ming Cheung",
+      "venue": "IEEE Trans. Neural Networks Learn. Syst.",
+      "year": 2025,
+      "type": "journal",
+      "short": "TNNLS",
+      "citation": "Yiqun Zhang, Sen Feng, Pengkai Wang, Zexi Tan, Xiaopeng Luo, Yuzhu Ji, Rong Zou, Yiu-Ming Cheung. Learning Self-Growth Maps for Fast and Accurate Imbalanced Streaming Data Clustering. IEEE Trans. Neural Networks Learn. Syst., 36(9), 16049–16061, 2025.",
+      "permalink": "/publication/2025-f575f9ebf84c",
+      "selected": false,
+      "url": "",
+      "source": {
+        "provider": "Author-provided BibTeX",
+        "file": "mypapers.bib"
+      },
+      "volume": "36",
+      "number": "9",
+      "pages": "16049--16061"
+    },
+    {
+      "title": "Learning Unbiased Cluster Descriptors for Interpretable Imbalanced Concept Drift Detection",
+      "authors": "Yiqun Zhang, Zhanpei Huang, Mingjie Zhao, Chuyao Zhang, Yang Lu, Yuzhu Ji, Fangqing Gu, An Zeng",
+      "venue": "IEEE Transactions on Emerging Topics in Computational Intelligence",
+      "year": 2025,
+      "type": "journal",
+      "short": "TETCI",
+      "citation": "Yiqun Zhang, Zhanpei Huang, Mingjie Zhao, Chuyao Zhang, Yang Lu, Yuzhu Ji, Fangqing Gu, An Zeng. Learning Unbiased Cluster Descriptors for Interpretable Imbalanced Concept Drift Detection. IEEE Transactions on Emerging Topics in Computational Intelligence, Early Access, 2025.",
+      "permalink": "/publication/2025-06439e621ea5",
+      "selected": false,
+      "url": "",
+      "source": {
+        "provider": "Author-provided BibTeX",
+        "file": "mypapers.bib"
+      },
+      "pages": "Early Access"
+    },
+    {
+      "title": "One-Shot Human Motion Transfer via Occlusion-Robust Flow Prediction and Neural Texturing",
+      "citation": "Yuzhu Ji, Chuanxia Zheng, Tat-Jen Cham. One-Shot Human Motion Transfer via Occlusion-Robust Flow Prediction and Neural Texturing. IEEE Trans. Multim., 27, 3939–3952, 2025.",
+      "permalink": "/publication/2024-11-4-paper-title-number-4",
+      "venue": "IEEE Trans. Multim.",
+      "url": "https://andrewchiyz.github.io/vision.ohmt.rfnt/",
+      "year": 2025,
+      "type": "journal",
+      "short": "TMM",
+      "authors": "Yuzhu Ji, Chuanxia Zheng, Tat-Jen Cham",
+      "selected": true,
+      "abstract": "Human motion transfer aims at animating a static source image with a driving video. While recent advances in one-shot human motion transfer have led to significant improvement in results, it remains challenging for methods with 2D body landmarks, skeleton and semantic mask to accurately capture correspondences between source and driving poses due to the large variation in motion and articulation complexity. In addition, the accuracy and precision of DensePose degrade the image quality for neural-rendering-based methods. To address the limitations and by both considering the importance of appearance and geometry for motion transfer, in this work, we proposed a unified framework that combines multi-scale feature warping and neural texture mapping to recover better 2D appearance and 2.5D geometry, partly by exploiting the information from DensePose, yet adapting to its inherent limited accuracy. Our model takes advantage of multiple modalities by jointly training and fusing them, which allows it to robust neural texture features that cope with geometric errors as well as multi-scale dense motion flow that better preserves appearance. Experimental results with full and half-view body video datasets demonstrate that our model can generalize well and achieve competitive results, and that it is particularly effective in handling challenging cases such as those with substantial self-occlusions.",
+      "source": {
+        "provider": "Author-provided BibTeX",
+        "file": "mypapers.bib"
+      },
+      "volume": "27",
+      "pages": "3939--3952"
+    },
+    {
+      "title": "Robust Qualitative Data Clustering via Learnable Multi-Metric Space Fusion",
+      "authors": "Sen Feng, Mingjie Zhao, Zhanpei Huang, Yuzhu Ji, Yiqun Zhang, Yiu-Ming Cheung",
+      "venue": "2025 IEEE International Conference on Acoustics, Speech and Signal Processing, ICASSP 2025, Hyderabad, India, April 6-11, 2025",
+      "year": 2025,
+      "type": "conference",
+      "short": "ICASSP",
+      "citation": "Sen Feng, Mingjie Zhao, Zhanpei Huang, Yuzhu Ji, Yiqun Zhang, Yiu-Ming Cheung. Robust Qualitative Data Clustering via Learnable Multi-Metric Space Fusion. 2025 IEEE International Conference on Acoustics, Speech and Signal Processing, ICASSP 2025, Hyderabad, India, April 6-11, 2025, 1–5, 2025.",
+      "permalink": "/publication/2025-3f2f1b5fe227",
+      "selected": false,
+      "url": "https://doi.org/10.1109/ICASSP49660.2025.10889806",
+      "source": {
+        "provider": "Author-provided BibTeX",
+        "file": "mypapers.bib",
+        "record": "https://dblp.org/rec/conf/icassp/Feng0HJ0C25.bib"
+      },
+      "pages": "1--5",
+      "publisher": "IEEE",
+      "doi": "10.1109/ICASSP49660.2025.10889806"
+    },
+    {
+      "title": "SeqPose: An End-to-End Framework to Unify Single-frame and Video-based RGB Category-Level Pose Estimation",
+      "authors": "Yuzhu Ji, Mingshan Sun, Jianyang Shi, Xiaoke Jiang, Yiqun Zhang, Haijun Zhang",
+      "venue": "Proceedings of the Thirty-Fourth International Joint Conference on Artificial Intelligence, IJCAI 2025, Montreal, Canada, August 16-22, 2025",
+      "year": 2025,
+      "type": "conference",
+      "short": "IJCAI",
+      "citation": "Yuzhu Ji, Mingshan Sun, Jianyang Shi, Xiaoke Jiang, Yiqun Zhang, Haijun Zhang. SeqPose: An End-to-End Framework to Unify Single-frame and Video-based RGB Category-Level Pose Estimation. Proceedings of the Thirty-Fourth International Joint Conference on Artificial Intelligence, IJCAI 2025, Montreal, Canada, August 16-22, 2025, 1224–1232, 2025.",
+      "permalink": "/publication/2025-77f5ec2b301a",
+      "selected": false,
+      "url": "https://doi.org/10.24963/ijcai.2025/137",
+      "source": {
+        "provider": "Author-provided BibTeX",
+        "file": "mypapers.bib",
+        "record": "https://dblp.org/rec/conf/ijcai/JiSSJ0025.bib"
+      },
+      "pages": "1224--1232",
+      "publisher": "ijcai.org",
+      "doi": "10.24963/IJCAI.2025/137"
+    },
+    {
+      "title": "SMACNet: A Unified Framework for One-Shot Talking Head Synthesis via Subtle Motion and Appearance Compensation",
+      "authors": "Yuzhu Ji, Wei Hu, Guoji Gan, Zhiquan Long, Yiqun Zhang, An Zeng, Haijun Zhang",
+      "venue": "IEEE Trans. Consum. Electron.",
+      "year": 2025,
+      "type": "journal",
+      "short": "TCE",
+      "citation": "Yuzhu Ji, Wei Hu, Guoji Gan, Zhiquan Long, Yiqun Zhang, An Zeng, Haijun Zhang. SMACNet: A Unified Framework for One-Shot Talking Head Synthesis via Subtle Motion and Appearance Compensation. IEEE Trans. Consum. Electron., 1-13, Early Access, 2025.",
+      "permalink": "/publication/2025-da8bccb7533d",
+      "selected": false,
+      "url": "https://doi.org/10.1109/TCE.2025.3596239",
+      "source": {
+        "provider": "Author-provided BibTeX",
+        "file": "mypapers.bib"
+      },
+      "pages": "1-13, Early Access",
+      "doi": "10.1109/TCE.2025.3596239"
+    },
+    {
+      "title": "SmartNet: One-shot Talking Head Synthesis via Subtle Motion and Appearance Compensation",
+      "authors": "Wei Hu, Yuzhu Ji, An Zeng, Dan Pan, Yiqun Zhang, Haijun Zhang",
+      "venue": "2025 IEEE International Conference on Acoustics, Speech and Signal Processing, ICASSP 2025, Hyderabad, India, April 6-11, 2025",
+      "year": 2025,
+      "type": "conference",
+      "short": "ICASSP",
+      "citation": "Wei Hu, Yuzhu Ji, An Zeng, Dan Pan, Yiqun Zhang, Haijun Zhang. SmartNet: One-shot Talking Head Synthesis via Subtle Motion and Appearance Compensation. 2025 IEEE International Conference on Acoustics, Speech and Signal Processing, ICASSP 2025, Hyderabad, India, April 6-11, 2025, 1–5, 2025.",
+      "permalink": "/publication/2025-292b57d0a1ec",
+      "selected": false,
+      "url": "https://doi.org/10.1109/ICASSP49660.2025.10887604",
+      "source": {
+        "provider": "Author-provided BibTeX",
+        "file": "mypapers.bib",
+        "record": "https://dblp.org/rec/conf/icassp/HuJZ00025.bib"
+      },
+      "pages": "1--5",
+      "publisher": "IEEE",
+      "doi": "10.1109/ICASSP49660.2025.10887604"
+    },
+    {
+      "title": "Towards Clustering of Incomplete Mixed-Attribute Data",
+      "authors": "Chuyao Zhang, Xinxi Chen, Zexi Tan, Fangqing Gu, Yuzhu Ji, Yiqun Zhang",
+      "venue": "Expert Syst.",
+      "year": 2025,
+      "type": "journal",
+      "short": "Expert Systems",
+      "citation": "Chuyao Zhang, Xinxi Chen, Zexi Tan, Fangqing Gu, Yuzhu Ji, Yiqun Zhang. Towards Clustering of Incomplete Mixed-Attribute Data. Expert Syst., 42(7), 2025.",
+      "permalink": "/publication/2025-b30ccddd9d30",
+      "selected": false,
+      "url": "",
+      "source": {
+        "provider": "Author-provided BibTeX",
+        "file": "mypapers.bib"
+      },
+      "volume": "42",
+      "number": "7"
+    },
+    {
+      "title": "CPNet: 3D Semantic Relation and Geometry Context Prior Network for Multi-Organ Segmentation",
+      "citation": "Yuzhu Ji, Mingshan Sun, Yiqun Zhang, Haijun Zhang. CPNet: 3D Semantic Relation and Geometry Context Prior Network for Multi-Organ Segmentation. ECAI 2024 - 27th European Conference on Artificial Intelligence, 19-24 October 2024, Santiago de Compostela, Spain - Including 13th Conference on Prestigious Applications of Intelligent Systems (PAIS 2024), 392, 153–160, 2024.",
       "permalink": "/publication/2024-10-25-paper-title-number-5",
-      "venue": "European Conference on Artificial Intelligence (ECAI)",
+      "venue": "ECAI 2024 - 27th European Conference on Artificial Intelligence, 19-24 October 2024, Santiago de Compostela, Spain - Including 13th Conference on Prestigious Applications of Intelligent Systems (PAIS 2024)",
       "url": "https://andrewchiyz.github.io/vision.medseg.cpnet/",
       "year": 2024,
       "type": "conference",
       "short": "ECAI",
       "authors": "Yuzhu Ji, Mingshan Sun, Yiqun Zhang, Haijun Zhang",
       "selected": true,
-      "abstract": "Automatic multi-organ segmentation of the abdominal region is a critical yet challenging task in computer-aided medical image analysis. Recent advances in CNN- and Transformer-based encoder-decoder models tend to implicitly learn context features by using enhanced effective receptive fields to capture local and global range dependencies. However, due to the complex anatomical structure, those models cannot recover the anatomical topology properly and result in broken organs with inaccurate semantic labels. Therefore, in this paper, by considering the anatomy priors of multi-organs, we propose a Context Prior Network, namely CPNet, which integrates the 3D context semantic relations and geometry priors as explicit anatomical constraints. Specifically, a Semantic Relation Prior Propagation (SRPP) module is designed to propagate the semantic relations between voxels progressively. Moreover, a Multiple Context Prior Prediction (MCPP) module is adopted to preserve the accurate shape and topology by recovering 3D contours and surface normal. Experimental results demonstrate our proposed model outperforms state-of-the-art models for multi-organ segmentation on Abdomen CT and MRI datasets, especially for recovering organs with correct semantic labels and anatomical structures."
+      "abstract": "Automatic multi-organ segmentation of the abdominal region is a critical yet challenging task in computer-aided medical image analysis. Recent advances in CNN- and Transformer-based encoder-decoder models tend to implicitly learn context features by using enhanced effective receptive fields to capture local and global range dependencies. However, due to the complex anatomical structure, those models cannot recover the anatomical topology properly and result in broken organs with inaccurate semantic labels. Therefore, in this paper, by considering the anatomy priors of multi-organs, we propose a Context Prior Network, namely CPNet, which integrates the 3D context semantic relations and geometry priors as explicit anatomical constraints. Specifically, a Semantic Relation Prior Propagation (SRPP) module is designed to propagate the semantic relations between voxels progressively. Moreover, a Multiple Context Prior Prediction (MCPP) module is adopted to preserve the accurate shape and topology by recovering 3D contours and surface normal. Experimental results demonstrate our proposed model outperforms state-of-the-art models for multi-organ segmentation on Abdomen CT and MRI datasets, especially for recovering organs with correct semantic labels and anatomical structures.",
+      "source": {
+        "provider": "Author-provided BibTeX",
+        "file": "mypapers.bib",
+        "record": "https://dblp.org/rec/conf/ecai/JiS0024.bib"
+      },
+      "volume": "392",
+      "pages": "153--160",
+      "publisher": "IOS Press",
+      "doi": "10.3233/FAIA240483"
     },
     {
-      "title": "One-shot Human Motion Transfer via Occlusion-Robust Flow Prediction and Neural Texturing",
-      "citation": "Ji, Yuzhu, Chuanxia Zheng, and Tat-Jen Cham. \"One-shot Human Motion Transfer via Occlusion-Robust Flow Prediction and Neural Texturing.\" arXiv preprint arXiv:2412.06174 (2024).",
-      "permalink": "/publication/2024-11-4-paper-title-number-4",
-      "venue": "IEEE Transactions on Multimedia",
-      "url": "https://andrewchiyz.github.io/vision.ohmt.rfnt/",
+      "title": "Efficient Topology-Driven Clustering for Imbalanced Streaming Biomedical Data Analysis",
+      "authors": "Xiaopeng Luo, Yiqun Zhang, Yuzhu Ji, Peng Liu, Taoting Xiao",
+      "venue": "IEEE International Conference on Bioinformatics and Biomedicine, BIBM 2024, Lisbon, Portugal, December 3-6, 2024",
       "year": 2024,
-      "type": "journal",
-      "short": "TMM",
-      "authors": "Yuzhu Ji, Chuanxia Zheng, Tat-Jen Cham",
-      "selected": true,
-      "abstract": "Human motion transfer aims at animating a static source image with a driving video. While recent advances in one-shot human motion transfer have led to significant improvement in results, it remains challenging for methods with 2D body landmarks, skeleton and semantic mask to accurately capture correspondences between source and driving poses due to the large variation in motion and articulation complexity. In addition, the accuracy and precision of DensePose degrade the image quality for neural-rendering-based methods. To address the limitations and by both considering the importance of appearance and geometry for motion transfer, in this work, we proposed a unified framework that combines multi-scale feature warping and neural texture mapping to recover better 2D appearance and 2.5D geometry, partly by exploiting the information from DensePose, yet adapting to its inherent limited accuracy. Our model takes advantage of multiple modalities by jointly training and fusing them, which allows it to robust neural texture features that cope with geometric errors as well as multi-scale dense motion flow that better preserves appearance. Experimental results with full and half-view body video datasets demonstrate that our model can generalize well and achieve competitive results, and that it is particularly effective in handling challenging cases such as those with substantial self-occlusions."
+      "type": "conference",
+      "short": "BIBM",
+      "citation": "Xiaopeng Luo, Yiqun Zhang, Yuzhu Ji, Peng Liu, Taoting Xiao. Efficient Topology-Driven Clustering for Imbalanced Streaming Biomedical Data Analysis. IEEE International Conference on Bioinformatics and Biomedicine, BIBM 2024, Lisbon, Portugal, December 3-6, 2024, 2262–2267, 2024.",
+      "permalink": "/publication/2024-85cfb8137526",
+      "selected": false,
+      "url": "https://doi.org/10.1109/BIBM62325.2024.10822727",
+      "source": {
+        "provider": "Author-provided BibTeX",
+        "file": "mypapers.bib",
+        "record": "https://dblp.org/rec/conf/bibm/Luo0JLX24.bib"
+      },
+      "pages": "2262--2267",
+      "publisher": "IEEE",
+      "doi": "10.1109/BIBM62325.2024.10822727"
+    },
+    {
+      "title": "MGOD: Multi-Granular Outlier Detection with Clustlier Analysis",
+      "authors": "Qingsheng Chen, Mingjie Zhao, Yuzhu Ji, Xiaopeng Luo, Yiqun Zhang, Yue Zhang",
+      "venue": "IEEE International Conference on Bioinformatics and Biomedicine, BIBM 2024, Lisbon, Portugal, December 3-6, 2024",
+      "year": 2024,
+      "type": "conference",
+      "short": "BIBM",
+      "citation": "Qingsheng Chen, Mingjie Zhao, Yuzhu Ji, Xiaopeng Luo, Yiqun Zhang, Yue Zhang. MGOD: Multi-Granular Outlier Detection with Clustlier Analysis. IEEE International Conference on Bioinformatics and Biomedicine, BIBM 2024, Lisbon, Portugal, December 3-6, 2024, 3105–3110, 2024.",
+      "permalink": "/publication/2024-d50d3a6f64aa",
+      "selected": false,
+      "url": "https://doi.org/10.1109/BIBM62325.2024.10821743",
+      "source": {
+        "provider": "Author-provided BibTeX",
+        "file": "mypapers.bib",
+        "record": "https://dblp.org/rec/conf/bibm/ChenZJLZZ24.bib"
+      },
+      "pages": "3105--3110",
+      "publisher": "IEEE",
+      "doi": "10.1109/BIBM62325.2024.10821743"
     },
     {
       "title": "QGRL: Quaternion Graph Representation Learning for Heterogeneous Feature Data Clustering",
-      "citation": "Junyang Chen, Yuzhu Ji, Rong Zou, Yiqun Zhang, Yiu-ming Cheung. QGRL: Quaternion Graph Representation Learning for Heterogeneous Feature Data Clustering. KDD 2024: 297-306",
+      "citation": "Junyang Chen, Yuzhu Ji, Rong Zou, Yiqun Zhang, Yiu-ming Cheung. QGRL: Quaternion Graph Representation Learning for Heterogeneous Feature Data Clustering. Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, KDD 2024, Barcelona, Spain, August 25-29, 2024, 297–306, 2024.",
       "permalink": "/publication/2024-9-8-paper-title-number-6",
-      "venue": "ACM Conference on Knowledge Discovery and Data Mining, ACM KDD",
+      "venue": "Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, KDD 2024, Barcelona, Spain, August 25-29, 2024",
       "url": "https://github.com/Juny-Chen/QGRL",
       "year": 2024,
       "type": "conference",
       "short": "KDD",
       "authors": "Junyang Chen, Yuzhu Ji, Rong Zou, Yiqun Zhang, Yiu-ming Cheung",
       "selected": true,
-      "abstract": "Clustering is one of the most commonly used techniques for unsupervised data analysis. As real data sets are usually composed of numerical and categorical features that are heterogeneous in nature, the heterogeneity in the distance metric and feature coupling prevents deep representation learning from achieving satisfactory clustering accuracy. Currently, supervised Quaternion Representation Learning (QRL) has achieved remarkable success in efficiently learning informative representations of coupled features from multiple views derived endogenously from the original data. To inherit the advantages of QRL for unsupervised heterogeneous feature representation learning, we propose a deep QRL model that works in an encoder-decoder manner. To ensure that the implicit couplings of heterogeneous feature data can be well characterized by representation learning, a hierarchical coupling encoding strategy is designed to convert the data set into an attributed graph to be the input of QRL. We also integrate the clustering objective into the model training to facilitate a joint optimization of the representation and clustering. Extensive experimental evaluations illustrate the superiority of the proposed Quaternion Graph Representation Learning (QGRL) method in terms of clustering accuracy and robustness to various data sets composed of arbitrary combinations of numerical and categorical features. The source code is opened at https://github.com/Juny-Chen/QGRL.git."
+      "abstract": "Clustering is one of the most commonly used techniques for unsupervised data analysis. As real data sets are usually composed of numerical and categorical features that are heterogeneous in nature, the heterogeneity in the distance metric and feature coupling prevents deep representation learning from achieving satisfactory clustering accuracy. Currently, supervised Quaternion Representation Learning (QRL) has achieved remarkable success in efficiently learning informative representations of coupled features from multiple views derived endogenously from the original data. To inherit the advantages of QRL for unsupervised heterogeneous feature representation learning, we propose a deep QRL model that works in an encoder-decoder manner. To ensure that the implicit couplings of heterogeneous feature data can be well characterized by representation learning, a hierarchical coupling encoding strategy is designed to convert the data set into an attributed graph to be the input of QRL. We also integrate the clustering objective into the model training to facilitate a joint optimization of the representation and clustering. Extensive experimental evaluations illustrate the superiority of the proposed Quaternion Graph Representation Learning (QGRL) method in terms of clustering accuracy and robustness to various data sets composed of arbitrary combinations of numerical and categorical features. The source code is opened at https://github.com/Juny-Chen/QGRL.git.",
+      "source": {
+        "provider": "Author-provided BibTeX",
+        "file": "mypapers.bib",
+        "record": "https://dblp.org/rec/conf/kdd/ChenJZ0C24.bib"
+      },
+      "pages": "297--306",
+      "publisher": "ACM",
+      "doi": "10.1145/3637528.3671839"
     },
     {
       "title": "CFNet: A Coarse-to-Fine Framework for Coronary Artery Segmentation",
-      "citation": "Shiting He, Yuzhu Ji, Yiqun Zhang, An Zeng, Dan Pan, Jing Lin, Xiaobo Zhang: CFNet: A Coarse-to-Fine Framework for Coronary Artery Segmentation. PRCV (5) 2023: 431-442.",
+      "citation": "Shiting He, Yuzhu Ji, Yiqun Zhang, An Zeng, Dan Pan, Jing Lin, Xiaobo Zhang. CFNet: A Coarse-to-Fine Framework for Coronary Artery Segmentation. Pattern Recognition and Computer Vision - 6th Chinese Conference, PRCV 2023, Xiamen, China, October 13-15, 2023, Proceedings, Part V, 14429, 431–442, 2023.",
       "permalink": "/publication/2024-8-19-paper-title-number-3",
-      "venue": "Pattern Recognition and Computer Vision, PRCV",
-      "url": "",
+      "venue": "Pattern Recognition and Computer Vision - 6th Chinese Conference, PRCV 2023, Xiamen, China, October 13-15, 2023, Proceedings, Part V",
+      "url": "https://doi.org/10.1007/978-981-99-8469-5_34",
       "year": 2023,
       "type": "conference",
       "short": "PRCV",
       "authors": "Shiting He, Yuzhu Ji, Yiqun Zhang, An Zeng, Dan Pan, Jing Lin, Xiaobo Zhang",
       "selected": false,
-      "abstract": "Coronary Artery (CA) segmentation has become an important task to facilitate coronary artery disease diagnosis. However, existing methods have not effectively addressed the challenges posed by the thin and complex structure of CA, leading to unsatisfactory performance in grouping local detailed vessel structures. Therefore, we proposed a novel coarse-to-fine segmentation framework, namely CFNet, to refine the CA segmentation results progressively. The global structure targeting module aims to capture the spatial structure of the CA by introducing dilated pseudo labels as supervision. In addition, a lightweight transformer-based module is designed to refine the coarse results and produce more accurate segmentation results by capturing the long-range dependencies. Our model exploits both local and global contextual features by integrating a convolutional neural network and visual Transformer. These two modules are cascaded using a center-line patching strategy, which filters out unnecessary features and mitigates the sparsity of CA annotation. Experimental results demonstrate that our model performs well in CA segmentation, particularly in handling challenging cases for fine vessel structures, and achieves competitive results on a large-scale dataset, i.e., ImageCAS, in comparison to state-of-the-art methods."
+      "abstract": "Coronary Artery (CA) segmentation has become an important task to facilitate coronary artery disease diagnosis. However, existing methods have not effectively addressed the challenges posed by the thin and complex structure of CA, leading to unsatisfactory performance in grouping local detailed vessel structures. Therefore, we proposed a novel coarse-to-fine segmentation framework, namely CFNet, to refine the CA segmentation results progressively. The global structure targeting module aims to capture the spatial structure of the CA by introducing dilated pseudo labels as supervision. In addition, a lightweight transformer-based module is designed to refine the coarse results and produce more accurate segmentation results by capturing the long-range dependencies. Our model exploits both local and global contextual features by integrating a convolutional neural network and visual Transformer. These two modules are cascaded using a center-line patching strategy, which filters out unnecessary features and mitigates the sparsity of CA annotation. Experimental results demonstrate that our model performs well in CA segmentation, particularly in handling challenging cases for fine vessel structures, and achieves competitive results on a large-scale dataset, i.e., ImageCAS, in comparison to state-of-the-art methods.",
+      "source": {
+        "provider": "Author-provided BibTeX",
+        "file": "mypapers.bib",
+        "record": "https://dblp.org/rec/conf/prcv/HeJZZPLZ23.bib"
+      },
+      "volume": "14429",
+      "pages": "431--442",
+      "publisher": "Springer",
+      "doi": "10.1007/978-981-99-8469-5_34"
+    },
+    {
+      "title": "Time-Series Data Imputation via Realistic Masking-Guided Tri-Attention Bi-GRU",
+      "authors": "Zhipeng Zhang, Yiqun Zhang, An Zeng, Dan Pan, Yuzhu Ji, Zhipeng Zhang, Jing Lin",
+      "venue": "ECAI 2023 - 26th European Conference on Artificial Intelligence, September 30 - October 4, 2023, Kraków, Poland - Including 12th Conference on Prestigious Applications of Intelligent Systems (PAIS 2023)",
+      "year": 2023,
+      "type": "conference",
+      "short": "ECAI",
+      "citation": "Zhipeng Zhang, Yiqun Zhang, An Zeng, Dan Pan, Yuzhu Ji, Zhipeng Zhang, Jing Lin. Time-Series Data Imputation via Realistic Masking-Guided Tri-Attention Bi-GRU. ECAI 2023 - 26th European Conference on Artificial Intelligence, September 30 - October 4, 2023, Kraków, Poland - Including 12th Conference on Prestigious Applications of Intelligent Systems (PAIS 2023), 372, 3074–3082, 2023.",
+      "permalink": "/publication/2023-c0afbd8296f6",
+      "selected": false,
+      "url": "https://doi.org/10.3233/FAIA230625",
+      "source": {
+        "provider": "Author-provided BibTeX",
+        "file": "mypapers.bib",
+        "record": "https://dblp.org/rec/conf/ecai/ZhangZZ0JZL23.bib"
+      },
+      "volume": "372",
+      "pages": "3074--3082",
+      "publisher": "IOS Press",
+      "doi": "10.3233/FAIA230625"
+    },
+    {
+      "title": "Unsupervised Concept Drift Detection via Imbalanced Cluster Discriminator Learning",
+      "authors": "Mingjie Zhao, Yiqun Zhang, Yuzhu Ji, Yang Lu",
+      "venue": "Pattern Recognition and Computer Vision - 6th Chinese Conference, PRCV 2023, Xiamen, China, October 13-15, 2023, Proceedings, Part III",
+      "year": 2023,
+      "type": "conference",
+      "short": "PRCV",
+      "citation": "Mingjie Zhao, Yiqun Zhang, Yuzhu Ji, Yang Lu. Unsupervised Concept Drift Detection via Imbalanced Cluster Discriminator Learning. Pattern Recognition and Computer Vision - 6th Chinese Conference, PRCV 2023, Xiamen, China, October 13-15, 2023, Proceedings, Part III, 14427, 31–43, 2023.",
+      "permalink": "/publication/2023-788140e5cc7d",
+      "selected": false,
+      "url": "https://doi.org/10.1007/978-981-99-8435-0_3",
+      "source": {
+        "provider": "Author-provided BibTeX",
+        "file": "mypapers.bib",
+        "record": "https://dblp.org/rec/conf/prcv/ZhaoZJL23.bib"
+      },
+      "volume": "14427",
+      "pages": "31--43",
+      "publisher": "Springer",
+      "doi": "10.1007/978-981-99-8435-0_3"
+    },
+    {
+      "title": "Heterogeneous Drift Learning: Classification of Mix-Attribute Data with Concept Drifts",
+      "authors": "Lang Zhao, Yiqun Zhang, Yuzhu Ji, An Zeng, Fangqing Gu, Xiaopeng Luo",
+      "venue": "9th IEEE International Conference on Data Science and Advanced Analytics, DSAA 2022, Shenzhen, China, October 13-16, 2022",
+      "year": 2022,
+      "type": "conference",
+      "short": "DSAA",
+      "citation": "Lang Zhao, Yiqun Zhang, Yuzhu Ji, An Zeng, Fangqing Gu, Xiaopeng Luo. Heterogeneous Drift Learning: Classification of Mix-Attribute Data with Concept Drifts. 9th IEEE International Conference on Data Science and Advanced Analytics, DSAA 2022, Shenzhen, China, October 13-16, 2022, 1–10, 2022.",
+      "permalink": "/publication/2022-4bf5cf5d31ae",
+      "selected": false,
+      "url": "https://doi.org/10.1109/DSAA54385.2022.10032342",
+      "source": {
+        "provider": "Author-provided BibTeX",
+        "file": "mypapers.bib",
+        "record": "https://dblp.org/rec/conf/dsaa/ZhaoZJZGL22.bib"
+      },
+      "pages": "1--10",
+      "publisher": "IEEE",
+      "doi": "10.1109/DSAA54385.2022.10032342"
+    },
+    {
+      "title": "LGCNet: A local-to-global context-aware feature augmentation network for salient object detection",
+      "authors": "Yuzhu Ji, Haijun Zhang, Feng Gao, Haofei Sun, Haokun Wei, Nan Wang, Biao Yang",
+      "venue": "Inf. Sci.",
+      "year": 2022,
+      "type": "journal",
+      "short": "Information Sciences",
+      "citation": "Yuzhu Ji, Haijun Zhang, Feng Gao, Haofei Sun, Haokun Wei, Nan Wang, Biao Yang. LGCNet: A local-to-global context-aware feature augmentation network for salient object detection. Inf. Sci., 584, 399–416, 2022.",
+      "permalink": "/publication/2022-72a248f80362",
+      "selected": false,
+      "url": "",
+      "source": {
+        "provider": "Author-provided BibTeX",
+        "file": "mypapers.bib"
+      },
+      "volume": "584",
+      "pages": "399--416"
+    },
+    {
+      "title": "An empirical study of multi-scale object detection in high resolution UAV images",
+      "authors": "Haijun Zhang, Mingshan Sun, Qun Li, Linlin Liu, Ming Liu, Yuzhu Ji",
+      "venue": "Neurocomputing",
+      "year": 2021,
+      "type": "journal",
+      "short": "Neurocomputing",
+      "citation": "Haijun Zhang, Mingshan Sun, Qun Li, Linlin Liu, Ming Liu, Yuzhu Ji. An empirical study of multi-scale object detection in high resolution UAV images. Neurocomputing, 421, 173–182, 2021.",
+      "permalink": "/publication/2021-b30e777827a0",
+      "selected": false,
+      "url": "https://doi.org/10.1016/j.neucom.2020.08.074",
+      "source": {
+        "provider": "Author-provided BibTeX",
+        "file": "mypapers.bib",
+        "record": "https://dblp.org/rec/journals/ijon/ZhangSLLLJ21.bib"
+      },
+      "volume": "421",
+      "pages": "173--182",
+      "doi": "10.1016/J.NEUCOM.2020.08.074"
+    },
+    {
+      "title": "CASNet: A Cross-Attention Siamese Network for Video Salient Object Detection",
+      "authors": "Yuzhu Ji, Haijun Zhang, Zequn Jie, Lin Ma, Q. M. Jonathan Wu",
+      "venue": "IEEE Trans. Neural Networks Learn. Syst.",
+      "year": 2021,
+      "type": "journal",
+      "short": "TNNLS",
+      "citation": "Yuzhu Ji, Haijun Zhang, Zequn Jie, Lin Ma, Q. M. Jonathan Wu. CASNet: A Cross-Attention Siamese Network for Video Salient Object Detection. IEEE Trans. Neural Networks Learn. Syst., 32(6), 2676–2690, 2021.",
+      "permalink": "/publication/2021-586f828e70c5",
+      "selected": false,
+      "url": "https://doi.org/10.1109/TNNLS.2020.3007534",
+      "source": {
+        "provider": "Author-provided BibTeX",
+        "file": "mypapers.bib",
+        "record": "https://dblp.org/rec/journals/tnn/JiZJMW21.bib"
+      },
+      "volume": "32",
+      "number": "6",
+      "pages": "2676--2690",
+      "doi": "10.1109/TNNLS.2020.3007534"
+    },
+    {
+      "title": "CNN-based encoder-decoder networks for salient object detection: A comprehensive review and recent advances",
+      "authors": "Yuzhu Ji, Haijun Zhang, Zhao Zhang, Ming Liu",
+      "venue": "Inf. Sci.",
+      "year": 2021,
+      "type": "journal",
+      "short": "Information Sciences",
+      "citation": "Yuzhu Ji, Haijun Zhang, Zhao Zhang, Ming Liu. CNN-based encoder-decoder networks for salient object detection: A comprehensive review and recent advances. Inf. Sci., 546, 835–857, 2021.",
+      "permalink": "/publication/2021-07a80c5eff20",
+      "selected": false,
+      "url": "https://doi.org/10.1016/j.ins.2020.09.003",
+      "source": {
+        "provider": "Author-provided BibTeX",
+        "file": "mypapers.bib",
+        "record": "https://dblp.org/rec/journals/isci/JiZZL21.bib"
+      },
+      "volume": "546",
+      "pages": "835--857",
+      "doi": "10.1016/J.INS.2020.09.003"
+    },
+    {
+      "title": "EWNet: An early warning classification framework for smart grid based on local-to-global perception",
+      "authors": "Feng Gao, Qun Li, Yuzhu Ji, Shengchang Ji, Jie Guo, Haofei Sun, Yang Liu, Simeng Feng, Haokun Wei, Nan Wang, Biao Yang, Haijun Zhang",
+      "venue": "Neurocomputing",
+      "year": 2021,
+      "type": "journal",
+      "short": "Neurocomputing",
+      "citation": "Feng Gao, Qun Li, Yuzhu Ji, Shengchang Ji, Jie Guo, Haofei Sun, Yang Liu, Simeng Feng, Haokun Wei, Nan Wang, Biao Yang, Haijun Zhang. EWNet: An early warning classification framework for smart grid based on local-to-global perception. Neurocomputing, 443, 199–212, 2021.",
+      "permalink": "/publication/2021-e7c260435b6e",
+      "selected": false,
+      "url": "https://doi.org/10.1016/j.neucom.2021.03.007",
+      "source": {
+        "provider": "Author-provided BibTeX",
+        "file": "mypapers.bib",
+        "record": "https://dblp.org/rec/journals/ijon/GaoLJJGSLFWWYZ21.bib"
+      },
+      "volume": "443",
+      "pages": "199--212",
+      "doi": "10.1016/J.NEUCOM.2021.03.007"
+    },
+    {
+      "title": "ID-Net: an improved mask R-CNN model for intrusion detection under power grid surveillance",
+      "authors": "Feng Gao, Shengchang Ji, Jie Guo, Qun Li, Yuzhu Ji, Yang Liu, Simeng Feng, Haokun Wei, Nan Wang, Biao Yang",
+      "venue": "Neural Comput. Appl.",
+      "year": 2021,
+      "type": "journal",
+      "short": "NCA",
+      "citation": "Feng Gao, Shengchang Ji, Jie Guo, Qun Li, Yuzhu Ji, Yang Liu, Simeng Feng, Haokun Wei, Nan Wang, Biao Yang. ID-Net: an improved mask R-CNN model for intrusion detection under power grid surveillance. Neural Comput. Appl., 33(15), 9241–9257, 2021.",
+      "permalink": "/publication/2021-4ae32a3ff333",
+      "selected": false,
+      "url": "https://doi.org/10.1007/s00521-021-05688-2",
+      "source": {
+        "provider": "Author-provided BibTeX",
+        "file": "mypapers.bib",
+        "record": "https://dblp.org/rec/journals/nca/GaoJGLJLFWWY21.bib"
+      },
+      "volume": "33",
+      "number": "15",
+      "pages": "9241--9257",
+      "doi": "10.1007/S00521-021-05688-2"
+    },
+    {
+      "title": "Clothescounter: A framework for star-oriented clothes mining from videos",
+      "authors": "Haijun Zhang, Han Guo, Xinghao Wang, Yuzhu Ji, Q. M. Jonathan Wu",
+      "venue": "Neurocomputing",
+      "year": 2020,
+      "type": "journal",
+      "short": "Neurocomputing",
+      "citation": "Haijun Zhang, Han Guo, Xinghao Wang, Yuzhu Ji, Q. M. Jonathan Wu. Clothescounter: A framework for star-oriented clothes mining from videos. Neurocomputing, 377, 38–48, 2020.",
+      "permalink": "/publication/2020-39f442bade01",
+      "selected": false,
+      "url": "https://doi.org/10.1016/j.neucom.2019.09.023",
+      "source": {
+        "provider": "Author-provided BibTeX",
+        "file": "mypapers.bib",
+        "record": "https://dblp.org/rec/journals/ijon/ZhangGWJW20.bib"
+      },
+      "volume": "377",
+      "pages": "38--48",
+      "doi": "10.1016/J.NEUCOM.2019.09.023"
+    },
+    {
+      "title": "Toward New Retail: A Benchmark Dataset for Smart Unmanned Vending Machines",
+      "authors": "Haijun Zhang, Donghai Li, Yuzhu Ji, Haibin Zhou, Weiwei Wu, Kai Liu",
+      "venue": "IEEE Trans. Ind. Informatics",
+      "year": 2020,
+      "type": "journal",
+      "short": "TII",
+      "citation": "Haijun Zhang, Donghai Li, Yuzhu Ji, Haibin Zhou, Weiwei Wu, Kai Liu. Toward New Retail: A Benchmark Dataset for Smart Unmanned Vending Machines. IEEE Trans. Ind. Informatics, 16(12), 7722–7731, 2020.",
+      "permalink": "/publication/2020-246229a22545",
+      "selected": false,
+      "url": "https://doi.org/10.1109/TII.2019.2954956",
+      "source": {
+        "provider": "Author-provided BibTeX",
+        "file": "mypapers.bib",
+        "record": "https://dblp.org/rec/journals/tii/ZhangLJZWL20.bib"
+      },
+      "volume": "16",
+      "number": "12",
+      "pages": "7722--7731",
+      "doi": "10.1109/TII.2019.2954956"
+    },
+    {
+      "title": "Graph model-based salient object detection using objectness and multiple saliency cues",
+      "authors": "Yuzhu Ji, Haijun Zhang, Kuo-Kun Tseng, Tommy W. S. Chow, Q. M. Jonathan Wu",
+      "venue": "Neurocomputing",
+      "year": 2019,
+      "type": "journal",
+      "short": "Neurocomputing",
+      "citation": "Yuzhu Ji, Haijun Zhang, Kuo-Kun Tseng, Tommy W. S. Chow, Q. M. Jonathan Wu. Graph model-based salient object detection using objectness and multiple saliency cues. Neurocomputing, 323, 188–202, 2019.",
+      "permalink": "/publication/2019-b5a17063cb08",
+      "selected": false,
+      "url": "https://doi.org/10.1016/j.neucom.2018.09.081",
+      "source": {
+        "provider": "Author-provided BibTeX",
+        "file": "mypapers.bib",
+        "record": "https://dblp.org/rec/journals/ijon/JiZTCW19.bib"
+      },
+      "volume": "323",
+      "pages": "188--202",
+      "doi": "10.1016/J.NEUCOM.2018.09.081"
+    },
+    {
+      "title": "Toward AI fashion design: An Attribute-GAN model for clothing match",
+      "authors": "Linlin Liu, Haijun Zhang, Yuzhu Ji, Q. M. Jonathan Wu",
+      "venue": "Neurocomputing",
+      "year": 2019,
+      "type": "journal",
+      "short": "Neurocomputing",
+      "citation": "Linlin Liu, Haijun Zhang, Yuzhu Ji, Q. M. Jonathan Wu. Toward AI fashion design: An Attribute-GAN model for clothing match. Neurocomputing, 341, 156–167, 2019.",
+      "permalink": "/publication/2019-346dc2a40539",
+      "selected": false,
+      "url": "https://doi.org/10.1016/j.neucom.2019.03.011",
+      "source": {
+        "provider": "Author-provided BibTeX",
+        "file": "mypapers.bib",
+        "record": "https://dblp.org/rec/journals/ijon/LiuZJW19.bib"
+      },
+      "volume": "341",
+      "pages": "156--167",
+      "doi": "10.1016/J.NEUCOM.2019.03.011"
+    },
+    {
+      "title": "Saliency detection via conditional adversarial image-to-image network",
+      "authors": "Yuzhu Ji, Haijun Zhang, Q. M. Jonathan Wu",
+      "venue": "Neurocomputing",
+      "year": 2018,
+      "type": "journal",
+      "short": "Neurocomputing",
+      "citation": "Yuzhu Ji, Haijun Zhang, Q. M. Jonathan Wu. Saliency detection via conditional adversarial image-to-image network. Neurocomputing, 316, 357–368, 2018.",
+      "permalink": "/publication/2018-a1cde4fee519",
+      "selected": false,
+      "url": "https://doi.org/10.1016/j.neucom.2018.08.013",
+      "source": {
+        "provider": "Author-provided BibTeX",
+        "file": "mypapers.bib",
+        "record": "https://dblp.org/rec/journals/ijon/JiZW18.bib"
+      },
+      "volume": "316",
+      "pages": "357--368",
+      "doi": "10.1016/J.NEUCOM.2018.08.013"
+    },
+    {
+      "title": "Salient object detection via multi-scale attention CNN",
+      "authors": "Yuzhu Ji, Haijun Zhang, Q. M. Jonathan Wu",
+      "venue": "Neurocomputing",
+      "year": 2018,
+      "type": "journal",
+      "short": "Neurocomputing",
+      "citation": "Yuzhu Ji, Haijun Zhang, Q. M. Jonathan Wu. Salient object detection via multi-scale attention CNN. Neurocomputing, 322, 130–140, 2018.",
+      "permalink": "/publication/2018-650e16d5904b",
+      "selected": false,
+      "url": "https://doi.org/10.1016/j.neucom.2018.09.061",
+      "source": {
+        "provider": "Author-provided BibTeX",
+        "file": "mypapers.bib",
+        "record": "https://dblp.org/rec/journals/ijon/JiZW18a.bib"
+      },
+      "volume": "322",
+      "pages": "130--140",
+      "doi": "10.1016/J.NEUCOM.2018.09.061"
+    },
+    {
+      "title": "Sitcom-Stars Oriented Video Advertising via Clothing Retrieval",
+      "authors": "Haijun Zhang, Yuzhu Ji, Wang Huang, Linlin Liu",
+      "venue": "Database Systems for Advanced Applications - 23rd International Conference, DASFAA 2018, Gold Coast, QLD, Australia, May 21-24, 2018, Proceedings, Part II",
+      "year": 2018,
+      "type": "conference",
+      "short": "DASFAA",
+      "citation": "Haijun Zhang, Yuzhu Ji, Wang Huang, Linlin Liu. Sitcom-Stars Oriented Video Advertising via Clothing Retrieval. Database Systems for Advanced Applications - 23rd International Conference, DASFAA 2018, Gold Coast, QLD, Australia, May 21-24, 2018, Proceedings, Part II, 10828, 638–646, 2018.",
+      "permalink": "/publication/2018-7cb4e51a7f4b",
+      "selected": false,
+      "url": "https://doi.org/10.1007/978-3-319-91458-9_39",
+      "source": {
+        "provider": "Author-provided BibTeX",
+        "file": "mypapers.bib",
+        "record": "https://dblp.org/rec/conf/dasfaa/ZhangJHL18.bib"
+      },
+      "volume": "10828",
+      "pages": "638--646",
+      "publisher": "Springer",
+      "doi": "10.1007/978-3-319-91458-9_39"
+    },
+    {
+      "title": "Understanding Subtitles by Character-Level Sequence-to-Sequence Learning",
+      "authors": "Haijun Zhang, Jingxuan Li, Yuzhu Ji, Heng Yue",
+      "venue": "IEEE Trans. Ind. Informatics",
+      "year": 2017,
+      "type": "journal",
+      "short": "TII",
+      "citation": "Haijun Zhang, Jingxuan Li, Yuzhu Ji, Heng Yue. Understanding Subtitles by Character-Level Sequence-to-Sequence Learning. IEEE Trans. Ind. Informatics, 13(2), 616–624, 2017.",
+      "permalink": "/publication/2017-158dd6163f33",
+      "selected": false,
+      "url": "https://doi.org/10.1109/TII.2016.2601521",
+      "source": {
+        "provider": "Author-provided BibTeX",
+        "file": "mypapers.bib",
+        "record": "https://dblp.org/rec/journals/tii/ZhangLJY17.bib"
+      },
+      "volume": "13",
+      "number": "2",
+      "pages": "616--624",
+      "doi": "10.1109/TII.2016.2601521"
+    },
+    {
+      "title": "A Triple Wing Harmonium Model for Movie Recommendation",
+      "authors": "Haijun Zhang, Yuzhu Ji, Jingxuan Li, Yunming Ye",
+      "venue": "IEEE Trans. Ind. Informatics",
+      "year": 2016,
+      "type": "journal",
+      "short": "TII",
+      "citation": "Haijun Zhang, Yuzhu Ji, Jingxuan Li, Yunming Ye. A Triple Wing Harmonium Model for Movie Recommendation. IEEE Trans. Ind. Informatics, 12(1), 231–239, 2016.",
+      "permalink": "/publication/2016-936bcfb21bb8",
+      "selected": false,
+      "url": "https://doi.org/10.1109/TII.2015.2475218",
+      "source": {
+        "provider": "Author-provided BibTeX",
+        "file": "mypapers.bib",
+        "record": "https://dblp.org/rec/journals/tii/ZhangJLY16.bib"
+      },
+      "volume": "12",
+      "number": "1",
+      "pages": "231--239",
+      "doi": "10.1109/TII.2015.2475218"
     }
   ],
   "courses": [
@@ -112,32 +702,39 @@
   ],
   "jobs": [
     {
-      "date": "2022.05",
+      "date": "2023 – present",
       "en": "Associate Professor",
       "zh": "副教授",
       "org": "Guangdong University of Technology",
       "orgZh": "广东工业大学计算机学院"
     },
     {
-      "date": "2020.12",
+      "date": "2022 – 2023",
+      "en": "Lecturer",
+      "zh": "讲师",
+      "org": "Guangdong University of Technology",
+      "orgZh": "广东工业大学计算机学院"
+    },
+    {
+      "date": "2020.12 – 2022.03",
       "en": "Postdoctoral Research Fellow",
       "zh": "博士后研究员",
       "org": "Nanyang Technological University · Prof. Tat-Jen Cham",
       "orgZh": "南洋理工大学 · Tat-Jen Cham 教授"
     },
     {
-      "date": "2019.10",
+      "date": "2019.11 – 2020.12",
       "en": "Research Assistant",
       "zh": "研究助理",
       "org": "Harbin Institute of Technology, Shenzhen · Prof. Haijun Zhang",
       "orgZh": "哈尔滨工业大学（深圳）· 张海军教授"
     },
     {
-      "date": "2018",
+      "date": "2018.03 – 2018.10",
       "en": "Research Intern",
       "zh": "研究实习生",
-      "org": "Tencent AI Lab · Dr. Zequn Jie & Dr. Lin Ma",
-      "orgZh": "腾讯 AI Lab · Zequn Jie 博士、Lin Ma 博士"
+      "org": "Tencent AI Lab · Dr. Zequn Jie",
+      "orgZh": "腾讯 AI Lab · Zequn Jie 博士"
     }
   ],
   "education": [
@@ -162,5 +759,34 @@
       "org": "PLA Information Engineering University, Zhengzhou",
       "orgZh": "解放军信息工程大学，郑州"
     }
-  ]
+  ],
+  "avatar": "/images/JYZ1.png",
+  "cv": "/files/Yuzhu-Ji-CV.pdf",
+  "membership": "Senior Member, IEEE",
+  "researchInterests": [
+    [
+      "Human-centric multimodal video analysis & synthesis",
+      "以人为中心的多模态视频分析与合成"
+    ],
+    [
+      "6D object pose estimation",
+      "物体六维位姿估计"
+    ],
+    [
+      "Visual saliency reasoning & grounding",
+      "视觉显著性推理与定位"
+    ],
+    [
+      "Medical image segmentation",
+      "医学图像分割"
+    ],
+    [
+      "Embodied AI",
+      "具身智能"
+    ]
+  ],
+  "researchSummary": {
+    "en": "My research focuses on computer vision and machine learning, particularly visual intelligence that perceives, represents, reasons about, and interacts with the physical world. Current interests include human-centric multimodal video analysis and synthesis, 6D object pose estimation, visual saliency reasoning and grounding, medical image segmentation, and embodied AI.",
+    "zh": "我的研究主要围绕计算机视觉与机器学习展开，关注能够感知、表征、推理并与物理世界交互的视觉智能。当前研究方向包括以人为中心的多模态视频分析与合成、物体六维位姿估计、视觉显著性推理与定位、医学图像分割及具身智能。"
+  }
 }
