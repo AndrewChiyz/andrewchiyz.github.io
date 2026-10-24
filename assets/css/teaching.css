@@ -1,0 +1,19 @@
+/* Academic-year cards, using the shared theme's teaching archive components. */
+.teaching-years{display:flex;flex-wrap:wrap;gap:.5rem;margin:.9rem 0 1.5rem}
+.page__content .teaching-years a{border:1px solid #cbdced;border-radius:999px;padding:.25rem .8rem;background:#f5f9ff;color:#315c88;font-size:.88rem;text-decoration:none;font-variant-numeric:tabular-nums}
+.page__content .teaching-years a:hover,.page__content .teaching-years a:focus-visible{background:#e7f0fb;border-color:#7e9fc5}
+.teaching-year{margin:0 0 1.7rem}
+.page__content .teaching-archive__year{font-size:1.3rem;margin:0 0 .85rem;padding-bottom:.5rem;scroll-margin-top:1.5rem}
+.teaching-archive .teaching-archive__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.85rem;align-items:stretch}
+.teaching-archive .teaching-archive__grid>.teaching-archive__item{width:100%;max-width:none;align-self:stretch;justify-self:stretch}
+.teaching-archive .teaching-archive__item .archive__item{height:100%;min-height:166px;max-height:none;overflow:visible;padding:1rem 1.05rem;border-left-width:4px;transition:box-shadow .15s ease,border-color .15s ease}
+.teaching-archive .teaching-archive__item .archive__item:hover{border-color:#aec6e4;box-shadow:0 5px 17px #25406c12}
+.teaching-archive .teaching-card__meta{gap:.5rem;margin-bottom:.65rem;align-items:center}
+.teaching-card__repeat{font-size:.78rem;color:#61768e}
+.page__content .teaching-archive .archive__item-title{font-size:1.1rem;line-height:1.5;margin:0 0 .5rem;letter-spacing:0;overflow-wrap:normal}
+.page__content .teaching-archive .archive__item-title a{font-weight:600}
+.page__content .teaching-card__school{font-size:.83rem;color:#6c7e91;line-height:1.5;margin:0 0 .8rem;text-align:left}
+.page__content .teaching-card__link{margin-top:auto;font-size:.86rem;align-self:flex-start;text-decoration:none;color:#365f8c}
+.teaching-card__link span{margin-left:.3rem}
+@media(max-width:680px){.teaching-archive .teaching-archive__grid{grid-template-columns:minmax(0,1fr)}.teaching-archive .teaching-archive__item .archive__item{min-height:150px}.page__content .teaching-archive__year{font-size:1.2rem}.teaching-years{gap:.4rem}}
+@media(prefers-reduced-motion:reduce){.teaching-archive .teaching-archive__item .archive__item{transition:none}}

@@ -1,6 +1,6 @@
 /* Self-hosted SIL Open Font License fonts; see licenses/ and THIRD_PARTY_NOTICES.md. */
-@font-face{font-family:"Source Sans 3";font-style:normal;font-weight:400 800;font-display:swap;src:url("../fonts/source-sans3-latin.woff2?v=19143dca07") format("woff2")}
-@font-face{font-family:"Noto Sans SC";font-style:normal;font-weight:400 800;font-display:swap;src:url("../fonts/noto-sans-sc-subset.woff2?v=807bfe4ab1") format("woff2")}
+@font-face{font-family:"Source Sans 3";font-style:normal;font-weight:400 800;font-display:swap;src:url("../fonts/source-sans3-latin.woff2?v=4f3424d3f9") format("woff2")}
+@font-face{font-family:"Noto Sans SC";font-style:normal;font-weight:400 800;font-display:swap;src:url("../fonts/noto-sans-sc-subset.woff2?v=fe87d74b47") format("woff2")}
 :root{--academic-font:"Source Sans 3","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif}
 body,h1,h2,h3,h4,h5,h6,input,button,select,textarea{font-family:var(--academic-font)}
 /* Override the upstream sidebar's explicit, more-specific system-font rules.
