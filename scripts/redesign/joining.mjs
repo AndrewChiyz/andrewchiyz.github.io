@@ -48,7 +48,7 @@ ${list([
 <p>${t('A preparation period of about a week is typical, with the task and timing discussed beforehand. These are research conversations to help us get to know each other; formal admissions arrangements remain subject to university and school notices.','通常会留出一周左右的准备时间，具体内容和节奏可以在交流时商量。这些交流主要帮助我们了解彼此的科研兴趣与想法，学校正式的招生考核仍以相关通知为准。')}</p></section>
 
 <section id="admissions"><h2>${t('Where to find admissions information','关于招生政策、面试与名额')}</h2>
-<aside class="home-highlight admissions-notice"><p>${t('I do not have reliable information about recommendation-based admission interviews, entrance examinations and subsequent admission interviews, admission quotas, or transfer quotas. For accurate information, please check the official pages below and official university accounts, or contact the school’s graduate program secretary.','关于推免面试、考研初试和复试安排，以及招生名额、调剂名额，我这里没有准确的信息。为免耽误大家的申请，建议关注下面的官方页面及公众号，或向学院研究生秘书咨询。')}</p>
+<aside class="home-highlight admissions-notice"><p>${t('For recommendation-based admission interviews, entrance examinations and subsequent admission interviews, as well as admission and transfer quotas, please refer to the official announcements from the university and the school. You may find the information you need on the official pages below and official university accounts, or by contacting the school’s graduate program secretary.','关于推免面试、考研初试与复试安排，以及招生和调剂名额等事项，请以学校和学院的官方通知为准。建议同学们关注下方的官方页面及公众号，也可以向学院研究生秘书咨询。')}</p>
 <div class="admissions-links"><a href="https://yzw.gdut.edu.cn/index.htm">${t('GDUT Graduate Admissions','广东工业大学研究生招生信息网')} ↗</a><a href="https://cs.gdut.edu.cn/index.htm">${t('School of Computer Science and Technology','广东工业大学计算机学院官网')} ↗</a></div></aside></section>
 </div>`;
 }
