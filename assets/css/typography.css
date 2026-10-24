@@ -1,6 +1,6 @@
 /* Self-hosted SIL Open Font License fonts; see licenses/ and THIRD_PARTY_NOTICES.md. */
 @font-face{font-family:"Source Sans 3";font-style:normal;font-weight:400 800;font-display:swap;src:url("../fonts/source-sans3-latin.woff2?v=19143dca07") format("woff2")}
-@font-face{font-family:"Noto Sans SC";font-style:normal;font-weight:400 800;font-display:swap;src:url("../fonts/noto-sans-sc-subset.woff2?v=b24a5907ff") format("woff2")}
+@font-face{font-family:"Noto Sans SC";font-style:normal;font-weight:400 800;font-display:swap;src:url("../fonts/noto-sans-sc-subset.woff2?v=a3ea2f4b95") format("woff2")}
 :root{--academic-font:"Source Sans 3","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif}
 body,h1,h2,h3,h4,h5,h6,input,button,select,textarea{font-family:var(--academic-font)}
 /* Override the upstream sidebar's explicit, more-specific system-font rules.
@@ -27,6 +27,7 @@ html[lang=zh-CN] .page__content p{line-height:1.9}
 .page__content .recruitment-callout p{font-weight:400;margin:0;line-height:1.8}
 .page__content .recruitment-callout a{white-space:nowrap}
 .admissions-notice>a{font-size:.88rem}
+.admissions-links{display:flex;flex-wrap:wrap;gap:.5rem 1.2rem;margin-top:.7rem;font-size:.9rem}
 .joining-audience{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem;margin:1.1rem 0}
 .page__content .joining-audience a{display:flex;flex-direction:column;gap:.3rem;padding:1rem;border:1px solid #d7e4f3;border-left:4px solid #5f86c9;border-radius:10px;background:linear-gradient(180deg,#f7fbff,#fff);text-decoration:none}
 .joining-audience strong{font-size:1.08rem}
