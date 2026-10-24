@@ -681,16 +681,24 @@
       "titleZh": "人工智能",
       "title": "Artificial Intelligence",
       "permalink": "/teaching/artificial-intelligence",
-      "body": "Artificial Intelligence was taught at Guangdong University of Technology in the 2024–2025 academic year, with a listed teaching-hour allocation of 32/16.",
-      "bodyZh": "2024–2025 学年于广东工业大学开设的人工智能课程，学时标注为 32/16。"
+      "body": "Artificial Intelligence was taught at Guangdong University of Technology in the 2024–2025 academic year.",
+      "bodyZh": "2024–2025 学年于广东工业大学开设的人工智能课程。"
     },
     {
       "id": "ai-foundations",
       "titleZh": "人工智能基础：科学与工程",
       "title": "Fundamentals of Artificial Intelligence: Science and Engineering",
       "permalink": "/teaching/ai-foundations-science-engineering",
-      "body": "Fundamentals of Artificial Intelligence: Science and Engineering was taught at Guangdong University of Technology in the 2025–2026 academic year. Two offerings were listed, each with 32 teaching hours.",
-      "bodyZh": "2025–2026 学年于广东工业大学开设的人工智能基础课程，包含两次开课记录，每次 32 学时。"
+      "body": "Fundamentals of Artificial Intelligence: Science and Engineering was taught at Guangdong University of Technology in the 2025–2026 academic year, with two course offerings.",
+      "bodyZh": "2025–2026 学年于广东工业大学开设的人工智能基础：科学与工程课程，包含两次开课记录。"
+    },
+    {
+      "id": "ai-foundations-humanities-science",
+      "titleZh": "人工智能基础：人文与科学",
+      "title": "Fundamentals of Artificial Intelligence: Humanities and Science",
+      "permalink": "/teaching/ai-foundations-humanities-science",
+      "body": "Fundamentals of Artificial Intelligence: Humanities and Science is taught at Guangdong University of Technology in the 2026–2027 academic year.",
+      "bodyZh": "2026–2027 学年于广东工业大学开设的人工智能基础：人文与科学课程。"
     }
   ],
   "news": [
@@ -967,6 +975,18 @@
     }
   ],
   "teachingYears": [
+    {
+      "year": "2026-2027",
+      "current": true,
+      "courses": [
+        {
+          "id": "ai-foundations-humanities-science"
+        },
+        {
+          "id": "ai-chip"
+        }
+      ]
+    },
     {
       "year": "2025-2026",
       "courses": [

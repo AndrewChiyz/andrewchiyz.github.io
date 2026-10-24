@@ -15,5 +15,9 @@
 .page__content .teaching-card__school{font-size:.83rem;color:#6c7e91;line-height:1.5;margin:0 0 .8rem;text-align:left}
 .page__content .teaching-card__link{margin-top:auto;font-size:.86rem;align-self:flex-start;text-decoration:none;color:#365f8c}
 .teaching-card__link span{margin-left:.3rem}
+.page__content .teaching-years a.is-current{color:#a63d4a;background:#fff2f3;border-color:#e2b6be}
+.current-teaching-label{display:inline-block;vertical-align:middle;font-size:.74rem;font-weight:600;color:#a63d4a;background:#fff0f2;border:1px solid #e5bac2;border-radius:999px;padding:.12rem .6rem;margin-left:.5rem;letter-spacing:0}
+.teaching-archive .teaching-archive__item--active .archive__item{border-left:4px solid #b94a59;background:linear-gradient(180deg,#fff7f8,#fff)}
+.teaching-archive .teaching-archive__item--active .archive__item:hover{border-left-color:#a63d4a}
 @media(max-width:680px){.teaching-archive .teaching-archive__grid{grid-template-columns:minmax(0,1fr)}.teaching-archive .teaching-archive__item .archive__item{min-height:150px}.page__content .teaching-archive__year{font-size:1.2rem}.teaching-years{gap:.4rem}}
 @media(prefers-reduced-motion:reduce){.teaching-archive .teaching-archive__item .archive__item{transition:none}}
