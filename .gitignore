@@ -12,5 +12,5 @@ Gemfile.lock
 node_modules
 package-lock.json
 
-reference/
+/reference/
 .preview/
