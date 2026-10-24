@@ -1,6 +1,6 @@
 # Yuzhu Ji · Academic website
 
-独立静态学术主页。原生 HTML / CSS / JavaScript，无 Jekyll、Ruby、第三方运行依赖。页面正文直接输出到 HTML，搜索引擎和关闭 JavaScript 的浏览器仍可阅读。参考学术主页的侧栏、摘要首页和双语分页组织，未引入或复制其他站点的主题代码。
+独立静态学术主页。原生 HTML / CSS / JavaScript，无 Jekyll、Ruby、第三方运行依赖。页面正文直接输出到 HTML，搜索引擎和关闭 JavaScript 的浏览器仍可阅读。直接迁移李梦柯老师（Mengke Li）公开主页的 MIT 主题样式和页面结构，个人资料全部替换为姬玉柱的内容。来源及许可证见 THIRD_PARTY_NOTICES.md。
 
 ## 开发
 
@@ -19,7 +19,9 @@ npm run preview:site
 ```text
 content/scholar.json       论文（含摘要）、动态、课程、教育和工作经历
 scripts/redesign/         页面生成、完整本地预览、验证
-assets/css/scholar.css    新版布局与字体
+scripts/redesign/theme.mjs 参考主题的共享页面结构
+assets/css/reference/    原样保留的参考主页基础 CSS 与定制主题
+assets/css/scholar.css    静态站点集成、Arial 字体和功能适配
 assets/js/scholar.js      菜单、论文筛选和引用复制
 index.html               英文首页（生成结果）
 zh/                      中文首页与分页（生成结果）
@@ -29,7 +31,7 @@ images/、files/           旧站提取的图片及附件，待按内容逐步�
 docs/redesign/            维护与资料核对说明
 ```
 
-双语正文及共享模板在 `scripts/redesign/build.mjs`。修改数据和模板后执行 build；提交时包含生成结果。无需在 GitHub 安装 Node 或新增工作流。
+双语正文在 `scripts/redesign/build.mjs`，共享布局在 `scripts/redesign/theme.mjs`。修改数据和模板后执行 build；提交时包含生成结果。无需在 GitHub 安装 Node 或新增工作流。
 
 ## 分支与上线
 

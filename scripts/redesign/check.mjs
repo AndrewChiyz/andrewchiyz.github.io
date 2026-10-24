@@ -6,6 +6,18 @@ const routes=JSON.parse(fs.readFileSync('.preview/routes.json','utf8'));
 const data=JSON.parse(fs.readFileSync('content/scholar.json','utf8'));
 const targetFile=url=>path.join(process.cwd(),url.endsWith('.html')?url.slice(1):path.join(url.slice(1),'index.html'));
 let links=0;
+// Verify the vendored theme's fonts are present; do not silently hotlink upstream.
+for(const file of ['main.css','custom-theme.css']) {
+ const filename=path.join('assets/css/reference',file);
+ const css=fs.readFileSync(filename,'utf8');
+ for(const match of css.matchAll(/url\(["']?([^"')]+)["']?\)/g)) {
+  const resource=match[1];
+  if(resource.startsWith('data:'))continue;
+  assert(!/^https?:/.test(resource),`Remote CSS dependency: ${resource}`);
+  assert(fs.existsSync(path.resolve(path.dirname(filename),resource)),`Missing theme resource ${resource}`);
+ }
+}
+assert(fs.readFileSync('licenses/keke921-MIT.txt','utf8').includes('Copyright (c) 2016 Michael Rose'),'Missing upstream license');
 assert(fs.existsSync('.nojekyll'),'Missing static publishing marker');
 for(const obsolete of ['Gemfile','_config.yml','_layouts','_includes','_sass'])assert(!fs.existsSync(obsolete),`Old framework remains: ${obsolete}`);
 for(const [url,html] of Object.entries(routes)) {

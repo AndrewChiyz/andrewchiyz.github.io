@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { renderShell } from './theme.mjs';
 const root = process.cwd();
 const data = JSON.parse(fs.readFileSync(path.join(root, 'content/scholar.json'), 'utf8'));
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -29,11 +30,7 @@ function body(key, zh) {
 const outputs={};
 for(const zh of [false,true]) for(const key of Object.keys(names)) {
  const t=(a,b)=>zh?b:a; const url=href(key,zh);
- const html=`<!doctype html>
-<html lang="${zh?'zh-CN':'en'}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${titles[key][+zh]} · Yuzhu Ji</title><meta name="description" content="${t('Yuzhu Ji — computer vision and machine learning research at Guangdong University of Technology.','姬玉柱 — 广东工业大学，计算机视觉与机器学习研究。')}"><link rel="canonical" href="https://andrewchiyz.github.io${url}"><link rel="alternate" hreflang="en" href="https://andrewchiyz.github.io${href(key,false)}"><link rel="alternate" hreflang="zh-CN" href="https://andrewchiyz.github.io${href(key,true)}"><link rel="icon" href="/images/favicon.ico"><link rel="stylesheet" href="/assets/css/scholar.css"><script src="/assets/js/scholar.js" defer></script></head>
-<body><a class="skip-link" href="#main">${t('Skip to content','跳转到正文')}</a><header class="site-header"><div class="header-inner"><a class="brand" href="${href('home',zh)}">Yuzhu Ji<span> / 姬玉柱</span></a><button class="menu-toggle" aria-expanded="false" aria-controls="navigation">${t('Menu','菜单')} ☰</button><nav id="navigation" aria-label="${t('Main navigation','主导航')}">${['home','publications','joining','teaching'].map(k=>`<a ${k===key?'aria-current="page"':''} href="${href(k,zh)}">${names[k][+zh]}</a>`).join('')}<details class="more-nav"><summary>${t('More','更多')}</summary><div>${['news','talks','cv'].map(k=>`<a ${k===key?'aria-current="page"':''} href="${href(k,zh)}">${names[k][+zh]}</a>`).join('')}</div></details></nav><a class="language-switch" href="${href(key,!zh)}" lang="${zh?'en':'zh-CN'}" aria-label="${t('Switch this page to Chinese','切换此页至英文')}">${zh?'EN':'中文'} <span aria-hidden="true">⇄</span></a></div></header>
-<div class="page-shell"><aside class="profile"><img class="portrait" src="/images/android-chrome-512x512.png" alt="Yuzhu Ji / 姬玉柱" width="168" height="168"><h2>Yuzhu Ji <span>姬玉柱</span></h2><p class="position">${t('Associate Professor','副教授')}</p><p class="affiliation"><a href="https://cs.gdut.edu.cn/">${t('School of Computer Science<br>and Technology','计算机学院')}</a><br><a href="https://www.gdut.edu.cn/">${t('Guangdong University<br>of Technology','广东工业大学')}</a></p><div class="profile-divider"></div><p class="location">${t('Guangzhou, China','中国 · 广州')}</p><a class="profile-email" href="mailto:${data.email}">${data.email}</a><div class="social-links"><a href="${data.scholar}">Google Scholar <span>↗</span></a><a href="${data.dblp}">DBLP <span>↗</span></a><a href="https://github.com/AndrewChiyz">GitHub <span>↗</span></a></div><a class="profile-cv" href="${href('cv',zh)}">${t('Curriculum vitae','个人履历')} →</a></aside>
-<main id="main" class="main-content">${key!=='home'?`<div class="eyebrow">YUZHU JI / ${names[key][0].toUpperCase()}</div><h1>${titles[key][+zh]}</h1>`:''}${body(key,zh)}</main></div><footer><div><span>© ${new Date().getFullYear()} Yuzhu Ji</span><span>${t('Computer vision & machine learning','计算机视觉与机器学习')} · <a href="mailto:${data.email}">${t('Contact','联系')}</a></span></div></footer></body></html>`;
+ const html=renderShell({key,zh,title:titles[key][+zh],content:body(key,zh),data});
  const publicHtml=html
   .replace('This first edition includes publications migrated from the previous website. See also','For more publications, see')
   .replace('首版收录旧主页已有论文，更多成果可参见','更多成果可参见')
@@ -52,13 +49,7 @@ for(const [items,section] of [[data.papers,'publications'],[data.courses,'teachi
  const alternate=(!zh?'/zh':'')+item.permalink;
  const paragraphs=(item.abstract||item.body||'').split(/\n\s*\n/).map(s=>`<p>${esc(s)}</p>`).join('');
  const content=`<div class="eyebrow">${section.toUpperCase()}</div><h1>${esc(item.title)}</h1>${item.authors?`<p>${esc(item.authors)}</p>`:''}${item.venue?`<p class="page-lead">${esc(item.venue)} · ${item.year}</p>`:''}<section><h2>${zh?(item.abstract?'摘要（英文原文）':'课程介绍（英文原文）'):(item.abstract?'Abstract':'Course description')}</h2>${paragraphs}</section>${item.url?`<p><a href="${esc(item.url)}">${item.url.includes('github.com/')?'Code':'Project'} ↗</a></p>`:''}${item.citation?`<section><h2>${zh?'引用':'Citation'}</h2><p>${esc(item.citation)}</p></section>`:''}<p><a href="${href(section,zh)}">← ${names[section][+zh]}</a></p>`;
- outputs[url]=outputs[zh?'/zh/':'/'].replace(/<title>[\s\S]*?<\/title>/,`<title>${esc(item.title)} · Yuzhu Ji</title>`)
-  .replace(/<link rel="canonical"[^>]+>/,`<link rel="canonical" href="https://andrewchiyz.github.io${url}">`)
-  .replace(/<link rel="alternate"[^>]+>/g,'')
-  .replace('</head>',`<link rel="alternate" hreflang="en" href="https://andrewchiyz.github.io${item.permalink}"><link rel="alternate" hreflang="zh-CN" href="https://andrewchiyz.github.io/zh${item.permalink}"></head>`)
-  .replace(/aria-current="page"/g,'')
-  .replace(/class="language-switch" href="[^"]+"/,`class="language-switch" href="${alternate}"`)
-  .replace(/<main id="main"[\s\S]*?<\/main>/,`<main id="main" class="main-content">${content}</main>`);
+ outputs[url]=renderShell({key:section,zh,title:item.title,content,data,url,languageUrl:alternate,detail:true});
 }
 for(const [file,url,target] of [['scholar-about.html','/about/','/'],['scholar-about-html.html','/about.html','/'],['scholar-resume.html','/resume','/cv/']]) {
  const html=`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=${target}"><title>Yuzhu Ji</title><link rel="canonical" href="https://andrewchiyz.github.io${target}"></head><body><a href="${target}">Continue →</a></body></html>`;
@@ -72,6 +63,6 @@ for(const [url,html] of Object.entries(outputs)) {
  fs.writeFileSync(destination,html+'\n');
 }
 fs.writeFileSync(path.join(root,'.nojekyll'),'');
-fs.writeFileSync(path.join(root,'404.html'),'<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found · Yuzhu Ji</title><link rel="stylesheet" href="/assets/css/scholar.css"><main class="page-shell"><div><h1>Page not found / 页面未找到</h1><p><a href="/">English home →</a></p><p><a href="/zh/">中文首页 →</a></p></div></main></html>\n');
+fs.writeFileSync(path.join(root,'404.html'),renderShell({key:'home',zh:false,title:'Page not found / 页面未找到',content:'<p><a href="/">English home →</a></p><p><a href="/zh/">中文首页 →</a></p>',data,url:'/404.html',languageUrl:'/zh/',detail:true})+'\n');
 fs.writeFileSync(path.join(root,'.preview','routes.json'),JSON.stringify(outputs));
 console.log(`Generated ${Object.keys(outputs).length} framework-free static pages.`);
