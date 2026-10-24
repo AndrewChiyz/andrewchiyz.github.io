@@ -665,39 +665,104 @@
   ],
   "news": [
     {
+      "date": "2026.10",
+      "en": "🎉 One paper was accepted by **IEEE TCSVT** (**CCF-B**).",
+      "zh": "🎉 一篇论文被 **IEEE TCSVT**（**CCF-B**）录用。"
+    },
+    {
+      "date": "2026.10",
+      "en": "🎉 One paper was accepted by **BIBM 2026** (**CCF-B**). Congratulations to 麦凯翔 and 余嘉祺!",
+      "zh": "🎉 一篇论文被 **BIBM 2026**（**CCF-B**）录用，祝贺麦凯翔、余嘉祺！"
+    },
+    {
+      "date": "2026.01",
+      "en": "🎉 One paper was accepted by **ICASSP 2026** (**CCF-B**). Congratulations to Qiushujie!",
+      "zh": "🎉 一篇论文被 **ICASSP 2026**（**CCF-B**）录用，祝贺 Qiushujie！"
+    },
+    {
+      "date": "2026.01",
+      "en": "🎉 Our undergraduate team won the **Third Prize at the national level** in the natural science paper track of the **Challenge Cup** competition. Many thanks for the students’ hard work, and congratulations to the team!",
+      "zh": "🎉 指导的本科生团队获得“**挑战杯**”自科论文赛道**国赛三等奖**。感谢同学们的辛苦付出，恭喜团队同学们！"
+    },
+    {
+      "date": "2025.11",
+      "en": "🎉 One paper was accepted by **IEEE TCYB**.",
+      "zh": "🎉 一篇论文被 **IEEE TCYB** 录用。"
+    },
+    {
+      "date": "2025.08",
+      "en": "🎉 One paper was accepted by **IEEE TETCI**.",
+      "zh": "🎉 一篇论文被 **IEEE TETCI** 录用。"
+    },
+    {
+      "date": "2025.08",
+      "en": "🎉 One paper was accepted by **IEEE TCE**.",
+      "zh": "🎉 一篇论文被 **IEEE TCE** 录用。"
+    },
+    {
+      "date": "2025.05",
+      "en": "🎉 Our undergraduate team won the **Special Prize at the provincial level**, the highest provincial award, in the natural science paper track of the **Challenge Cup** competition and advanced to the national competition. Congratulations to the team!",
+      "zh": "🎉 指导的本科生团队获得“**挑战杯**”自科论文赛道**省赛特等奖**（该竞赛的省赛最高级别奖项），并被上推国赛，恭喜团队同学！"
+    },
+    {
+      "date": "2025.05",
+      "en": "🎉 One paper was accepted by **Expert Systems**.",
+      "zh": "🎉 一篇论文被 **Expert Systems** 录用。"
+    },
+    {
+      "date": "2025.05",
+      "en": "🎉 Two papers were accepted by **ICME 2025** (**CCF-B**).",
+      "zh": "🎉 两篇论文被 **ICME 2025**（**CCF-B**）录用。"
+    },
+    {
+      "date": "2025.04",
+      "en": "🎉 One paper was accepted by **IJCAI 2025** (**CCF-A**).",
+      "zh": "🎉 一篇论文被 **IJCAI 2025**（**CCF-A**）录用。"
+    },
+    {
+      "date": "2025.04",
+      "en": "🎉 One paper was accepted by **IEEE TNNLS** (**CAS SCI Q1, Top Journal, CCF-B**).",
+      "zh": "🎉 一篇论文被 **IEEE TNNLS**（**中科院 SCI 一区、Top 期刊、CCF-B**）录用。"
+    },
+    {
+      "date": "2025.03",
+      "en": "🎉 Our undergraduate researcher was approved to lead a **Guangdong Province College Student Science and Technology Innovation Cultivation Project**, one of only **13 projects university-wide**. Congratulations to the team!",
+      "zh": "🎉 指导的本科科研生获批主持**广东省大学生科创培育项目**（**全校仅 13 项**），恭喜团队同学！"
+    },
+    {
       "date": "2024.12",
-      "en": "Two papers accepted to ICASSP 2025.",
-      "zh": "两篇论文被 ICASSP 2025 录用。"
+      "en": "🎉 Two papers were accepted by **ICASSP 2025** (**CCF-B**).",
+      "zh": "🎉 两篇论文被 **ICASSP 2025**（**CCF-B**）录用。"
     },
     {
       "date": "2024.11",
-      "en": "One paper accepted by IEEE Transactions on Multimedia.",
-      "zh": "一篇论文被 IEEE Transactions on Multimedia 录用。"
+      "en": "🎉 One paper was accepted by **IEEE T-MM** in **2024** (**CCF-B**).",
+      "zh": "🎉 一篇论文于 **2024** 年被 **IEEE T-MM**（**CCF-B**）录用。"
     },
     {
       "date": "2024.09",
-      "en": "Two papers accepted to BIBM 2024. Congratulations to Qingsheng and Xiaopeng!",
-      "zh": "两篇论文被 BIBM 2024 录用，祝贺 Qingsheng 和 Xiaopeng！"
+      "en": "🎉 Two papers were accepted by **BIBM 2024** (**CCF-B**). Congratulations to Qingsheng and Xiaopeng!",
+      "zh": "🎉 两篇论文被 **BIBM 2024**（**CCF-B**）录用，祝贺 Qingsheng、Xiaopeng！"
     },
     {
       "date": "2024.07",
-      "en": "One paper accepted to ECAI 2024.",
-      "zh": "一篇论文被 ECAI 2024 录用。"
+      "en": "🎉 One paper was accepted by **ECAI 2024** (**CCF-B**).",
+      "zh": "🎉 一篇论文被 **ECAI 2024**（**CCF-B**）录用。"
     },
     {
       "date": "2024.05",
-      "en": "One paper accepted to SIGKDD 2024. Congratulations to Junyang!",
-      "zh": "一篇论文被 SIGKDD 2024 录用，祝贺 Junyang！"
+      "en": "🎉 One paper was accepted by **SIGKDD 2024** (**CCF-A**). Congratulations to Junyang!",
+      "zh": "🎉 一篇论文被 **SIGKDD 2024**（**CCF-A**）录用，祝贺 Junyang！"
     },
     {
       "date": "2023.08",
-      "en": "Two papers accepted to PRCV 2023. Congratulations to Shiting!",
-      "zh": "两篇论文被 PRCV 2023 录用，祝贺 Shiting！"
+      "en": "🎉 Two papers were accepted by **PRCV 2023** (**CCF-C**). Congratulations to ShiTing!",
+      "zh": "🎉 两篇论文被 **PRCV 2023**（**CCF-C**）录用，祝贺 ShiTing！"
     },
     {
       "date": "2023.05",
-      "en": "One paper accepted to ECAI 2023. Congratulations to Zhipeng!",
-      "zh": "一篇论文被 ECAI 2023 录用，祝贺 Zhipeng！"
+      "en": "🎉 One paper was accepted by **ECAI 2023** (**CCF-B**). Congratulations to ZhiPeng!",
+      "zh": "🎉 一篇论文被 **ECAI 2023**（**CCF-B**）录用，祝贺 ZhiPeng！"
     }
   ],
   "jobs": [

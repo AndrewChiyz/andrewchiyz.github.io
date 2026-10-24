@@ -3,7 +3,7 @@
 const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const route=(key,zh)=>`${zh?'/zh':''}/${key==='home'?'':key+'/'}`;
 const labels={home:['Home','首页'],news:['News','动态'],publications:['Publications','论文'],joining:['Joining','招生'],teaching:['Teaching','教学'],talks:['Talks','报告'],cv:['CV','履历']};
-const symbols={home:'👨‍🏫',news:'🔥',publications:'📝',joining:'🎓',teaching:'📚',talks:'💬',cv:'👤'};
+const symbols={home:'👨‍🏫',news:'🏆',publications:'📝',joining:'🎓',teaching:'📚',talks:'💬',cv:'👤'};
 export function renderShell({key,zh,title,content,data,url=route(key,zh),languageUrl=route(key,!zh),detail=false}) {
  const t=(a,b)=>zh?b:a;
  content=content.replace(/^<div class="eyebrow">[\s\S]*?<\/div>/,'').replace(/^<h1>[\s\S]*?<\/h1>/,'');
