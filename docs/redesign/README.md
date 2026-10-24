@@ -51,4 +51,4 @@
 
 ## Footer and visits
 
-The footer records the build date in Asia/Shanghai and links to bilingual sitemaps. Theme notices are preserved verbatim in `licenses/theme-MIT.txt`. A 240px visitor globe embeds the owner-provided MapMyVisitors script asynchronously over HTTPS. It replaces Busuanzi; historical counts from the previous provider are not transferred. The provider handles visitor geolocation and statistics.
+The footer records the build date in Asia/Shanghai and links to bilingual sitemaps. Theme notices are preserved verbatim in `licenses/theme-MIT.txt`. A 160px visitor globe (using the provider?s native `w=160` parameter) embeds the owner-provided MapMyVisitors script asynchronously over HTTPS. It replaces Busuanzi; historical counts from the previous provider are not transferred. The provider handles visitor geolocation and statistics.
