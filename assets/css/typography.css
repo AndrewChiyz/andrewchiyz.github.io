@@ -22,10 +22,12 @@ html[lang=zh-CN] .page__content p{line-height:1.9}
 .page__content .admissions-notice{font-weight:400;padding:.8rem 1rem;margin:1rem 0 1.3rem}
 .admissions-notice>strong{display:block;margin-bottom:.4rem}
 .page__content .admissions-notice p{margin:.4rem 0}
-.page__content .recruitment-callout{display:flex;gap:.7rem;align-items:flex-start;padding:.85rem 1rem;margin:1rem 0 1.5rem;border-radius:8px}
+.page__content .recruitment-callout{display:flex;gap:.7rem;align-items:flex-start;padding:.85rem 1rem;margin:1rem 0 1.5rem;border:1px solid #efd6da;border-left:4px solid #b84b57;border-radius:8px;background:#fff3f3;color:#67414a}
 .recruitment-icon{font-size:1.45rem;line-height:1.5;flex:none}
-.page__content .recruitment-callout p{font-weight:400;margin:0;line-height:1.8}
-.page__content .recruitment-callout a{white-space:nowrap}
+.page__content .recruitment-callout p{font-weight:400;margin:0;line-height:1.8;min-width:0}
+.page__content .recruitment-callout p>strong{color:#8a3540}
+.page__content .recruitment-callout .recruitment-link{display:inline-flex;align-items:baseline;gap:.35em;white-space:nowrap;vertical-align:baseline;font-weight:650;color:#a33e4a}
+.page__content .recruitment-callout .recruitment-link:hover{color:#842b37}
 .admissions-notice>a{font-size:.88rem}
 .admissions-links{display:flex;flex-wrap:wrap;gap:.5rem 1.2rem;margin-top:.7rem;font-size:.9rem}
 .joining-audience{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem;margin:1.1rem 0}
