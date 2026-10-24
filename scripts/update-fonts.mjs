@@ -1,6 +1,7 @@
 // Optional maintenance step after adding Chinese characters to the site.
 // Normal builds are offline and use the checked-in fonts.
 import fs from 'node:fs';
+import {createHash} from 'node:crypto';
 const directory='assets/fonts';fs.mkdirSync(directory,{recursive:true});
 const routes=JSON.parse(fs.readFileSync('.preview/routes.json','utf8'));
 const text=[...new Set(Object.values(routes).join('').match(/[\u2e80-\u9fff\u3000-\u303f\uff00-\uffef]/gu))].sort().join('');
@@ -26,4 +27,11 @@ for(const [source,file] of [['sourcesans3','source-sans3-OFL.txt'],['notosanssc'
  fs.writeFileSync('licenses/'+file,license);
 }
 fs.writeFileSync(directory+'/subset-characters.json',JSON.stringify({family:'Noto Sans SC',characters:text},null,2)+'\n');
+// Ensure browsers load the new subset when new Chinese characters are added.
+const stylesheet='assets/css/typography.css';let typography=fs.readFileSync(stylesheet,'utf8');
+for(const file of ['source-sans3-latin.woff2','noto-sans-sc-subset.woff2']) {
+ const version=createHash('sha256').update(fs.readFileSync(directory+'/'+file)).digest('hex').slice(0,10);
+ typography=typography.replace(new RegExp(file.replaceAll('.','\\.')+'(?:\\?v=[a-f0-9]+)?','g'),file+'?v='+version);
+}
+fs.writeFileSync(stylesheet,typography);
 console.log(`Chinese subset covers ${[...text].length} characters; licenses retained.`);

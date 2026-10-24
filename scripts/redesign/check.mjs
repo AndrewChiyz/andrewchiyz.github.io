@@ -25,7 +25,7 @@ for(const [url,html] of Object.entries(routes)) {
  assert(html.includes('<html lang='),`Missing language: ${url}`);
  assert(!/undefined|\{%|\{\{/.test(html),`Unresolved template: ${url}`);
  for(const match of html.matchAll(/(?:href|src)="([^"#]+)(?:#[^"]*)?"/g)) {
-  const target=match[1];
+  const target=match[1].split(/[?#]/)[0];
   if(!target.startsWith('/'))continue;
   assert(fs.existsSync(targetFile(target))||fs.existsSync(path.join(process.cwd(),target)),`Broken target ${target} from ${url}`);links++;
  }
