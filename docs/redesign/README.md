@@ -51,4 +51,4 @@
 
 ## Footer and visits
 
-The footer records the build date in Asia/Shanghai and links to bilingual sitemaps. Theme notices are preserved verbatim in `licenses/theme-MIT.txt`. A compact total-page-view widget uses the original Busuanzi service (https://busuanzi.ibruce.info/), loaded asynchronously only on the production hostname. The service receives visitor requests for counting; historical traffic before integration is not reconstructed. Unavailable counts display an em dash.
+The footer records the build date in Asia/Shanghai and links to bilingual sitemaps. Theme notices are preserved verbatim in `licenses/theme-MIT.txt`. A 240px visitor globe embeds the owner-provided MapMyVisitors script asynchronously over HTTPS. It replaces Busuanzi; historical counts from the previous provider are not transferred. The provider handles visitor geolocation and statistics.

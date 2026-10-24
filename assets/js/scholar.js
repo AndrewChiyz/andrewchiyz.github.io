@@ -38,10 +38,3 @@ document.querySelectorAll('[data-copy]').forEach(button => button.addEventListen
   catch { button.textContent = document.documentElement.lang === 'zh-CN' ? '请选中上方引用并复制' : 'Select the citation above to copy'; }
 }));
 
-// Count production page views only; the widget never delays page rendering.
-if (location.hostname === "andrewchiyz.github.io") {
-  const counterScript = document.createElement("script");
-  counterScript.src = "https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js";
-  counterScript.async = true;
-  document.body.appendChild(counterScript);
-}
