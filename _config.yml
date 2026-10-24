@@ -157,6 +157,18 @@ include:
   - _pages
   - files
 exclude:
+  - scripts
+  - docs
+  - .preview
+  - _posts
+  - _portfolio
+  - _drafts
+  - _pages/backupmark.md
+  - _pages/archive-layout-with-content.md
+  - _pages/non-menu-page.md
+  - _pages/portfolio.html
+  - _pages/year-archive.html
+  - _pages/talkmap.html
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
@@ -251,7 +263,7 @@ defaults:
       path: ""
       type: teaching
     values:
-      layout: single
+      layout: scholar-detail
       author_profile: true
       share: true
       comments: true
@@ -260,7 +272,7 @@ defaults:
       path: ""
       type: publications
     values:
-      layout: single
+      layout: scholar-detail
       author_profile: true
       share: true
       comments: true
@@ -278,7 +290,7 @@ defaults:
       path: ""
       type: talks
     values:
-      layout: talk
+      layout: scholar-detail
       author_profile: true
       share: true
 

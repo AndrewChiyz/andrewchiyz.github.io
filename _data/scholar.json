@@ -1,0 +1,162 @@
+{
+  "email": "yuzhu.ji@gdut.edu.cn",
+  "scholar": "https://scholar.google.com/citations?user=EqHMEmMAAAAJ",
+  "dblp": "https://dblp.org/pid/169/2012.html",
+  "papers": [
+    {
+      "title": "CPNet: 3D Semantic Relation and Geometry Context Prior Network for Multi-organ Segmentation",
+      "citation": "Yuzhu Ji, Mingshan Sun, Yiqun Zhang, Haijun Zhang. CPNet: 3D Semantic Relation and Geometry Context Prior Network for Multi-Organ Segmentation. ECAI 2024: 153-160.",
+      "permalink": "/publication/2024-10-25-paper-title-number-5",
+      "venue": "European Conference on Artificial Intelligence (ECAI)",
+      "url": "https://andrewchiyz.github.io/vision.medseg.cpnet/",
+      "year": 2024,
+      "type": "conference",
+      "short": "ECAI",
+      "authors": "Yuzhu Ji, Mingshan Sun, Yiqun Zhang, Haijun Zhang",
+      "selected": true
+    },
+    {
+      "title": "One-shot Human Motion Transfer via Occlusion-Robust Flow Prediction and Neural Texturing",
+      "citation": "Ji, Yuzhu, Chuanxia Zheng, and Tat-Jen Cham. \"One-shot Human Motion Transfer via Occlusion-Robust Flow Prediction and Neural Texturing.\" arXiv preprint arXiv:2412.06174 (2024).",
+      "permalink": "/publication/2024-11-4-paper-title-number-4",
+      "venue": "IEEE Transactions on Multimedia",
+      "url": "https://andrewchiyz.github.io/vision.ohmt.rfnt/",
+      "year": 2024,
+      "type": "journal",
+      "short": "TMM",
+      "authors": "Yuzhu Ji, Chuanxia Zheng, Tat-Jen Cham",
+      "selected": true
+    },
+    {
+      "title": "QGRL: Quaternion Graph Representation Learning for Heterogeneous Feature Data Clustering",
+      "citation": "Junyang Chen, Yuzhu Ji, Rong Zou, Yiqun Zhang, Yiu-ming Cheung. QGRL: Quaternion Graph Representation Learning for Heterogeneous Feature Data Clustering. KDD 2024: 297-306",
+      "permalink": "/publication/2024-9-8-paper-title-number-6",
+      "venue": "ACM Conference on Knowledge Discovery and Data Mining, ACM KDD",
+      "url": "https://github.com/Juny-Chen/QGRL",
+      "year": 2024,
+      "type": "conference",
+      "short": "KDD",
+      "authors": "Junyang Chen, Yuzhu Ji, Rong Zou, Yiqun Zhang, Yiu-ming Cheung",
+      "selected": true
+    },
+    {
+      "title": "CFNet: A Coarse-to-Fine Framework for Coronary Artery Segmentation",
+      "citation": "Shiting He, Yuzhu Ji, Yiqun Zhang, An Zeng, Dan Pan, Jing Lin, Xiaobo Zhang: CFNet: A Coarse-to-Fine Framework for Coronary Artery Segmentation. PRCV (5) 2023: 431-442.",
+      "permalink": "/publication/2024-8-19-paper-title-number-3",
+      "venue": "Pattern Recognition and Computer Vision, PRCV",
+      "url": "",
+      "year": 2023,
+      "type": "conference",
+      "short": "PRCV",
+      "authors": "Shiting He, Yuzhu Ji, Yiqun Zhang, An Zeng, Dan Pan, Jing Lin, Xiaobo Zhang",
+      "selected": false
+    }
+  ],
+  "courses": [
+    {
+      "title": "Principles and Application of AI Chip",
+      "permalink": "/teaching/2024-fall-teaching-1",
+      "body": "This course takes several typical applications in the field of AI computing, and focus on the basic principles and system optimization methods involved in instruction set, compiler and software stack from software algorithm to computer architecture. To understand the design process of AI computing from the perspective of system. The purpose of this course is to develop students' basic skills in designing and using relevant compilers and software stacks and system optimization methods based on an AI computing architecture."
+    },
+    {
+      "title": "Machine Learning and Data Mining",
+      "permalink": "/teaching/2024-fall-teaching-2",
+      "body": "Since the dawn of the 21st century, informatization and digitization have transformed the world, with information technology permeating every facet of human society. The rapid development and widespread adoption of technologies such as the Internet, the Internet of Things (IoT), cloud computing, and mobile internet have led to an explosion of data. As the country with the largest number of internet and mobile internet users, China stands at the forefront of this revolution, boasting abundant data resources and a thriving application market, giving it unique advantages in big data development.\r\n\r\nThe integration of big data and machine learning analysis has introduced unprecedented opportunities in economic research, enabling the study of long-term processes, large-scale spatial patterns, and rapid economic dynamics. Leveraging data from sources such as the internet, social networks (e.g., WeChat and Weibo), IoT, and geographic information systems, economic analysis now reaches new depths and broader scopes.\r\n\r\nThrough this course, students will learn to apply machine learning techniques to analyze and mine big data, addressing real-world economic challenges. The course emphasizes building practical problem-solving skills and enhancing data analysis capabilities, laying a strong foundation for developing professional expertise."
+    },
+    {
+      "title": "Computer Vision",
+      "permalink": "/teaching/2024-spring-teaching-1",
+      "body": "Computer vision is a core area of artificial intelligence, enabling machines to analyze and interpret visual data from the world, driving advancements in autonomous vehicles, augmented reality, medical diagnostics, and robotics. This course introduces core concepts such as image acquisition, processing, feature extraction, segmentation, and 3D reconstruction, with practical applications in depth estimation and panoramic stitching.\r\n\r\nHands-on experiments utilize OpenCV for tasks like object detection and motion tracking, alongside deep learning frameworks such as TensorFlow, PyTorch or Mindspore for modern applications like scene understanding and image generation. Students will gain practical skills through projects, preparing them to address contemporary challenges in computer vision."
+    }
+  ],
+  "news": [
+    {
+      "date": "2024.12",
+      "en": "Two papers accepted to ICASSP 2025.",
+      "zh": "两篇论文被 ICASSP 2025 录用。"
+    },
+    {
+      "date": "2024.11",
+      "en": "One paper accepted by IEEE Transactions on Multimedia.",
+      "zh": "一篇论文被 IEEE Transactions on Multimedia 录用。"
+    },
+    {
+      "date": "2024.09",
+      "en": "Two papers accepted to BIBM 2024. Congratulations to Qingsheng and Xiaopeng!",
+      "zh": "两篇论文被 BIBM 2024 录用，祝贺 Qingsheng 和 Xiaopeng！"
+    },
+    {
+      "date": "2024.07",
+      "en": "One paper accepted to ECAI 2024.",
+      "zh": "一篇论文被 ECAI 2024 录用。"
+    },
+    {
+      "date": "2024.05",
+      "en": "One paper accepted to SIGKDD 2024. Congratulations to Junyang!",
+      "zh": "一篇论文被 SIGKDD 2024 录用，祝贺 Junyang！"
+    },
+    {
+      "date": "2023.08",
+      "en": "Two papers accepted to PRCV 2023. Congratulations to Shiting!",
+      "zh": "两篇论文被 PRCV 2023 录用，祝贺 Shiting！"
+    },
+    {
+      "date": "2023.05",
+      "en": "One paper accepted to ECAI 2023. Congratulations to Zhipeng!",
+      "zh": "一篇论文被 ECAI 2023 录用，祝贺 Zhipeng！"
+    }
+  ],
+  "jobs": [
+    {
+      "date": "2022.05",
+      "en": "Associate Professor",
+      "zh": "副教授",
+      "org": "Guangdong University of Technology",
+      "orgZh": "广东工业大学计算机学院"
+    },
+    {
+      "date": "2020.12",
+      "en": "Postdoctoral Research Fellow",
+      "zh": "博士后研究员",
+      "org": "Nanyang Technological University · Prof. Tat-Jen Cham",
+      "orgZh": "南洋理工大学 · Tat-Jen Cham 教授"
+    },
+    {
+      "date": "2019.10",
+      "en": "Research Assistant",
+      "zh": "研究助理",
+      "org": "Harbin Institute of Technology, Shenzhen · Prof. Haijun Zhang",
+      "orgZh": "哈尔滨工业大学（深圳）· 张海军教授"
+    },
+    {
+      "date": "2018",
+      "en": "Research Intern",
+      "zh": "研究实习生",
+      "org": "Tencent AI Lab · Dr. Zequn Jie & Dr. Lin Ma",
+      "orgZh": "腾讯 AI Lab · Zequn Jie 博士、Lin Ma 博士"
+    }
+  ],
+  "education": [
+    {
+      "date": "2015.03 – 2019.10",
+      "en": "Ph.D.",
+      "zh": "博士",
+      "org": "Harbin Institute of Technology, Shenzhen",
+      "orgZh": "哈尔滨工业大学（深圳）"
+    },
+    {
+      "date": "2012.09 – 2014.12",
+      "en": "Master’s degree",
+      "zh": "硕士",
+      "org": "Harbin Institute of Technology, Shenzhen",
+      "orgZh": "哈尔滨工业大学（深圳）"
+    },
+    {
+      "date": "2007.09 – 2011.07",
+      "en": "Bachelor’s degree",
+      "zh": "学士",
+      "org": "PLA Information Engineering University, Zhengzhou",
+      "orgZh": "解放军信息工程大学，郑州"
+    }
+  ]
+}
