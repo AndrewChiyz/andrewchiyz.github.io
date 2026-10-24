@@ -660,21 +660,36 @@
       "permalink": "/teaching/2024-fall-teaching-1",
       "body": "This course takes several typical applications in the field of AI computing, and focus on the basic principles and system optimization methods involved in instruction set, compiler and software stack from software algorithm to computer architecture. To understand the design process of AI computing from the perspective of system. The purpose of this course is to develop students' basic skills in designing and using relevant compilers and software stacks and system optimization methods based on an AI computing architecture.",
       "id": "ai-chip",
-      "titleZh": "智能芯片原理与应用"
+      "titleZh": "智能芯片原理与应用",
+      "poster": {
+        "src": "/images/teaching/ai-chip.png",
+        "width": 1672,
+        "height": 941
+      }
     },
     {
       "title": "Machine Learning and Data Mining",
       "permalink": "/teaching/2024-fall-teaching-2",
       "body": "Since the dawn of the 21st century, informatization and digitization have transformed the world, with information technology permeating every facet of human society. The rapid development and widespread adoption of technologies such as the Internet, the Internet of Things (IoT), cloud computing, and mobile internet have led to an explosion of data. As the country with the largest number of internet and mobile internet users, China stands at the forefront of this revolution, boasting abundant data resources and a thriving application market, giving it unique advantages in big data development.\r\n\r\nThe integration of big data and machine learning analysis has introduced unprecedented opportunities in economic research, enabling the study of long-term processes, large-scale spatial patterns, and rapid economic dynamics. Leveraging data from sources such as the internet, social networks (e.g., WeChat and Weibo), IoT, and geographic information systems, economic analysis now reaches new depths and broader scopes.\r\n\r\nThrough this course, students will learn to apply machine learning techniques to analyze and mine big data, addressing real-world economic challenges. The course emphasizes building practical problem-solving skills and enhancing data analysis capabilities, laying a strong foundation for developing professional expertise.",
       "id": "machine-learning",
-      "titleZh": "机器学习与数据挖掘"
+      "titleZh": "机器学习与数据挖掘",
+      "poster": {
+        "src": "/images/teaching/machine-learning-data-mining.png",
+        "width": 1672,
+        "height": 941
+      }
     },
     {
       "title": "Computer Vision",
       "permalink": "/teaching/2024-spring-teaching-1",
       "body": "Computer vision is a core area of artificial intelligence, enabling machines to analyze and interpret visual data from the world, driving advancements in autonomous vehicles, augmented reality, medical diagnostics, and robotics. This course introduces core concepts such as image acquisition, processing, feature extraction, segmentation, and 3D reconstruction, with practical applications in depth estimation and panoramic stitching.\r\n\r\nHands-on experiments utilize OpenCV for tasks like object detection and motion tracking, alongside deep learning frameworks such as TensorFlow, PyTorch or Mindspore for modern applications like scene understanding and image generation. Students will gain practical skills through projects, preparing them to address contemporary challenges in computer vision.",
       "id": "computer-vision",
-      "titleZh": "计算机视觉"
+      "titleZh": "计算机视觉",
+      "poster": {
+        "src": "/images/teaching/computer-vision.png",
+        "width": 1672,
+        "height": 941
+      }
     },
     {
       "id": "artificial-intelligence",
@@ -690,7 +705,12 @@
       "title": "Fundamentals of Artificial Intelligence: Science and Engineering",
       "permalink": "/teaching/ai-foundations-science-engineering",
       "body": "Fundamentals of Artificial Intelligence: Science and Engineering was taught at Guangdong University of Technology in the 2025–2026 academic year, with two course offerings.",
-      "bodyZh": "2025–2026 学年于广东工业大学开设的人工智能基础：科学与工程课程，包含两次开课记录。"
+      "bodyZh": "2025–2026 学年于广东工业大学开设的人工智能基础：科学与工程课程，包含两次开课记录。",
+      "poster": {
+        "src": "/images/teaching/ai-science-engineering.png",
+        "width": 1672,
+        "height": 941
+      }
     },
     {
       "id": "ai-foundations-humanities-science",
@@ -698,7 +718,12 @@
       "title": "Fundamentals of Artificial Intelligence: Humanities and Science",
       "permalink": "/teaching/ai-foundations-humanities-science",
       "body": "Fundamentals of Artificial Intelligence: Humanities and Science is taught at Guangdong University of Technology in the 2026–2027 academic year.",
-      "bodyZh": "2026–2027 学年于广东工业大学开设的人工智能基础：人文与科学课程。"
+      "bodyZh": "2026–2027 学年于广东工业大学开设的人工智能基础：人文与科学课程。",
+      "poster": {
+        "src": "/images/teaching/ai-humanities-science.png",
+        "width": 1672,
+        "height": 941
+      }
     }
   ],
   "news": [

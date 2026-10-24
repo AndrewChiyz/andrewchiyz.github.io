@@ -33,4 +33,16 @@
 
 “智能芯片原理与应用”对应 Principles and Application of AI Chip，保留 `/teaching/2024-fall-teaching-1` 及中文对应路径。
 
+## 课程海报
+
+作者提供的 5 张 PNG 原图复制到 `images/teaching/`，在 courses 的 poster 字段记录路径及尺寸。年度卡片显示完整海报，点击打开原图；课程详情展示大图与原图入口。图片保持原始比例，不裁剪文字，不修改原文件；卡片图片延迟加载，不同学年使用同一资源。
+
+- 人文与科学 → ai-foundations-humanities-science
+- 科学与工程 → ai-foundations
+- 智能芯片 → ai-chip
+- 机器学习与数据挖掘 → machine-learning
+- 计算机视觉 → computer-vision
+
+旧的“人工智能 / Artificial Intelligence”没有同名海报，暂保留文字卡片，不借用其他课程的封面。
+
 `original-content.json` 保留旧简介、CV 与完整招生原文，只作内容参考，不再用于渲染网站。网站没有编造新增成果、团队成员或荣誉。

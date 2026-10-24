@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { renderShell } from './theme.mjs';
-import { renderTeaching } from './teaching.mjs';
+import { renderTeaching, renderCoursePoster } from './teaching.mjs';
 import { renderJoining } from './joining.mjs';
 import { renderAbout } from './about.mjs';
 const root = process.cwd();
@@ -47,7 +47,8 @@ for(const [items,section] of [[data.papers,'publications'],[data.courses,'teachi
  const alternate=(!zh?'/zh':'')+item.permalink;
  const paragraphs=(item.abstract||(zh&&item.bodyZh?item.bodyZh:item.body)||'').split(/\n\s*\n/).map(s=>`<p>${esc(s)}</p>`).join('');
  const content=`<div class="eyebrow">${section.toUpperCase()}</div><h1>${esc(item.title)}</h1>${item.authors?`<p>${esc(item.authors)}</p>`:''}${item.venue?`<p class="page-lead">${esc(item.venue)} · ${item.year}</p>`:''}${item.abstract||item.body?`<section><h2>${zh?(item.abstract?'摘要（英文原文）':item.bodyZh?'课程介绍':'课程介绍（英文原文）'):(item.abstract?'Abstract':'Course description')}</h2>${paragraphs}</section>`:''}${item.url?`<p><a href="${esc(item.url)}">${item.url.includes('github.com/')?'Code':item.url.includes('github.io/')?'Project':'Paper'} ↗</a></p>`:''}${item.citation?`<section><h2>${zh?'引用':'Citation'}</h2><p>${esc(item.citation)}</p></section>`:''}<p><a href="${href(section,zh)}">← ${names[section][+zh]}</a></p>`;
- outputs[url]=renderShell({key:section,zh,title:zh&&section==='teaching'&&item.titleZh?item.titleZh:item.title,content,data,url,languageUrl:alternate,detail:true});
+ const detailContent=section==='teaching'?content.replace('</h1>',()=>'</h1>'+renderCoursePoster(item,zh)):content;
+ outputs[url]=renderShell({key:section,zh,title:zh&&section==='teaching'&&item.titleZh?item.titleZh:item.title,content:detailContent,data,url,languageUrl:alternate,detail:true});
 }
 for(const [file,url,target] of [['scholar-about.html','/about/','/'],['scholar-about-html.html','/about.html','/'],['scholar-resume.html','/resume','/cv/']]) {
  const html=`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=${target}"><title>Yuzhu Ji</title><link rel="canonical" href="https://andrewchiyz.github.io${target}"></head><body><a href="${target}">Continue →</a></body></html>`;
