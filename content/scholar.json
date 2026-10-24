@@ -697,7 +697,12 @@
       "title": "Artificial Intelligence",
       "permalink": "/teaching/artificial-intelligence",
       "body": "Artificial Intelligence was taught at Guangdong University of Technology in the 2024–2025 academic year.",
-      "bodyZh": "2024–2025 学年于广东工业大学开设的人工智能课程。"
+      "bodyZh": "2024–2025 学年于广东工业大学开设的人工智能课程。",
+      "poster": {
+        "src": "/images/teaching/artificial-intelligence.png",
+        "width": 1672,
+        "height": 941
+      }
     },
     {
       "id": "ai-foundations",
