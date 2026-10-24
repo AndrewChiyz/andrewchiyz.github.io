@@ -1,6 +1,6 @@
 /* Self-hosted SIL Open Font License fonts; see licenses/ and THIRD_PARTY_NOTICES.md. */
 @font-face{font-family:"Source Sans 3";font-style:normal;font-weight:400 800;font-display:swap;src:url("../fonts/source-sans3-latin.woff2?v=19143dca07") format("woff2")}
-@font-face{font-family:"Noto Sans SC";font-style:normal;font-weight:400 800;font-display:swap;src:url("../fonts/noto-sans-sc-subset.woff2?v=b054e4bc3c") format("woff2")}
+@font-face{font-family:"Noto Sans SC";font-style:normal;font-weight:400 800;font-display:swap;src:url("../fonts/noto-sans-sc-subset.woff2?v=bfa61bc787") format("woff2")}
 :root{--academic-font:"Source Sans 3","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif}
 body,h1,h2,h3,h4,h5,h6,input,button,select,textarea{font-family:var(--academic-font)}
 /* Override the upstream sidebar's explicit, more-specific system-font rules.
@@ -23,3 +23,14 @@ html[lang=zh-CN] .page__content p{line-height:1.9}
 .admissions-notice>strong{display:block;margin-bottom:.4rem}
 .page__content .admissions-notice p{margin:.4rem 0}
 .admissions-notice>a{font-size:.88rem}
+.joining-audience{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem;margin:1.1rem 0}
+.page__content .joining-audience a{display:flex;flex-direction:column;gap:.3rem;padding:1rem;border:1px solid #d7e4f3;border-left:4px solid #5f86c9;border-radius:10px;background:linear-gradient(180deg,#f7fbff,#fff);text-decoration:none}
+.joining-audience strong{font-size:1.08rem}
+.joining-audience span{font-size:.85rem;color:#5f7187}
+.joining-page section{margin-top:1.8rem;scroll-margin-top:1.5rem}
+.joining-page li{margin:.45rem 0}
+.joining-page .contents{padding-bottom:.8rem;border-bottom:1px solid #dce6f1;gap:.5rem 1rem}
+.joining-tasks{display:grid;gap:1rem;margin:.9rem 0}
+.joining-tasks article{border:1px solid #dce6f1;border-radius:10px;padding:1rem;background:#fafcff}
+.page__content .joining-tasks h3{margin:0 0 .65rem}
+@media(max-width:600px){.joining-audience{grid-template-columns:1fr}}

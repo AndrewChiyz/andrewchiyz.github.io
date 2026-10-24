@@ -6,7 +6,7 @@ const teachingVersion=createHash('sha256').update(fs.readFileSync('assets/css/te
 const typographyVersion=createHash('sha256').update(fs.readFileSync('assets/css/typography.css')).digest('hex').slice(0,10);
 const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const route=(key,zh)=>`${zh?'/zh':''}/${key==='home'?'':key+'/'}`;
-const labels={home:['Home','首页'],news:['News','动态'],publications:['Publications','论文'],joining:['Joining','招生'],teaching:['Teaching','教学'],talks:['Talks','报告'],cv:['CV','履历']};
+const labels={home:['Home','首页'],news:['News','动态'],publications:['Publications','论文'],joining:['Join Us','加入我们'],teaching:['Teaching','教学'],talks:['Talks','报告'],cv:['CV','履历']};
 const symbols={home:'👨‍🏫',news:'🏆',publications:'📝',joining:'🎓',teaching:'📚',talks:'💬',cv:'👤'};
 export function renderShell({key,zh,title,content,data,url=route(key,zh),languageUrl=route(key,!zh),detail=false}) {
  const t=(a,b)=>zh?b:a;

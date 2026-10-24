@@ -6,7 +6,12 @@ const directory='assets/fonts';fs.mkdirSync(directory,{recursive:true});
 const routes=JSON.parse(fs.readFileSync('.preview/routes.json','utf8'));
 const text=[...new Set(Object.values(routes).join('').match(/[\u2e80-\u9fff\u3000-\u303f\uff00-\uffef]/gu))].sort().join('');
 const headers={'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36'};
-async function get(url){const r=await fetch(url,{headers,signal:AbortSignal.timeout(30000)});if(!r.ok)throw new Error(`${r.status}: ${url.slice(0,100)}`);return r;}
+async function get(url){
+ for(let attempt=0;attempt<3;attempt++) {
+  try{const r=await fetch(url,{headers,signal:AbortSignal.timeout(30000)});if(!r.ok)throw new Error(`${r.status}: ${url.slice(0,100)}`);return r;}
+  catch(error){if(attempt===2)throw error;}
+ }
+}
 async function font(family,file,characters) {
  const css=await(await get('https://fonts.googleapis.com/css2?family='+family+':wght@400..800&display=swap'+(characters?'&text='+encodeURIComponent(characters):''))).text();
  const blocks=css.match(/@font-face\s*\{[^}]+\}/g)||[];
