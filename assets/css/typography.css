@@ -1,6 +1,6 @@
 /* Self-hosted SIL Open Font License fonts; see licenses/ and THIRD_PARTY_NOTICES.md. */
 @font-face{font-family:"Source Sans 3";font-style:normal;font-weight:400 800;font-display:swap;src:url("../fonts/source-sans3-latin.woff2?v=19143dca07") format("woff2")}
-@font-face{font-family:"Noto Sans SC";font-style:normal;font-weight:400 800;font-display:swap;src:url("../fonts/noto-sans-sc-subset.woff2?v=a3ea2f4b95") format("woff2")}
+@font-face{font-family:"Noto Sans SC";font-style:normal;font-weight:400 800;font-display:swap;src:url("../fonts/noto-sans-sc-subset.woff2?v=0483a03d1f") format("woff2")}
 :root{--academic-font:"Source Sans 3","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif}
 body,h1,h2,h3,h4,h5,h6,input,button,select,textarea{font-family:var(--academic-font)}
 /* Override the upstream sidebar's explicit, more-specific system-font rules.
@@ -41,3 +41,11 @@ html[lang=zh-CN] .page__content p{line-height:1.9}
 .joining-tasks article{border:1px solid #dce6f1;border-radius:10px;padding:1rem;background:#fafcff}
 .page__content .joining-tasks h3{margin:0 0 .65rem}
 @media(max-width:600px){.joining-audience{grid-template-columns:1fr}}
+
+/* Separate applicant groups and highlight research/admissions reminders. */
+.page__content .joining-audience a[href="#undergraduates"]{border-color:#d4e5dc;border-left-color:#85b49a;background:linear-gradient(180deg,#f3faf6,#fff)}
+.page__content .joining-audience a[href="#undergraduates"] strong{color:#426e59}
+.page__content .joining-page .joining-reminder{border:1px solid #efd9dd;border-left:4px solid #b84b57;border-radius:8px;padding:1rem 1.2rem;background:#fff8f8}
+.page__content .joining-reminder h2{margin-top:0;color:#8a3540}
+.page__content .joining-reminder>p:last-child,.page__content .joining-reminder>ul:last-child{margin-bottom:0}
+.page__content .joining-reminder .admissions-notice{border:0;background:transparent;padding:0;margin:0;color:inherit;box-shadow:none}
