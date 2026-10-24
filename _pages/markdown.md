@@ -1,5 +1,0 @@
----
-layout: null
-permalink: /markdown/
----
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=/zh/joining/"><link rel="canonical" href="https://andrewchiyz.github.io/zh/joining/"><title>招生说明</title></head><body><a href="/zh/joining/">招生说明 / Joining information →</a></body></html>

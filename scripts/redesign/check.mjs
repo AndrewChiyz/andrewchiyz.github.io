@@ -3,29 +3,19 @@ import path from 'node:path';
 import assert from 'node:assert/strict';
 import {execFileSync} from 'node:child_process';
 const routes=JSON.parse(fs.readFileSync('.preview/routes.json','utf8'));
-const config=fs.readFileSync('_config.yml','utf8');
-const known=new Map(Object.keys(routes).map(u=>[u,'generated']));
-const excluded=new Set([...config.matchAll(/^  - (_pages\/[^\r\n]+)/gm)].map(m=>m[1]));
-const permalinks=new Map();
-for(const dir of ['_pages','_publications','_teaching','_talks']) {
- for(const file of fs.readdirSync(dir)) {
-  const filename=dir+'/'+file;
-  if(!/\.(md|html)$/.test(file)||excluded.has(filename))continue;
-  const source=fs.readFileSync(filename,'utf8');
-  const permalink=source.match(/^permalink:\s*(\/[^\s\r\n]*)/m)?.[1];
-  if(!permalink)continue;
-  assert(!permalinks.has(permalink),`Duplicate permalink ${permalink}: ${filename} and ${permalinks.get(permalink)}`);
-  permalinks.set(permalink,filename);known.set(permalink,filename);
- }
-}
+const data=JSON.parse(fs.readFileSync('content/scholar.json','utf8'));
+const targetFile=url=>path.join(process.cwd(),url.endsWith('.html')?url.slice(1):path.join(url.slice(1),'index.html'));
 let links=0;
+assert(fs.existsSync('.nojekyll'),'Missing static publishing marker');
+for(const obsolete of ['Gemfile','_config.yml','_layouts','_includes','_sass'])assert(!fs.existsSync(obsolete),`Old framework remains: ${obsolete}`);
 for(const [url,html] of Object.entries(routes)) {
+ assert.equal(fs.readFileSync(targetFile(url),'utf8'),html+'\n',`Static output mismatch: ${url}`);
  assert(html.includes('<html lang='),`Missing language: ${url}`);
- assert(!html.includes('undefined'),`Unresolved data: ${url}`);
+ assert(!/undefined|\{%|\{\{/.test(html),`Unresolved template: ${url}`);
  for(const match of html.matchAll(/(?:href|src)="([^"#]+)(?:#[^"]*)?"/g)) {
   const target=match[1];
   if(!target.startsWith('/'))continue;
-  assert(known.has(target)||fs.existsSync(path.join(process.cwd(),target)),`Broken target ${target} from ${url}`);links++;
+  assert(fs.existsSync(targetFile(target))||fs.existsSync(path.join(process.cwd(),target)),`Broken target ${target} from ${url}`);links++;
  }
  if(!html.includes('http-equiv="refresh"')) {
   assert.equal((html.match(/<h1[ >]/g)||[]).length,1,`Expected one h1: ${url}`);
@@ -34,11 +24,12 @@ for(const [url,html] of Object.entries(routes)) {
   assert(html.includes(`class="language-switch" href="${alternate}"`),`Language pair: ${url}`);
  }
 }
+for(const item of [...data.papers,...data.courses]) {
+ assert(routes[item.permalink],`Missing detail page: ${item.permalink}`);
+ assert(routes['/zh'+item.permalink],`Missing Chinese detail shell: ${item.permalink}`);
+}
 const before=JSON.stringify(routes);
 execFileSync(process.execPath,['scripts/redesign/build.mjs']);
 assert.equal(fs.readFileSync('.preview/routes.json','utf8'),before,'Build must be reproducible');
-const data=JSON.parse(fs.readFileSync('_data/scholar.json','utf8'));
-for(const paper of data.papers)assert(known.has(paper.permalink),`Lost paper URL: ${paper.permalink}`);
-for(const course of data.courses)assert(known.has(course.permalink),`Lost course URL: ${course.permalink}`);
 execFileSync(process.execPath,['--check','assets/js/scholar.js']);
-console.log(`PASS: ${Object.keys(routes).length} generated routes, ${links} local references, bilingual pairs, canonical metadata, no duplicate permalinks, original paper/course URLs, stable generation, JavaScript syntax.`);
+console.log(`PASS: ${Object.keys(routes).length} static routes, ${links} local references, bilingual pairs, complete detail pages, metadata, stable generation; no Jekyll dependency.`);

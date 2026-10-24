@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 const root = process.cwd();
-const data = JSON.parse(fs.readFileSync(path.join(root, '_data/scholar.json'), 'utf8'));
+const data = JSON.parse(fs.readFileSync(path.join(root, 'content/scholar.json'), 'utf8'));
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const href = (key, zh) => `${zh ? '/zh' : ''}/${key === 'home' ? '' : key + '/'}`;
 const names = {home:['Home','首页'], publications:['Publications','学术论文'], joining:['Joining','招生'], teaching:['Teaching','教学'], news:['News','动态'], talks:['Talks','学术报告'], cv:['CV','个人履历']};
@@ -34,28 +34,44 @@ for(const zh of [false,true]) for(const key of Object.keys(names)) {
 <body><a class="skip-link" href="#main">${t('Skip to content','跳转到正文')}</a><header class="site-header"><div class="header-inner"><a class="brand" href="${href('home',zh)}">Yuzhu Ji<span> / 姬玉柱</span></a><button class="menu-toggle" aria-expanded="false" aria-controls="navigation">${t('Menu','菜单')} ☰</button><nav id="navigation" aria-label="${t('Main navigation','主导航')}">${['home','publications','joining','teaching'].map(k=>`<a ${k===key?'aria-current="page"':''} href="${href(k,zh)}">${names[k][+zh]}</a>`).join('')}<details class="more-nav"><summary>${t('More','更多')}</summary><div>${['news','talks','cv'].map(k=>`<a ${k===key?'aria-current="page"':''} href="${href(k,zh)}">${names[k][+zh]}</a>`).join('')}</div></details></nav><a class="language-switch" href="${href(key,!zh)}" lang="${zh?'en':'zh-CN'}" aria-label="${t('Switch this page to Chinese','切换此页至英文')}">${zh?'EN':'中文'} <span aria-hidden="true">⇄</span></a></div></header>
 <div class="page-shell"><aside class="profile"><img class="portrait" src="/images/android-chrome-512x512.png" alt="Yuzhu Ji / 姬玉柱" width="168" height="168"><h2>Yuzhu Ji <span>姬玉柱</span></h2><p class="position">${t('Associate Professor','副教授')}</p><p class="affiliation"><a href="https://cs.gdut.edu.cn/">${t('School of Computer Science<br>and Technology','计算机学院')}</a><br><a href="https://www.gdut.edu.cn/">${t('Guangdong University<br>of Technology','广东工业大学')}</a></p><div class="profile-divider"></div><p class="location">${t('Guangzhou, China','中国 · 广州')}</p><a class="profile-email" href="mailto:${data.email}">${data.email}</a><div class="social-links"><a href="${data.scholar}">Google Scholar <span>↗</span></a><a href="${data.dblp}">DBLP <span>↗</span></a><a href="https://github.com/AndrewChiyz">GitHub <span>↗</span></a></div><a class="profile-cv" href="${href('cv',zh)}">${t('Curriculum vitae','个人履历')} →</a></aside>
 <main id="main" class="main-content">${key!=='home'?`<div class="eyebrow">YUZHU JI / ${names[key][0].toUpperCase()}</div><h1>${titles[key][+zh]}</h1>`:''}${body(key,zh)}</main></div><footer><div><span>© ${new Date().getFullYear()} Yuzhu Ji</span><span>${t('Computer vision & machine learning','计算机视觉与机器学习')} · <a href="mailto:${data.email}">${t('Contact','联系')}</a></span></div></footer></body></html>`;
- outputs[url]=html;
- const existing={home:'about.md',publications:'publications.html',teaching:'teaching.html',cv:'cv.md',talks:'talks.html'};
- const filename=zh?`scholar-zh-${key}.html`:(existing[key]||`scholar-${key}.html`);
- fs.writeFileSync(path.join(root,'_pages',filename),`---\nlayout: null\npermalink: ${url}\ntitle: "${titles[key][+zh]}"\n---\n${html}\n`);
+ const publicHtml=html
+  .replace('This first edition includes publications migrated from the previous website. See also','For more publications, see')
+  .replace('首版收录旧主页已有论文，更多成果可参见','更多成果可参见')
+  .replace(/<p class="subtle">(?:Updates below were migrated from the previous website\.|以下动态迁移自旧主页。)<\/p>/,'');
+ outputs[url]=zh?publicHtml.replace(/href="(\/(?:publication|teaching)\/[^"#]+)"/g,'href="/zh$1"'):publicHtml;
 }
 // Preserve the original recruitment URL, plus its historic aliases.
 for(const [file,url] of [['markdown.md','/markdown/'],['scholar-md.html','/md/'],['scholar-markdown.html','/markdown.html']]) {
  const target='/zh/joining/'; const html=`<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=${target}"><link rel="canonical" href="https://andrewchiyz.github.io${target}"><title>招生说明</title></head><body><a href="${target}">招生说明 / Joining information →</a></body></html>`;
- fs.writeFileSync(path.join(root,'_pages',file),`---\nlayout: null\npermalink: ${url}\n---\n${html}`);outputs[url]=html;
+ outputs[url]=html;
 }
 fs.mkdirSync(path.join(root,'.preview'),{recursive:true});
-// Keep existing paper/course source and URLs while rendering them in the new shell.
-const detail = outputs['/'].replace(/<title>[\s\S]*?<\/title>/,'<title>{{ page.title | escape }} · Yuzhu Ji</title>')
- .replace(/<link rel="canonical"[^>]+>/,'<link rel="canonical" href="{{ page.url | absolute_url }}">')
- .replace(/<link rel="alternate"[^>]+>/g,'')
- .replace(/aria-current="page"/g,'')
- .replace(/<a class="language-switch"[\s\S]*?<\/a>/,'<a class="language-switch" href="{% if page.collection == "teaching" %}/zh/teaching/{% elsif page.collection == "talks" %}/zh/talks/{% else %}/zh/publications/{% endif %}">中文栏目 ⇄</a>')
- .replace(/<main id="main"[\s\S]*?<\/main>/,'<main id="main" class="main-content"><div class="eyebrow">YUZHU JI / RESEARCH & TEACHING</div><h1>{{ page.title | escape }}</h1>{% if page.venue %}<p class="page-lead">{{ page.venue | escape }}</p>{% endif %}<div class="legacy-content">{{ content }}</div><p><a href="/publications/">Publications →</a> · <a href="/teaching/">Teaching →</a></p></main>');
-fs.writeFileSync(path.join(root,'_layouts/scholar-detail.html'),detail+'\n');
+// Full detail pages are static too: no framework runtime or legacy templates.
+for(const [items,section] of [[data.papers,'publications'],[data.courses,'teaching']]) for(const item of items) for(const zh of [false,true]) {
+ const url=(zh?'/zh':'')+item.permalink;
+ const alternate=(!zh?'/zh':'')+item.permalink;
+ const paragraphs=(item.abstract||item.body||'').split(/\n\s*\n/).map(s=>`<p>${esc(s)}</p>`).join('');
+ const content=`<div class="eyebrow">${section.toUpperCase()}</div><h1>${esc(item.title)}</h1>${item.authors?`<p>${esc(item.authors)}</p>`:''}${item.venue?`<p class="page-lead">${esc(item.venue)} · ${item.year}</p>`:''}<section><h2>${zh?(item.abstract?'摘要（英文原文）':'课程介绍（英文原文）'):(item.abstract?'Abstract':'Course description')}</h2>${paragraphs}</section>${item.url?`<p><a href="${esc(item.url)}">${item.url.includes('github.com/')?'Code':'Project'} ↗</a></p>`:''}${item.citation?`<section><h2>${zh?'引用':'Citation'}</h2><p>${esc(item.citation)}</p></section>`:''}<p><a href="${href(section,zh)}">← ${names[section][+zh]}</a></p>`;
+ outputs[url]=outputs[zh?'/zh/':'/'].replace(/<title>[\s\S]*?<\/title>/,`<title>${esc(item.title)} · Yuzhu Ji</title>`)
+  .replace(/<link rel="canonical"[^>]+>/,`<link rel="canonical" href="https://andrewchiyz.github.io${url}">`)
+  .replace(/<link rel="alternate"[^>]+>/g,'')
+  .replace('</head>',`<link rel="alternate" hreflang="en" href="https://andrewchiyz.github.io${item.permalink}"><link rel="alternate" hreflang="zh-CN" href="https://andrewchiyz.github.io/zh${item.permalink}"></head>`)
+  .replace(/aria-current="page"/g,'')
+  .replace(/class="language-switch" href="[^"]+"/,`class="language-switch" href="${alternate}"`)
+  .replace(/<main id="main"[\s\S]*?<\/main>/,`<main id="main" class="main-content">${content}</main>`);
+}
 for(const [file,url,target] of [['scholar-about.html','/about/','/'],['scholar-about-html.html','/about.html','/'],['scholar-resume.html','/resume','/cv/']]) {
  const html=`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=${target}"><title>Yuzhu Ji</title><link rel="canonical" href="https://andrewchiyz.github.io${target}"></head><body><a href="${target}">Continue →</a></body></html>`;
- fs.writeFileSync(path.join(root,'_pages',file),`---\nlayout: null\npermalink: ${url}\n---\n${html}`);outputs[url]=html;
+ outputs[url]=html;
 }
+for(const [url,html] of Object.entries(outputs)) {
+ const rel=url.endsWith('.html')?url.slice(1):path.join(url.slice(1),'index.html');
+ const destination=path.resolve(root,rel);
+ if(!destination.startsWith(root+path.sep))throw new Error('Invalid output path');
+ fs.mkdirSync(path.dirname(destination),{recursive:true});
+ fs.writeFileSync(destination,html+'\n');
+}
+fs.writeFileSync(path.join(root,'.nojekyll'),'');
+fs.writeFileSync(path.join(root,'404.html'),'<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found · Yuzhu Ji</title><link rel="stylesheet" href="/assets/css/scholar.css"><main class="page-shell"><div><h1>Page not found / 页面未找到</h1><p><a href="/">English home →</a></p><p><a href="/zh/">中文首页 →</a></p></div></main></html>\n');
 fs.writeFileSync(path.join(root,'.preview','routes.json'),JSON.stringify(outputs));
-console.log(`Generated ${Object.keys(outputs).length} pages; existing publication and course permalinks retained.`);
+console.log(`Generated ${Object.keys(outputs).length} framework-free static pages.`);
