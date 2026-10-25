@@ -6,7 +6,7 @@
                     <ul class="visible-links identity-links">
                         <li class="masthead__menu-item masthead__menu-item--lg"><a href="/zh/">{{ site.data.profile.name | escape }} · GDUT</a><span
                                 class="masthead__lang-switch"><span aria-hidden="true">🌐</span> <a
-                                    class="language-switch" href="/joining/" lang="en">EN</a> <span
+                                    class="language-switch" href="{{ page.english_url }}" lang="en">EN</a> <span
                                     class="lang-sep">|</span> <span class="lang-current" lang="zh-CN">中文</span></span>
                         </li>
                     </ul><button class="menu-toggle" aria-expanded="false" aria-controls="navigation"
@@ -15,8 +15,8 @@
                         <li class="masthead__menu-item"><a href="/zh/">首页</a></li>
                         <li class="masthead__menu-item"><a href="/zh/news/">动态</a></li>
                         <li class="masthead__menu-item"><a href="/zh/publications/">论文</a></li>
-                        <li class="masthead__menu-item"><a aria-current="page" href="/zh/joining/">加入我们</a></li>
-                        <li class="masthead__menu-item"><a href="/zh/teaching/">教学</a></li>
+                        <li class="masthead__menu-item"><a {% if page.section == 'joining' %}aria-current="page"{% endif %} href="/zh/joining/">加入我们</a></li>
+                        <li class="masthead__menu-item"><a {% if page.section == 'teaching' %}aria-current="page"{% endif %} href="/zh/teaching/">教学</a></li>
                         <li class="masthead__menu-item"><a href="/zh/talks/">报告</a></li>
                         <li class="masthead__menu-item"><a href="/zh/cv/">履历</a></li>
                     </ul>
@@ -34,15 +34,15 @@
                         <li class="masthead__menu-item masthead__menu-item--lg"><a href="/">{{ site.data.profile.name | escape }} · GDUT</a><span
                                 class="masthead__lang-switch"><span aria-hidden="true">🌐</span> <span
                                     class="lang-current" lang="en">EN</span> <span class="lang-sep">|</span> <a
-                                    class="language-switch" href="/zh/joining/" lang="zh-CN">中文</a></span></li>
+                                    class="language-switch" href="{{ page.chinese_url }}" lang="zh-CN">中文</a></span></li>
                     </ul><button class="menu-toggle" aria-expanded="false" aria-controls="navigation"
                         aria-label="Toggle navigation">☰</button>
                     <ul class="visible-links migration-navigation" id="navigation">
                         <li class="masthead__menu-item"><a href="/">Home</a></li>
                         <li class="masthead__menu-item"><a href="/news/">News</a></li>
                         <li class="masthead__menu-item"><a href="/publications/">Publications</a></li>
-                        <li class="masthead__menu-item"><a aria-current="page" href="/joining/">Join Us</a></li>
-                        <li class="masthead__menu-item"><a href="/teaching/">Teaching</a></li>
+                        <li class="masthead__menu-item"><a {% if page.section == 'joining' %}aria-current="page"{% endif %} href="/joining/">Join Us</a></li>
+                        <li class="masthead__menu-item"><a {% if page.section == 'teaching' %}aria-current="page"{% endif %} href="/teaching/">Teaching</a></li>
                         <li class="masthead__menu-item"><a href="/talks/">Talks</a></li>
                         <li class="masthead__menu-item"><a href="/cv/">CV</a></li>
                     </ul>

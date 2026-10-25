@@ -7,20 +7,27 @@ const findClass=(doc,c)=>walk(doc).find(n=>(attr(n,'class')||'').split(' ').incl
 const text=n=>n.nodeName==='#text'?n.value:(n.childNodes||[]).filter(c=>!['script','style'].includes(c.tagName)).map(text).join('');
 const compact=s=>s.replace(/\s+/g,'').replaceAll('\u2019',"'").replaceAll('\u2018',"'");
 const shape=n=>n.nodeName==='#text'?(n.value.trim()?'text':null):n.nodeName==='#comment'?null:[n.tagName||n.nodeName,(n.attrs||[]).filter(a=>!['markdown'].includes(a.name)).sort((a,b)=>a.name.localeCompare(b.name)),...(n.childNodes||[]).map(shape).filter(Boolean)];
-for(const lang of ['en','zh']){
- const route=lang==='zh'?'zh/joining/index.html':'joining/index.html';
+const courses=JSON.parse(fs.readFileSync('content/scholar.json','utf8')).courses;
+const routes=['joining/index.html','teaching/index.html',...courses.map(c=>c.permalink.slice(1)+'/index.html')];
+for(const lang of ['en','zh'])for(const base of routes){
+ const route=(lang==='zh'?'zh/':'')+base;
  const old=parse(fs.readFileSync(route,'utf8'));
  const html=fs.readFileSync('.preview/jekyll-site/'+route,'utf8');const fresh=parse(html);
  assert(!/\{%|\{\{|markdown="1"/.test(html.replace(/<!--[^]*?-->/g,'')),'Unrendered template');
- const a=findClass(old,'joining-page'),b=findClass(fresh,'joining-page');
+ const a=findClass(old,'academic-detail'),b=findClass(fresh,'academic-detail');
  assert.equal(compact(text(b)),compact(text(a)),lang+': content changed');
  assert.deepEqual(shape(b),shape(a),lang+': content structure changed');
+ const sharedBaseline=parse(fs.readFileSync((lang==='zh'?'zh/':'')+'joining/index.html','utf8'));
  for(const c of ['sidebar','masthead','page__footer']){
-  assert.equal(compact(text(findClass(fresh,c))),compact(text(findClass(old,c))),lang+': '+c+' text changed');
-  assert.deepEqual(shape(findClass(fresh,c)),shape(findClass(old,c)),lang+': '+c+' structure changed');
+  const reference=c==='masthead'?old:sharedBaseline;
+  assert.equal(compact(text(findClass(fresh,c))),compact(text(findClass(reference,c))),lang+': '+c+' text changed');
+  assert.deepEqual(shape(findClass(fresh,c)),shape(findClass(reference,c)),lang+': '+c+' structure changed');
  }
  const styles=doc=>walk(doc).filter(n=>n.tagName==='link'&&attr(n,'rel')==='stylesheet').map(n=>attr(n,'href'));
  assert.deepEqual(styles(fresh),[...styles(old),'/assets/css/migration-layout.css?v=1'],'Unexpected styles changed');
  assert.equal(walk(fresh).filter(n=>n.tagName==='h1').length,1);
- console.log('PASS '+lang+': content, DOM structure, sidebar, navigation, footer, and styles match the current page.');
+ const canonical=walk(fresh).find(n=>attr(n,'rel')==='canonical');
+ const originalCanonical=walk(old).find(n=>attr(n,'rel')==='canonical');
+ assert.equal(attr(canonical,'href'),attr(originalCanonical,'href'),route+': canonical URL changed');
+ console.log('PASS '+route+': content, structure, navigation, metadata, and styles.');
 }

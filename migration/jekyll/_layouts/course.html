@@ -1,0 +1,5 @@
+---
+layout: single
+---
+{%- assign course = site.data.courses[page.course_id] -%}
+<figure class="course-poster"><a href="{{ course.poster.src }}" target="_blank" rel="noopener"><img src="{{ course.poster.src }}" alt="{{ course[page.lang].title | escape }}" width="{{ course.poster.width }}" height="{{ course.poster.height }}" decoding="async"></a><figcaption><a href="{{ course.poster.src }}" target="_blank" rel="noopener">{% if page.lang == 'zh' %}查看原图{% else %}View full-size image{% endif %} ↗</a></figcaption></figure><section><h2>{{ page.description_heading | escape }}</h2>{{ content }}</section><p><a href="{% if page.lang == 'zh' %}/zh{% endif %}/teaching/">← {% if page.lang == 'zh' %}教学{% else %}Teaching{% endif %}</a></p>

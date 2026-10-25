@@ -1,5 +1,8 @@
 ---
 layout: single
+section: joining
+english_url: /joining/
+chinese_url: /zh/joining/
 lang: en
 title: Join Us
 permalink: /joining/

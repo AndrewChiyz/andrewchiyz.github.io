@@ -1,0 +1,11 @@
+# Shared by every academic year and both languages.
+slug: ai-foundations-humanities-science
+url: "/teaching/ai-foundations-humanities-science"
+poster:
+  src: /images/teaching/ai-humanities-science.jpg
+  width: 682
+  height: 384
+en:
+  title: "Fundamentals of Artificial Intelligence: Humanities and Science"
+zh:
+  title: "人工智能基础：人文与科学"

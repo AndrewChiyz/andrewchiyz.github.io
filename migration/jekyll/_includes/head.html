@@ -2,11 +2,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-    <title>加入我们 · {{ site.data.profile.name | escape }}</title>
+    <title>{{ page_title | escape }} · {{ site.data.profile.name | escape }}</title>
     <meta name="description" content="{{ site.data.profile.name_zh | escape }} — {{ site.data.profile.zh.university | escape }}，计算机视觉与机器学习。">
-    <link rel="canonical" href="https://andrewchiyz.github.io/zh/joining/">
-    <link rel="alternate" hreflang="en" href="https://andrewchiyz.github.io/joining/">
-    <link rel="alternate" hreflang="zh-CN" href="https://andrewchiyz.github.io/zh/joining/">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.english_url }}">
+    <link rel="alternate" hreflang="zh-CN" href="{{ site.url }}{{ page.chinese_url }}">
     <link rel="icon" href="/images/favicon.ico">
     <meta name="theme-color" content="#2a5686">
     <link rel="stylesheet" href="/assets/css/reference/main.css">
@@ -14,18 +14,19 @@
     <link rel="stylesheet" href="/assets/css/scholar.css?v=37c1ff6939">
     <link rel="preload" href="/assets/fonts/source-sans3-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/assets/css/typography.css?v=b63f895016">
+    {% if page.section == 'teaching' %}<link rel="stylesheet" href="/assets/css/teaching.css?v=7983d50932">{% endif %}
     <script src="/assets/js/scholar.js?v=1485b84656" defer></script>
 
 {% else %}
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-    <title>Join Us · {{ site.data.profile.name | escape }}</title>
+    <title>{{ page_title | escape }} · {{ site.data.profile.name | escape }}</title>
     <meta name="description"
         content="{{ site.data.profile.name | escape }} — computer vision and machine learning, {{ site.data.profile.en.university | escape }}.">
-    <link rel="canonical" href="https://andrewchiyz.github.io/joining/">
-    <link rel="alternate" hreflang="en" href="https://andrewchiyz.github.io/joining/">
-    <link rel="alternate" hreflang="zh-CN" href="https://andrewchiyz.github.io/zh/joining/">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.english_url }}">
+    <link rel="alternate" hreflang="zh-CN" href="{{ site.url }}{{ page.chinese_url }}">
     <link rel="icon" href="/images/favicon.ico">
     <meta name="theme-color" content="#2a5686">
     <link rel="stylesheet" href="/assets/css/reference/main.css">
@@ -33,6 +34,7 @@
     <link rel="stylesheet" href="/assets/css/scholar.css?v=37c1ff6939">
     <link rel="preload" href="/assets/fonts/source-sans3-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/assets/css/typography.css?v=b63f895016">
+    {% if page.section == 'teaching' %}<link rel="stylesheet" href="/assets/css/teaching.css?v=7983d50932">{% endif %}
     <script src="/assets/js/scholar.js?v=1485b84656" defer></script>
 
 {% endif %}

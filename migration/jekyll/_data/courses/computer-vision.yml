@@ -1,0 +1,11 @@
+# Shared by every academic year and both languages.
+slug: computer-vision
+url: "/teaching/2024-spring-teaching-1"
+poster:
+  src: /images/teaching/computer-vision.jpg
+  width: 682
+  height: 384
+en:
+  title: "Computer Vision"
+zh:
+  title: "计算机视觉"

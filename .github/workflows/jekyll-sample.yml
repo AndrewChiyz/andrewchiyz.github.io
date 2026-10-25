@@ -20,8 +20,9 @@ jobs:
         run: |
           cd migration/jekyll
           bundle install
-      - name: Build only the two sample pages
+      - name: Build migrated pages only
         run: |
+          ruby migration/tools/validate.rb
           export BUNDLE_GEMFILE="$GITHUB_WORKSPACE/migration/jekyll/Gemfile"
           bundle exec jekyll build --source migration/jekyll --destination .preview/jekyll-site --config migration/jekyll/_config.yml
       - name: Compare with current pages
@@ -32,6 +33,7 @@ jobs:
         run: |
           cp -R migration/jekyll .preview/profile-source
           ruby -ryaml -e 'p=".preview/profile-source/_data/profile.yml"; d=YAML.load_file(p); d["email"]="sample-check@example.invalid"; d["en"]["position"]="PROFILE_CHECK_EN"; d["zh"]["position"]="PROFILE_CHECK_ZH"; File.write(p,YAML.dump(d))'
+          ruby -ryaml -e 'p=".preview/profile-source/_data/courses/ai-chip.yml"; d=YAML.load_file(p); d["en"]["title"]="COURSE_CHECK_EN"; d["zh"]["title"]="COURSE_CHECK_ZH"; File.write(p,YAML.dump(d))'
           export BUNDLE_GEMFILE="$GITHUB_WORKSPACE/migration/jekyll/Gemfile"
           bundle exec jekyll build --source .preview/profile-source --destination .preview/profile-check --config .preview/profile-source/_config.yml
           node migration/tools/check-profile.mjs
