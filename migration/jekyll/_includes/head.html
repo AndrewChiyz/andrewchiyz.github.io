@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <title>{{ page_title | escape }} · {{ site.data.profile.name | escape }}</title>
     <meta name="description" content="{{ site.data.profile.name_zh | escape }} — {{ site.data.profile.zh.university | escape }}，计算机视觉与机器学习。">
-    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <link rel="canonical" href="{{ site.url }}{{ page.canonical_url | default: page.url }}">
     <link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.english_url }}">
     <link rel="alternate" hreflang="zh-CN" href="{{ site.url }}{{ page.chinese_url }}">
     <link rel="icon" href="/images/favicon.ico">
@@ -24,7 +24,7 @@
     <title>{{ page_title | escape }} · {{ site.data.profile.name | escape }}</title>
     <meta name="description"
         content="{{ site.data.profile.name | escape }} — computer vision and machine learning, {{ site.data.profile.en.university | escape }}.">
-    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <link rel="canonical" href="{{ site.url }}{{ page.canonical_url | default: page.url }}">
     <link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.english_url }}">
     <link rel="alternate" hreflang="zh-CN" href="{{ site.url }}{{ page.chinese_url }}">
     <link rel="icon" href="/images/favicon.ico">

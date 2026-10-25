@@ -3,7 +3,8 @@ layout: course
 section: teaching
 lang: zh
 course_id: ai-foundations
-permalink: /zh/teaching/ai-foundations-science-engineering
+permalink: /zh/teaching/ai-foundations-science-engineering/
+canonical_url: /zh/teaching/ai-foundations-science-engineering
 english_url: /teaching/ai-foundations-science-engineering
 chinese_url: /zh/teaching/ai-foundations-science-engineering
 description_heading: "课程介绍"

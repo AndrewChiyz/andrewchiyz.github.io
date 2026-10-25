@@ -3,7 +3,8 @@ layout: course
 section: teaching
 lang: en
 course_id: ai-chip
-permalink: /teaching/2024-fall-teaching-1
+permalink: /teaching/2024-fall-teaching-1/
+canonical_url: /teaching/2024-fall-teaching-1
 english_url: /teaching/2024-fall-teaching-1
 chinese_url: /zh/teaching/2024-fall-teaching-1
 description_heading: "Course description"

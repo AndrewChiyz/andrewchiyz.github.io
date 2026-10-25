@@ -3,7 +3,8 @@ layout: course
 section: teaching
 lang: zh
 course_id: ai-chip
-permalink: /zh/teaching/2024-fall-teaching-1
+permalink: /zh/teaching/2024-fall-teaching-1/
+canonical_url: /zh/teaching/2024-fall-teaching-1
 english_url: /teaching/2024-fall-teaching-1
 chinese_url: /zh/teaching/2024-fall-teaching-1
 description_heading: "课程介绍（英文原文）"

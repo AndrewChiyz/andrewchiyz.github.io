@@ -11,7 +11,7 @@ Dir[root+'/_data/courses/*.yml'].each do |file|
     md=File.read(root+"/_courses/#{id}/#{lang}.md")
     front=YAML.safe_load(md.split(/^---\s*$\n?/,3)[1])
     url=(lang=='zh' ? '/zh' : '')+course.fetch('url')
-    raise "Course metadata mismatch: #{id}/#{lang}" unless front['permalink']==url && front['course_id']==id && front['lang']==lang
+    raise "Course metadata mismatch: #{id}/#{lang}" unless front['permalink']==url+'/' && front['canonical_url']==url && front['course_id']==id && front['lang']==lang
   end
   courses[id]=course
 end

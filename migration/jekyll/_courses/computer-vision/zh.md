@@ -3,7 +3,8 @@ layout: course
 section: teaching
 lang: zh
 course_id: computer-vision
-permalink: /zh/teaching/2024-spring-teaching-1
+permalink: /zh/teaching/2024-spring-teaching-1/
+canonical_url: /zh/teaching/2024-spring-teaching-1
 english_url: /teaching/2024-spring-teaching-1
 chinese_url: /zh/teaching/2024-spring-teaching-1
 description_heading: "课程介绍（英文原文）"

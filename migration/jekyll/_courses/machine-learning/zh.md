@@ -3,7 +3,8 @@ layout: course
 section: teaching
 lang: zh
 course_id: machine-learning
-permalink: /zh/teaching/2024-fall-teaching-2
+permalink: /zh/teaching/2024-fall-teaching-2/
+canonical_url: /zh/teaching/2024-fall-teaching-2
 english_url: /teaching/2024-fall-teaching-2
 chinese_url: /zh/teaching/2024-fall-teaching-2
 description_heading: "课程介绍（英文原文）"

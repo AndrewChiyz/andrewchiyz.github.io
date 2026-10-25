@@ -7,12 +7,13 @@ const findClass=(doc,c)=>walk(doc).find(n=>(attr(n,'class')||'').split(' ').incl
 const text=n=>n.nodeName==='#text'?n.value:(n.childNodes||[]).filter(c=>!['script','style'].includes(c.tagName)).map(text).join('');
 const compact=s=>s.replace(/\s+/g,'').replaceAll('\u2019',"'").replaceAll('\u2018',"'");
 const shape=n=>n.nodeName==='#text'?(n.value.trim()?'text':null):n.nodeName==='#comment'?null:[n.tagName||n.nodeName,(n.attrs||[]).filter(a=>!['markdown'].includes(a.name)).sort((a,b)=>a.name.localeCompare(b.name)),...(n.childNodes||[]).map(shape).filter(Boolean)];
+const output=process.argv[2]||'.preview/jekyll-site';
 const courses=JSON.parse(fs.readFileSync('content/scholar.json','utf8')).courses;
 const routes=['joining/index.html','teaching/index.html',...courses.map(c=>c.permalink.slice(1)+'/index.html')];
 for(const lang of ['en','zh'])for(const base of routes){
  const route=(lang==='zh'?'zh/':'')+base;
  const old=parse(fs.readFileSync(route,'utf8'));
- const html=fs.readFileSync('.preview/jekyll-site/'+route,'utf8');const fresh=parse(html);
+ const html=fs.readFileSync(output+'/'+route,'utf8');const fresh=parse(html);
  assert(!/\{%|\{\{|markdown="1"/.test(html.replace(/<!--[^]*?-->/g,'')),'Unrendered template');
  const a=findClass(old,'academic-detail'),b=findClass(fresh,'academic-detail');
  assert.equal(compact(text(b)),compact(text(a)),lang+': content changed');

@@ -3,7 +3,8 @@ layout: course
 section: teaching
 lang: zh
 course_id: artificial-intelligence
-permalink: /zh/teaching/artificial-intelligence
+permalink: /zh/teaching/artificial-intelligence/
+canonical_url: /zh/teaching/artificial-intelligence
 english_url: /teaching/artificial-intelligence
 chinese_url: /zh/teaching/artificial-intelligence
 description_heading: "课程介绍"
