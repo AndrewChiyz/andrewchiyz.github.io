@@ -20,7 +20,7 @@ for(const lang of ['en','zh']){
   assert.deepEqual(shape(findClass(fresh,c)),shape(findClass(old,c)),lang+': '+c+' structure changed');
  }
  const styles=doc=>walk(doc).filter(n=>n.tagName==='link'&&attr(n,'rel')==='stylesheet').map(n=>attr(n,'href'));
- assert.deepEqual(styles(fresh),styles(old),'Styles changed');
+ assert.deepEqual(styles(fresh),[...styles(old),'/assets/css/migration-layout.css?v=1'],'Unexpected styles changed');
  assert.equal(walk(fresh).filter(n=>n.tagName==='h1').length,1);
  console.log('PASS '+lang+': content, DOM structure, sidebar, navigation, footer, and styles match the current page.');
 }
