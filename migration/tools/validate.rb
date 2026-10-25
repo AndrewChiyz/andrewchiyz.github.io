@@ -32,3 +32,15 @@ papers=Dir[root+'/_papers/*.md'].map do |file|
 end
 %w[paper_id detail_url order].each { |key| raise "Duplicate paper #{key}" unless papers.map { |p| p[key] }.uniq.length==papers.length }
 puts "PASS: #{papers.length} independent paper records and unique IDs, ordering and URLs."
+news=Dir[root+'/_news/*.md'].map do |file|
+  _,front,body=File.read(file).split(/^---\s*$\n?/,3)
+  data=YAML.safe_load(front)
+  raise "Invalid news month: #{file}" unless data['month'].is_a?(String) && data['month'].match?(/\A\d{4}\.(0[1-9]|1[0-2])\z/)
+  raise "Missing news order: #{file}" unless data['order'].is_a?(Integer)
+  raise "Missing English news: #{file}" unless data['english'].is_a?(String) && !data['english'].strip.empty?
+  raise "Missing Chinese news: #{file}" if body.to_s.strip.empty?
+  raise "News summaries must be single paragraphs: #{file}" if body.strip.match?(/\n\s*\n/) || data['english'].strip.match?(/\n\s*\n/)
+  data
+end
+raise 'Duplicate news order' unless news.map { |n| n['order'] }.uniq.length==news.length
+puts "PASS: #{news.length} bilingual news records with valid months and ordering."

@@ -21,3 +21,5 @@ collections:
     output: true
   papers:
     output: false
+  news:
+    output: false
