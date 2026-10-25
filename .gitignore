@@ -14,3 +14,9 @@ package-lock.json
 
 /reference/
 .preview/
+
+# Isolated migration dependencies and caches (never publish these).
+migration/jekyll/.jekyll-cache/
+migration/jekyll/.bundle/
+migration/jekyll/vendor/
+!migration/tools/package-lock.json

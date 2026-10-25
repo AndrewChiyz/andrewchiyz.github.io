@@ -1,0 +1,95 @@
+{% if page.lang == 'zh' %}
+<aside class="sidebar sticky">
+            <div class="author-profile-root" itemscope itemtype="https://schema.org/Person"><input type="checkbox"
+                    id="sidebar-author-links-toggle" class="author-profile__links-toggle-input">
+                <div class="author-profile__mobile-bar">
+                    <div class="author__avatar"><img src="{{ site.data.profile.avatar | escape }}" class="author__avatar" alt="{{ site.data.profile.name | escape }} / {{ site.data.profile.name_zh | escape }}"
+                            width="170" height="170"></div>
+                    <div class="author__content">
+                        <h3 class="author__name" itemprop="name">{{ site.data.profile.name | escape }}<span class="author__name-sub">{{ site.data.profile.name_zh | escape }}</span></h3>
+                        <p class="author__affiliation"><span
+                                class="author__affiliation-line author__affiliation-line--1"><a
+                                    href="{{ site.data.profile.university_url | escape }}">{{ site.data.profile.zh.university | escape }}</a></span><span
+                                class="author__affiliation-line author__affiliation-line--2"><a
+                                    href="{{ site.data.profile.school_url | escape }}">{{ site.data.profile.zh.school | escape }}</a></span></p>
+                        <p class="author__bio">{{ site.data.profile.zh.position | escape }}<br><span class="author__membership">IEEE高级会员</span></p>
+                    </div><label for="sidebar-author-links-toggle" class="author-profile__expand-btn"><span
+                            class="visually-hidden">显示联系与学术链接</span><i class="fas fa-chevron-down"
+                            aria-hidden="true"></i></label>
+                </div>
+                <div class="author-profile__expand-panel author-profile__urls-panel">
+                    <div class="author__urls-wrapper">
+                        <ul class="author__urls social-icons">
+                            <li><i class="fas fa-map-marker-alt icon-pad-right" aria-hidden="true"></i>{{ site.data.profile.zh.location | escape }}</li>
+                            <li><a href="mailto:{{ site.data.profile.email | escape }}"><i class="fas fa-envelope icon-pad-right"
+                                        aria-hidden="true"></i>{{ site.data.profile.email | escape }}</a></li>
+                            <li><a href="{{ site.data.profile.scholar | escape }}"><i
+                                        class="fas fa-graduation-cap icon-pad-right" aria-hidden="true"></i>Google
+                                    Scholar</a></li>
+                            <li><a href="{{ site.data.profile.dblp | escape }}"><i class="fas fa-book icon-pad-right"
+                                        aria-hidden="true"></i>DBLP</a></li>
+                            <li><a href="{{ site.data.profile.github | escape }}"><i class="fab fa-github icon-pad-right"
+                                        aria-hidden="true"></i>GitHub</a></li>
+                            <li><a href="/zh/cv/"><i class="fas fa-id-card icon-pad-right"
+                                        aria-hidden="true"></i>个人履历</a></li>
+                            <li><a href="{{ site.data.profile.cv | escape }}" download><i class="fas fa-file-pdf icon-pad-right"
+                                        aria-hidden="true"></i>下载简历（PDF）</a></li>
+                        </ul>
+                        <div class="sidebar-visitor-map" aria-label="访客分布地图">
+                            <script async type="text/javascript" id="mapmyvisitors"
+                                src="https://mapmyvisitors.com/map.js?d=9ZOXZNxj70P-2i1iBsUKeadcMYKVDV_m7EphxW3SxPY&amp;cl=ffffff&amp;w=180"></script>
+                            <noscript><a href="https://mapmyvisitors.com/">Visitor map · MapMyVisitors</a></noscript>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+{% else %}
+<aside class="sidebar sticky">
+            <div class="author-profile-root" itemscope itemtype="https://schema.org/Person"><input type="checkbox"
+                    id="sidebar-author-links-toggle" class="author-profile__links-toggle-input">
+                <div class="author-profile__mobile-bar">
+                    <div class="author__avatar"><img src="{{ site.data.profile.avatar | escape }}" class="author__avatar" alt="{{ site.data.profile.name | escape }} / {{ site.data.profile.name_zh | escape }}"
+                            width="170" height="170"></div>
+                    <div class="author__content">
+                        <h3 class="author__name" itemprop="name">{{ site.data.profile.name | escape }}<span class="author__name-sub">{{ site.data.profile.name_zh | escape }}</span></h3>
+                        <p class="author__affiliation"><span
+                                class="author__affiliation-line author__affiliation-line--1"><a
+                                    href="{{ site.data.profile.university_url | escape }}">{{ site.data.profile.en.university | escape }}</a></span><span
+                                class="author__affiliation-line author__affiliation-line--2"><a
+                                    href="{{ site.data.profile.school_url | escape }}">{{ site.data.profile.en.school | escape }}</a></span>
+                        </p>
+                        <p class="author__bio">{{ site.data.profile.en.position | escape }}<br><span class="author__membership">IEEE Senior Member</span></p>
+                    </div><label for="sidebar-author-links-toggle" class="author-profile__expand-btn"><span
+                            class="visually-hidden">Show contact and academic links</span><i class="fas fa-chevron-down"
+                            aria-hidden="true"></i></label>
+                </div>
+                <div class="author-profile__expand-panel author-profile__urls-panel">
+                    <div class="author__urls-wrapper">
+                        <ul class="author__urls social-icons">
+                            <li><i class="fas fa-map-marker-alt icon-pad-right" aria-hidden="true"></i>{{ site.data.profile.en.location | escape }}
+                            </li>
+                            <li><a href="mailto:{{ site.data.profile.email | escape }}"><i class="fas fa-envelope icon-pad-right"
+                                        aria-hidden="true"></i>{{ site.data.profile.email | escape }}</a></li>
+                            <li><a href="{{ site.data.profile.scholar | escape }}"><i
+                                        class="fas fa-graduation-cap icon-pad-right" aria-hidden="true"></i>Google
+                                    Scholar</a></li>
+                            <li><a href="{{ site.data.profile.dblp | escape }}"><i class="fas fa-book icon-pad-right"
+                                        aria-hidden="true"></i>DBLP</a></li>
+                            <li><a href="{{ site.data.profile.github | escape }}"><i class="fab fa-github icon-pad-right"
+                                        aria-hidden="true"></i>GitHub</a></li>
+                            <li><a href="/cv/"><i class="fas fa-id-card icon-pad-right"
+                                        aria-hidden="true"></i>Curriculum vitae</a></li>
+                            <li><a href="{{ site.data.profile.cv | escape }}" download><i class="fas fa-file-pdf icon-pad-right"
+                                        aria-hidden="true"></i>Download CV (PDF)</a></li>
+                        </ul>
+                        <div class="sidebar-visitor-map" aria-label="Visitor map">
+                            <script async type="text/javascript" id="mapmyvisitors"
+                                src="https://mapmyvisitors.com/map.js?d=9ZOXZNxj70P-2i1iBsUKeadcMYKVDV_m7EphxW3SxPY&amp;cl=ffffff&amp;w=180"></script>
+                            <noscript><a href="https://mapmyvisitors.com/">Visitor map · MapMyVisitors</a></noscript>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+{% endif %}

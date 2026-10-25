@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="{% if page.lang == 'zh' %}zh-CN{% else %}en{% endif %}">
+<head>{% include head.html %}</head>
+<body class="layout--single">
+<a class="skip-link" href="#page-content">{% if page.lang == 'zh' %}跳转到正文{% else %}Skip to content{% endif %}</a>
+{% include masthead.html %}
+<div id="main" role="main">
+{% include sidebar.html %}
+<article class="page"><div class="page__inner-wrap"><header><h1 class="page__title">🎓 {{ page.title | escape }}</h1></header><section class="page__content" id="page-content"><div class="academic-detail">{{ content }}</div></section></div></article>
+</div>
+{% include footer.html %}
+</body></html>
