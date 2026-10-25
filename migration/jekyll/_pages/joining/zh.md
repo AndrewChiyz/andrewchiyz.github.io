@@ -15,11 +15,11 @@ permalink: /zh/joining/
 我们的研究主要涉及视频分析与合成、人体动作迁移、物体位姿估计、显著性物体检测和医学图像分割等方向。希望同学们能在这里找到自己感兴趣的问题，在阅读、实验和讨论中逐步形成独立思考与研究的能力。
 
 {::nomarkdown}
-{% include joining-block-zh-0.html %}
+{% include joining-audience-zh.html %}
 {:/nomarkdown}
 
 {::nomarkdown}
-{% include joining-block-zh-1.html %}
+{% include joining-contact-zh.html %}
 {:/nomarkdown}
 
 {% include joining-contents-zh.html %}
@@ -82,7 +82,7 @@ permalink: /zh/joining/
 为了方便查找，邮件主题可以写成：**硕士申请 / 本科科研 — 姓名 — 学校**。
 
 {::nomarkdown}
-{% include joining-block-zh-2.html %}
+{% include joining-email-zh.html %}
 {:/nomarkdown}
 
 </section>
@@ -145,7 +145,7 @@ permalink: /zh/joining/
 关于推免面试、考研初试与复试安排，以及招生和调剂名额等事项，请以学校和学院的官方通知为准。建议同学们关注下方的官方页面及公众号，也可以向学院研究生秘书咨询。
 
 {::nomarkdown}
-{% include joining-block-zh-3.html %}
+{% include joining-admissions-links-zh.html %}
 {:/nomarkdown}
 
 </aside>

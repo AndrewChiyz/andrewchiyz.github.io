@@ -19,11 +19,11 @@ estimation, salient object detection, and medical image segmentation. I hope you
 find a topic that interests you and develop the skills to explore it independently.
 
 {::nomarkdown}
-{% include joining-block-en-0.html %}
+{% include joining-audience-en.html %}
 {:/nomarkdown}
 
 {::nomarkdown}
-{% include joining-block-en-1.html %}
+{% include joining-contact-en.html %}
 {:/nomarkdown}
 
 {% include joining-contents-en.html %}
@@ -109,7 +109,7 @@ To make your email easier to find, a subject such as the following would be help
 **Master’s / Undergraduate Research — Name — University**.
 
 {::nomarkdown}
-{% include joining-block-en-2.html %}
+{% include joining-email-en.html %}
 {:/nomarkdown}
 
 </section>
@@ -189,7 +189,7 @@ You may find the information you need on the official pages below and official
 university accounts, or by contacting the school’s graduate program secretary.
 
 {::nomarkdown}
-{% include joining-block-en-3.html %}
+{% include joining-admissions-links-en.html %}
 {:/nomarkdown}
 
 </aside>
