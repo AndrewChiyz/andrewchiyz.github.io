@@ -1,4 +1,5 @@
 {% assign page_title = page.title %}{% if page.course_id %}{% assign course = site.data.courses[page.course_id] %}{% assign page_title = course[page.lang].title %}{% endif %}
+{% if page.paper_id %}{% assign paper = site.papers | where: 'paper_id', page.paper_id | first %}{% assign page_title = paper.title %}{% endif %}
 <!doctype html>
 <html lang="{% if page.lang == 'zh' %}zh-CN{% else %}en{% endif %}">
 <head>{% include head.html %}<link rel="stylesheet" href="/assets/css/migration-layout.css?v=1"></head>
@@ -7,7 +8,7 @@
 {% include masthead.html %}
 <div id="main" role="main">
 {% include sidebar.html %}
-<article class="page"><div class="page__inner-wrap"><header><h1 class="page__title">{% if page.section == 'teaching' %}📚{% else %}🎓{% endif %} {{ page_title | escape }}</h1></header><section class="page__content" id="page-content"><div class="academic-detail">{{ content }}</div></section></div></article>
+<article class="page"><div class="page__inner-wrap"><header><h1 class="page__title">{% if page.section == 'teaching' %}📚{% elsif page.section == 'publications' %}📝{% else %}🎓{% endif %} {{ page_title | escape }}</h1></header><section class="page__content" id="page-content"><div class="academic-detail">{{ content }}</div></section></div></article>
 </div>
 {% include footer.html %}
 </body></html>

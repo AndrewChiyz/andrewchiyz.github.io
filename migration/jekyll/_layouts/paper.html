@@ -1,0 +1,5 @@
+---
+layout: single
+---
+{%- assign paper = site.papers | where: 'paper_id', page.paper_id | first -%}
+{% if paper.authors %}<p>{{ paper.authors | escape }}</p>{% endif %}{% if paper.venue %}<p class="page-lead">{{ paper.venue | escape }} · {{ paper.year }}</p>{% endif %}{% assign abstract = paper.content | strip %}{% if abstract != '' %}<section><h2>{% if page.lang == 'zh' %}摘要（英文原文）{% else %}Abstract{% endif %}</h2>{{ paper.content | markdownify }}</section>{% endif %}{% if paper.paper_url != '' and paper.paper_url %}<p><a href="{{ paper.paper_url | escape }}">{% if paper.paper_url contains 'github.com/' %}Code{% elsif paper.paper_url contains 'github.io/' %}Project{% else %}Paper{% endif %} ↗</a></p>{% endif %}{% if paper.citation %}<section><h2>{% if page.lang == 'zh' %}引用{% else %}Citation{% endif %}</h2><p>{{ paper.citation | escape }}</p></section>{% endif %}<p><a href="{% if page.lang == 'zh' %}/zh{% endif %}/publications/">← {% if page.lang == 'zh' %}学术论文{% else %}Publications{% endif %}</a></p>

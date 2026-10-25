@@ -19,3 +19,5 @@ liquid:
 collections:
   courses:
     output: true
+  papers:
+    output: false

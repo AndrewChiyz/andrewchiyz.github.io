@@ -34,6 +34,7 @@ jobs:
           cp -R migration/jekyll .preview/profile-source
           ruby -ryaml -e 'p=".preview/profile-source/_data/profile.yml"; d=YAML.load_file(p); d["email"]="sample-check@example.invalid"; d["en"]["position"]="PROFILE_CHECK_EN"; d["zh"]["position"]="PROFILE_CHECK_ZH"; File.write(p,YAML.dump(d))'
           ruby -ryaml -e 'p=".preview/profile-source/_data/courses/ai-chip.yml"; d=YAML.load_file(p); d["en"]["title"]="COURSE_CHECK_EN"; d["zh"]["title"]="COURSE_CHECK_ZH"; File.write(p,YAML.dump(d))'
+          ruby -ryaml -e 'p=Dir[".preview/profile-source/_papers/*.md"].first; _,front,body=File.read(p).split(/^---\s*$\n?/,3); d=YAML.safe_load(front); d["paper_id"]="migration-check-paper"; d["detail_url"]="/publication/migration-check-paper"; d["title"]="PAPER_CHECK_NEW"; d["order"]=9999; File.write(".preview/profile-source/_papers/migration-check-paper.md",YAML.dump(d)+"---\n\nA test abstract.\n")'
           export BUNDLE_GEMFILE="$GITHUB_WORKSPACE/migration/jekyll/Gemfile"
           bundle exec jekyll build --source .preview/profile-source --destination .preview/profile-check --config .preview/profile-source/_config.yml
           node migration/tools/check-profile.mjs
