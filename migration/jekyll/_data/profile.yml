@@ -1,0 +1,23 @@
+# 修改这里，样板的中英文页面会统一更新。
+name: "Yuzhu Ji"
+name_zh: "姬玉柱"
+email: "yuzhu.ji@gdut.edu.cn"
+avatar: "/images/JYZ1.jpg"
+cv: "/files/Yuzhu-Ji-CV.pdf"
+scholar: "https://scholar.google.com/citations?user=EqHMEmMAAAAJ"
+dblp: "https://dblp.org/pid/169/2012.html"
+github: "https://github.com/AndrewChiyz"
+university_url: "https://www.gdut.edu.cn/"
+school_url: "https://cs.gdut.edu.cn/"
+en:
+  membership: "IEEE Senior Member"
+  position: "Associate Professor"
+  university: "Guangdong University of Technology"
+  school: "School of Computer Science and Technology"
+  location: "Guangzhou, China"
+zh:
+  membership: "IEEE高级会员"
+  position: "副教授"
+  university: "广东工业大学"
+  school: "计算机学院"
+  location: "中国 · 广州"

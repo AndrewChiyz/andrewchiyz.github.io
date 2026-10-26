@@ -1,0 +1,2 @@
+<!doctype html>
+<html lang="{% if page.lang == 'zh' %}zh-CN{% else %}en{% endif %}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url={{ page.redirect_to }}"><link rel="canonical" href="{{ site.url }}{{ page.redirect_to }}"><title>{% if page.lang == 'zh' %}招生说明{% else %}{{ site.data.profile.name | escape }}{% endif %}</title></head><body><a href="{{ page.redirect_to }}">{% if page.lang == 'zh' %}招生说明 / Joining information →{% else %}Continue →{% endif %}</a></body></html>

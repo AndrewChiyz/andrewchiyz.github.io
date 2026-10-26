@@ -1,0 +1,30 @@
+- year: "2026-2027"
+  current: true
+  courses:
+    - id: ai-foundations-humanities-science
+    - id: ai-chip
+- year: "2025-2026"
+  current: false
+  courses:
+    - id: ai-chip
+    - id: computer-vision
+    - id: ai-foundations
+      offerings: 2
+- year: "2024-2025"
+  current: false
+  courses:
+    - id: ai-chip
+    - id: computer-vision
+    - id: artificial-intelligence
+    - id: machine-learning
+- year: "2023-2024"
+  current: false
+  courses:
+    - id: ai-chip
+      offerings: 2
+    - id: computer-vision
+- year: "2022-2023"
+  current: false
+  courses:
+    - id: ai-chip
+    - id: computer-vision

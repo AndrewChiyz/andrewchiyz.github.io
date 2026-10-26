@@ -1,0 +1,11 @@
+# Shared by every academic year and both languages.
+slug: ai-foundations
+url: "/teaching/ai-foundations-science-engineering"
+poster:
+  src: /images/teaching/ai-science-engineering.jpg
+  width: 682
+  height: 384
+en:
+  title: "Fundamentals of Artificial Intelligence: Science and Engineering"
+zh:
+  title: "人工智能基础：科学与工程"

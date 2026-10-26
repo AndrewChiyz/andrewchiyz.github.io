@@ -1,0 +1,11 @@
+# Shared by every academic year and both languages.
+slug: ai-chip
+url: "/teaching/2024-fall-teaching-1"
+poster:
+  src: /images/teaching/ai-chip.jpg
+  width: 682
+  height: 384
+en:
+  title: "Principles and Application of AI Chip"
+zh:
+  title: "智能芯片原理与应用"

@@ -1,0 +1,20 @@
+/* The original float columns can exceed 100% when the sidebar hits its
+   minimum width. Grid reserves space for both columns without float wrapping. */
+@media screen and (min-width: 925px) {
+  #main {
+    display: grid;
+    grid-template-columns: minmax(11.5rem, 16%) minmax(0, 1fr);
+    column-gap: 1.25%;
+    align-items: start;
+  }
+  #main > .sidebar,
+  #main > .page {
+    float: none !important;
+    width: auto !important;
+    min-width: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  #main::before,
+  #main::after { display: none; }
+}

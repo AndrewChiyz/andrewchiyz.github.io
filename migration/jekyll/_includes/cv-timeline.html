@@ -1,0 +1,1 @@
+{% for entry in timeline %}<div class="timeline-row"><span>{{ entry.date | escape }}</span><div><h3>{{ entry[page.lang].title | escape }}</h3><p>{{ entry[page.lang].organization | escape }}</p></div></div>{% endfor %}

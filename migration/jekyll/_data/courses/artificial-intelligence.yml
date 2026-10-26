@@ -1,0 +1,11 @@
+# Shared by every academic year and both languages.
+slug: artificial-intelligence
+url: "/teaching/artificial-intelligence"
+poster:
+  src: /images/teaching/artificial-intelligence.jpg
+  width: 682
+  height: 384
+en:
+  title: "Artificial Intelligence"
+zh:
+  title: "人工智能"

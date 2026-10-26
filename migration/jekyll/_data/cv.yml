@@ -1,0 +1,59 @@
+---
+jobs:
+- date: 2023 – present
+  en:
+    title: Associate Professor
+    organization: Guangdong University of Technology
+  zh:
+    title: 副教授
+    organization: 广东工业大学计算机学院
+- date: 2022 – 2023
+  en:
+    title: Lecturer
+    organization: Guangdong University of Technology
+  zh:
+    title: 讲师
+    organization: 广东工业大学计算机学院
+- date: 2020.12 – 2022.03
+  en:
+    title: Postdoctoral Research Fellow
+    organization: Nanyang Technological University · Prof. Tat-Jen Cham
+  zh:
+    title: 博士后研究员
+    organization: 南洋理工大学 · Tat-Jen Cham 教授
+- date: 2019.11 – 2020.12
+  en:
+    title: Research Assistant
+    organization: Harbin Institute of Technology, Shenzhen · Prof. Haijun Zhang
+  zh:
+    title: 研究助理
+    organization: 哈尔滨工业大学（深圳）· 张海军教授
+- date: 2018.03 – 2018.10
+  en:
+    title: Research Intern
+    organization: Tencent AI Lab · Dr. Zequn Jie
+  zh:
+    title: 研究实习生
+    organization: 腾讯 AI Lab · Zequn Jie 博士
+education:
+- date: 2015.03 – 2019.10
+  en:
+    title: Ph.D.
+    organization: Harbin Institute of Technology, Shenzhen
+  zh:
+    title: 博士
+    organization: 哈尔滨工业大学（深圳）
+- date: 2012.09 – 2014.12
+  en:
+    title: Master’s degree
+    organization: Harbin Institute of Technology, Shenzhen
+  zh:
+    title: 硕士
+    organization: 哈尔滨工业大学（深圳）
+- date: 2007.09 – 2011.07
+  en:
+    title: Bachelor’s degree
+    organization: PLA Information Engineering University, Zhengzhou
+  zh:
+    title: 学士
+    organization: 解放军信息工程大学，郑州

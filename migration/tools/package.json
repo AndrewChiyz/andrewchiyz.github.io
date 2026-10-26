@@ -1,0 +1,5 @@
+{
+  "private": true,
+  "type": "module",
+  "devDependencies": { "parse5": "^7.3.0" }
+}

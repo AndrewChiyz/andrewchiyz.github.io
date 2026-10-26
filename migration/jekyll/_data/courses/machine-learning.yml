@@ -1,0 +1,11 @@
+# Shared by every academic year and both languages.
+slug: machine-learning
+url: "/teaching/2024-fall-teaching-2"
+poster:
+  src: /images/teaching/machine-learning-data-mining.jpg
+  width: 682
+  height: 384
+en:
+  title: "Machine Learning and Data Mining"
+zh:
+  title: "机器学习与数据挖掘"
