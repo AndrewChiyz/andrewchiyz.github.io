@@ -4,8 +4,8 @@
 .page__content .teaching-years a:hover,.page__content .teaching-years a:focus-visible{background:#e7f0fb;border-color:#7e9fc5}
 .teaching-year{margin:0 0 1.7rem}
 .page__content .teaching-archive__year{font-size:1.3rem;margin:0 0 .85rem;padding-bottom:.5rem;scroll-margin-top:1.5rem}
-.teaching-archive .teaching-archive__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.85rem;align-items:stretch}
-.teaching-archive .teaching-archive__grid>.teaching-archive__item{width:100%;max-width:none;align-self:stretch;justify-self:stretch}
+.teaching-archive .teaching-archive__grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,270px),270px));gap:.75rem;align-items:stretch;justify-content:start}
+.teaching-archive .teaching-archive__grid>.teaching-archive__item{width:100%;max-width:270px;align-self:stretch;justify-self:stretch}
 .teaching-archive .teaching-archive__item .archive__item{display:flex;flex-direction:column;height:100%;min-height:148px;max-height:none;overflow:visible;padding:.65rem;border-left-width:4px;transition:box-shadow .15s ease,border-color .15s ease}
 .teaching-archive .teaching-archive__item .archive__item:hover{border-color:#aec6e4;box-shadow:0 5px 17px #25406c12}
 .teaching-archive .teaching-card__meta{gap:.35rem;margin-bottom:.35rem;align-items:center}
@@ -27,5 +27,5 @@
 .current-teaching-label{display:inline-block;vertical-align:middle;font-size:.74rem;font-weight:600;color:#a63d4a;background:#fff0f2;border:1px solid #e5bac2;border-radius:999px;padding:.12rem .6rem;margin-left:.5rem;letter-spacing:0}
 .teaching-archive .teaching-archive__item--active .archive__item{border-left:4px solid #b94a59;background:linear-gradient(180deg,#fff7f8,#fff)}
 .teaching-archive .teaching-archive__item--active .archive__item:hover{border-left-color:#a63d4a}
-@media(max-width:680px){.teaching-archive .teaching-archive__grid{grid-template-columns:minmax(0,1fr)}.teaching-archive .teaching-archive__item .archive__item{min-height:140px}.page__content .teaching-archive__year{font-size:1.2rem}.teaching-years{gap:.4rem}}
+@media(max-width:680px){.teaching-archive .teaching-archive__item .archive__item{min-height:140px}.page__content .teaching-archive__year{font-size:1.2rem}.teaching-years{gap:.4rem}}
 @media(prefers-reduced-motion:reduce){.teaching-archive .teaching-archive__item .archive__item{transition:none}}
