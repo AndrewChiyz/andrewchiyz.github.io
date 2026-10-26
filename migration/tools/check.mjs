@@ -9,7 +9,7 @@ const compact=s=>s.replace(/\s+/g,'').replaceAll('\u2019',"'").replaceAll('\u201
 const shape=n=>n.nodeName==='#text'?(n.value.trim()?'text':null):n.nodeName==='#comment'?null:[n.tagName||n.nodeName,(n.attrs||[]).filter(a=>!['markdown'].includes(a.name)).sort((a,b)=>a.name.localeCompare(b.name)),...(n.childNodes||[]).map(shape).filter(Boolean)];
 const output=process.argv[2]||'.preview/jekyll-site';
 const {courses,papers}=JSON.parse(fs.readFileSync('content/scholar.json','utf8'));
-const routes=['joining/index.html','teaching/index.html','publications/index.html','news/index.html','talks/index.html',...[...courses,...papers].map(c=>c.permalink.slice(1)+'/index.html')];
+const routes=['joining/index.html','teaching/index.html','publications/index.html','news/index.html','talks/index.html','cv/index.html',...[...courses,...papers].map(c=>c.permalink.slice(1)+'/index.html')];
 for(const lang of ['en','zh'])for(const base of routes){
  const route=(lang==='zh'?'zh/':'')+base;
  const old=parse(fs.readFileSync(route,'utf8'));

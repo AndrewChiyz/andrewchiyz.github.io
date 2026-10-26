@@ -8,7 +8,7 @@
 {% include masthead.html %}
 <div id="main" role="main">
 {% include sidebar.html %}
-<article class="page"><div class="page__inner-wrap"><header><h1 class="page__title">{% if page.section == 'teaching' %}📚{% elsif page.section == 'publications' %}📝{% elsif page.section == 'news' %}🏆{% elsif page.section == 'talks' %}💬{% else %}🎓{% endif %} {{ page_title | escape }}</h1></header><section class="page__content" id="page-content"><div class="academic-detail">{{ content }}</div></section></div></article>
+<article class="page"><div class="page__inner-wrap"><header><h1 class="page__title">{% if page.section == 'teaching' %}📚{% elsif page.section == 'publications' %}📝{% elsif page.section == 'news' %}🏆{% elsif page.section == 'talks' %}💬{% elsif page.section == 'cv' %}👤{% else %}🎓{% endif %} {{ page_title | escape }}</h1></header><section class="page__content" id="page-content"><div class="academic-detail">{{ content }}</div></section></div></article>
 </div>
 {% include footer.html %}
 </body></html>
