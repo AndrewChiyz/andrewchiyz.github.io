@@ -6,17 +6,17 @@
 .page__content .teaching-archive__year{font-size:1.3rem;margin:0 0 .85rem;padding-bottom:.5rem;scroll-margin-top:1.5rem}
 .teaching-archive .teaching-archive__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.85rem;align-items:stretch}
 .teaching-archive .teaching-archive__grid>.teaching-archive__item{width:100%;max-width:none;align-self:stretch;justify-self:stretch}
-.teaching-archive .teaching-archive__item .archive__item{display:flex;flex-direction:column;height:100%;min-height:148px;max-height:none;overflow:visible;padding:.85rem;border-left-width:4px;transition:box-shadow .15s ease,border-color .15s ease}
+.teaching-archive .teaching-archive__item .archive__item{display:flex;flex-direction:column;height:100%;min-height:148px;max-height:none;overflow:visible;padding:.65rem;border-left-width:4px;transition:box-shadow .15s ease,border-color .15s ease}
 .teaching-archive .teaching-archive__item .archive__item:hover{border-color:#aec6e4;box-shadow:0 5px 17px #25406c12}
-.teaching-archive .teaching-card__meta{gap:.4rem;margin-bottom:.45rem;align-items:center}
+.teaching-archive .teaching-card__meta{gap:.35rem;margin-bottom:.35rem;align-items:center}
 .teaching-card__repeat{font-size:.78rem;color:#61768e}
-.page__content .teaching-archive .archive__item-title{font-size:1.03rem;line-height:1.45;margin:0 0 .4rem;letter-spacing:0;overflow-wrap:normal}
+.page__content .teaching-archive .archive__item-title{font-size:1.03rem;line-height:1.45;margin:0 0 .3rem;letter-spacing:0;overflow-wrap:normal}
 .page__content .teaching-archive .archive__item-title a{font-weight:600}
-.page__content .teaching-card__school{font-size:.8rem;color:#6c7e91;line-height:1.5;margin:0 0 .5rem;text-align:left}
+.page__content .teaching-card__school{font-size:.8rem;color:#6c7e91;line-height:1.5;margin:0 0 .35rem;text-align:left}
 .page__content .teaching-card__link{margin-top:auto;font-size:.83rem;align-self:flex-start;text-decoration:none;color:#365f8c}
 .teaching-archive .archive__item>.teaching-card__meta,.teaching-archive .archive__item>.archive__item-title,.teaching-archive .archive__item>.teaching-card__school,.teaching-archive .archive__item>.teaching-card__link{min-width:0}
 .teaching-card__link span{margin-left:.3rem}
-.page__content .teaching-card__poster{display:block;align-self:center;flex:none;width:100%;max-width:240px;margin:0 auto .8rem;border-radius:6px;overflow:hidden;background:#edf3fa;line-height:0}
+.page__content .teaching-card__poster{display:block;align-self:stretch;flex:none;width:100%;max-width:none;margin:0 0 .55rem;border-radius:6px;overflow:hidden;background:#edf3fa;line-height:0}
 .page__content .teaching-card__poster img{display:block;width:100%;height:auto;margin:0;object-fit:contain;max-width:100%}
 .page__content .teaching-card__poster:focus-visible{outline:3px solid #7e9fc5;outline-offset:3px}
 .page__content .course-poster{width:100%;max-width:480px;margin:.35rem auto 1.4rem}
