@@ -9,13 +9,19 @@ const compact=s=>s.replace(/\s+/g,'').replaceAll('\u2019',"'").replaceAll('\u201
 const shape=n=>n.nodeName==='#text'?(n.value.trim()?'text':null):n.nodeName==='#comment'?null:[n.tagName||n.nodeName,(n.attrs||[]).filter(a=>!['markdown'].includes(a.name)).sort((a,b)=>a.name.localeCompare(b.name)),...(n.childNodes||[]).map(shape).filter(Boolean)];
 const output=process.argv[2]||'.preview/jekyll-site';
 const {courses,papers}=JSON.parse(fs.readFileSync('content/scholar.json','utf8'));
-const routes=['joining/index.html','teaching/index.html','publications/index.html','news/index.html','talks/index.html','cv/index.html',...[...courses,...papers].map(c=>c.permalink.slice(1)+'/index.html')];
+const routes=['index.html','joining/index.html','teaching/index.html','publications/index.html','news/index.html','talks/index.html','cv/index.html',...[...courses,...papers].map(c=>c.permalink.slice(1)+'/index.html')];
 for(const lang of ['en','zh'])for(const base of routes){
  const route=(lang==='zh'?'zh/':'')+base;
  const old=parse(fs.readFileSync(route,'utf8'));
  const html=fs.readFileSync(output+'/'+route,'utf8');const fresh=parse(html);
  assert(!/\{%|\{\{|markdown="1"/.test(html.replace(/<!--[^]*?-->/g,'')),'Unrendered template');
- const a=findClass(old,'academic-detail'),b=findClass(fresh,'academic-detail');
+ const home=base==='index.html';
+ const a=findClass(old,home?'page__content':'academic-detail'),b=findClass(fresh,home?'page__content':'academic-detail');
+ if(home){
+  // Home now uses the same five newest records as the news archive.
+  const archive=parse(fs.readFileSync(output+'/'+(lang==='zh'?'zh/':'')+'news/index.html','utf8'));
+  findClass(a,'news-list').childNodes=findClass(archive,'news-list').childNodes.filter(n=>n.tagName==='li').slice(0,5);
+ }
  assert.equal(compact(text(b)),compact(text(a)),lang+': content changed');
  assert.deepEqual(shape(b),shape(a),lang+': content structure changed');
  const sharedBaseline=parse(fs.readFileSync((lang==='zh'?'zh/':'')+'joining/index.html','utf8'));

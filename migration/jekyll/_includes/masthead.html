@@ -12,7 +12,7 @@
                     </ul><button class="menu-toggle" aria-expanded="false" aria-controls="navigation"
                         aria-label="展开导航">☰</button>
                     <ul class="visible-links migration-navigation" id="navigation">
-                        <li class="masthead__menu-item"><a href="/zh/">首页</a></li>
+                        <li class="masthead__menu-item"><a {% if page.section == 'home' %}aria-current="page"{% endif %} href="/zh/">首页</a></li>
                         <li class="masthead__menu-item"><a {% if page.section == 'news' %}aria-current="page"{% endif %} href="/zh/news/">动态</a></li>
                         <li class="masthead__menu-item"><a {% if page.section == 'publications' %}aria-current="page"{% endif %} href="/zh/publications/">论文</a></li>
                         <li class="masthead__menu-item"><a {% if page.section == 'joining' %}aria-current="page"{% endif %} href="/zh/joining/">加入我们</a></li>
@@ -38,7 +38,7 @@
                     </ul><button class="menu-toggle" aria-expanded="false" aria-controls="navigation"
                         aria-label="Toggle navigation">☰</button>
                     <ul class="visible-links migration-navigation" id="navigation">
-                        <li class="masthead__menu-item"><a href="/">Home</a></li>
+                        <li class="masthead__menu-item"><a {% if page.section == 'home' %}aria-current="page"{% endif %} href="/">Home</a></li>
                         <li class="masthead__menu-item"><a {% if page.section == 'news' %}aria-current="page"{% endif %} href="/news/">News</a></li>
                         <li class="masthead__menu-item"><a {% if page.section == 'publications' %}aria-current="page"{% endif %} href="/publications/">Publications</a></li>
                         <li class="masthead__menu-item"><a {% if page.section == 'joining' %}aria-current="page"{% endif %} href="/joining/">Join Us</a></li>

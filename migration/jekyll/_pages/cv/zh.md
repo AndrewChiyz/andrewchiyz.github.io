@@ -66,10 +66,10 @@ chinese_url: /zh/cv/
 
 ### 期刊审稿
 
-IEEE TPAMI, IEEE TNNLS, IEEE TMM, IEEE TCE, IEEE TETCI, Pattern Recognition, Information Sciences, Neural Networks, Journal of Industrial Information Integration, Neurocomputing.
+{{ site.data.service.journals }}.
 
 ### 会议审稿
 
-CVPR, ICCV, ECCV, AAAI, ACM MM, ECAI.
+{{ site.data.service.conferences }}.
 
 </section>
