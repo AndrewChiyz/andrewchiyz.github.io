@@ -1,6 +1,6 @@
 # 当前维护与发布方式
 
-网站源码位于本目录；线上仍由 `master` 根目录的静态 HTML 发布，保留 `.nojekyll` 和原 GitHub Pages 设置。编辑 Markdown 或 `_data/profile.yml` 后需重新构建，再将生成结果发布到根目录；仅修改源码并 push 不会自动改变线上页面。请勿再手工逐页修改生成的 HTML。
+网站源码位于本目录；线上仍由 `master` 根目录的静态 HTML 发布，保留 `.nojekyll` 和原 GitHub Pages 设置。编辑 Markdown 或 `_data/profile.yml` 并推送到 `master` 后，`Build and publish content` 会自动构建、检查站内链接、更新生成的 HTML，并请求原有 GitHub Pages 发布。无需再手工逐页修改 HTML。通常需等待构建和部署完成后刷新网页；只在本地保存文件不会更新线上。
 
 本次切换保留备份分支 `backup/pre-jekyll-2026-10-25` 和标签 `pre-jekyll-migration-2026-10-25`（原线上提交 `489298a`）。下文记录迁移过程，关于“尚未上线”的描述属于历史阶段。
 
@@ -141,3 +141,7 @@ node migration/tools/preview.mjs
 - `check-routes.mjs` 检查全部旧 HTML 路径、跳转及站内 href/src 资源。两个独立项目网站 vision.ohmt.rfnt 和 vision.medseg.cpnet 不属于本仓库，不检查其网络可用性。
 
 仍未合并、未部署，未改变 GitHub Pages 配置。正式切换前仍需视觉验收及确认发布方式；现有自定义插件需由完整 Jekyll 构建运行。你的本地未提交内容编辑不会自动包含在远端构建中。
+
+## 自动更新故障排查
+
+修改 `_news/` 后，首页自动显示按 `order` 排序的前 5 条，动态页显示全部；中英文内容分别维护。推送 master 后在 Actions 查看 `Build and publish content`，随后查看 `pages build and deployment`。构建失败时不会覆盖现有生成页；如构建期间 master 有新提交，推送会安全失败，重新运行该流程即可，不会强制覆盖新提交。机器人生成 HTML 的提交不重复触发内容构建。发布使用现有 master 根目录和 `.nojekyll`，不更改 Pages 配置。

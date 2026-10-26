@@ -1,0 +1,52 @@
+name: Build and publish content
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'migration/jekyll/**'
+      - 'migration/tools/**'
+      - '.github/workflows/publish-content.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+concurrency:
+  group: publish-content
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build current Markdown and shared data
+        run: |
+          bundle install --gemfile migration/jekyll/Gemfile
+          ruby migration/tools/validate.rb
+          export BUNDLE_GEMFILE="$GITHUB_WORKSPACE/migration/jekyll/Gemfile"
+          bundle exec jekyll build --source migration/jekyll --destination .preview/jekyll-site --config migration/jekyll/_config.yml
+          npm ci --prefix migration/tools --ignore-scripts
+          node migration/tools/package-site.mjs
+          node migration/tools/check-routes.mjs
+      - name: Update generated pages on existing publishing branch
+        run: |
+          node migration/tools/update-published.mjs
+          git add -- '*.html' assets/css/migration-layout.css
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Build site from Markdown and shared data'
+            git push origin HEAD:master
+          fi
+      - name: Request existing GitHub Pages build
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"
