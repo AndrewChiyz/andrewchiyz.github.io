@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 const {courses,papers}=JSON.parse(fs.readFileSync('content/scholar.json','utf8'));
-const routes=['index.html','joining/index.html','teaching/index.html','publications/index.html','news/index.html','talks/index.html','cv/index.html',...[...courses,...papers].map(c=>c.permalink.slice(1)+'/index.html')];
+const routes=['index.html','joining/index.html','teaching/index.html','publications/index.html','news/index.html','talks/index.html','cv/index.html','sitemap/index.html',...[...courses,...papers].map(c=>c.permalink.slice(1)+'/index.html')];
 for(const [prefix,label] of [['','PROFILE_CHECK_EN'],['zh/','PROFILE_CHECK_ZH']])for(const route of routes){
  const file=prefix+route;
  const html=fs.readFileSync('.preview/profile-check/'+file,'utf8');
@@ -19,7 +19,7 @@ for(const prefix of ['','zh/']){
  const detail=fs.readFileSync('.preview/profile-check/'+prefix+'publication/migration-check-paper/index.html','utf8');
  assert(detail.includes('PAPER_CHECK_NEW')&&detail.includes('A test abstract.'),'New paper detail not generated');
 }
-console.log('PASS: shared profile updates all 90 pages; course metadata propagates; one new paper generates both lists and detail pages.');
+console.log('PASS: shared profile updates all 92 bilingual pages; course metadata propagates; one new paper generates both lists and detail pages.');
 for(const [prefix,label,other] of [['','NEWS_CHECK_EN','NEWS_CHECK_ZH'],['zh/','NEWS_CHECK_ZH','NEWS_CHECK_EN']]){
  const html=fs.readFileSync('.preview/profile-check/'+prefix+'news/index.html','utf8');
  assert(html.includes(label)&&!html.includes(other),'Incorrect news language');
@@ -44,3 +44,7 @@ for(const [prefix,label,other] of [['','NEWS_CHECK_EN','NEWS_CHECK_ZH'],['zh/','
  assert.equal((list.match(/<li>/g)||[]).length,5,'Homepage must show five latest news items');
 }
 console.log('PASS: home news, selected papers and academic service follow their shared sources.');
+
+const notFound=fs.readFileSync('.preview/profile-check/404.html','utf8');
+assert(notFound.includes('PROFILE_CHECK_EN')&&notFound.includes('mailto:sample-check@example.invalid'),'404 must use shared profile');
+console.log('PASS: 404 also uses shared profile.');

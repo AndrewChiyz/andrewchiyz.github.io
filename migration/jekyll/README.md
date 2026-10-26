@@ -38,6 +38,8 @@ bundle install
 bundle exec jekyll build --source migration/jekyll --destination .preview/jekyll-site --config migration/jekyll/_config.yml
 npm.cmd install --prefix migration/tools --ignore-scripts
 node migration/tools/check.mjs
+node migration/tools/package-site.mjs
+node migration/tools/check-routes.mjs
 node migration/tools/preview.mjs
 ```
 
@@ -121,3 +123,15 @@ node migration/tools/preview.mjs
 - 审稿服务：`_data/service.yml`，首页和个人履历共同引用。
 
 本地预览：[中文首页](http://127.0.0.1:4174/zh/) / [英文首页](http://127.0.0.1:4174/)。当前仅迁移分支启用，线上旧版本仍不受影响。
+
+## 迁移收尾状态
+
+全部 99 个原有 HTML 地址已覆盖：90 个主要内容页、2 个网站地图、1 个 404 页面和 6 个旧网址跳转。此前章节关于“其他页面仍由旧系统维护”的说明已不适用于当前样板。预览只读取新生成的页面，找不到地址时返回新版 404（HTTP 404）；静态资源仍允许从仓库读取。
+
+- 网站地图：`_pages/sitemap/en.md`、`zh.md`。
+- 错误页：`_pages/404.md`，构建为 `/404.html`。
+- 旧网址跳转：`_pages/redirects/`，`redirect_to` 指定目标，共用 `_layouts/redirect.html`。保留 `/about/`、`/about.html`、`/resume`、`/markdown/`、`/md/`、`/markdown.html`；目录入口同时支持末尾斜杠。使用静态 meta refresh 和可点击链接，不依赖服务器重定向配置。
+- `package-site.mjs` 将 images、assets、files、licenses 合入构建目录，生成可独立预览的完整产物；保留迁移专用样式。
+- `check-routes.mjs` 检查全部旧 HTML 路径、跳转及站内 href/src 资源。两个独立项目网站 vision.ohmt.rfnt 和 vision.medseg.cpnet 不属于本仓库，不检查其网络可用性。
+
+仍未合并、未部署，未改变 GitHub Pages 配置。正式切换前仍需视觉验收及确认发布方式；现有自定义插件需由完整 Jekyll 构建运行。你的本地未提交内容编辑不会自动包含在远端构建中。

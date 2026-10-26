@@ -11,7 +11,7 @@ http.createServer((req,res)=>{
  for(let i=0;i<candidates.length;i++){
   let file=candidates[i];const base=i===0?built:root;
   if(file!==base&&!file.startsWith(base+path.sep))continue;
-  if(i===1&&!/^(assets|images|files|licenses|zh|joining|publications|teaching|news|talks|cv|sitemap)(\/|$)/.test(rel)&&rel!=='')continue;
+  if(i===1&&!/^(assets|images|files|licenses)(\/|$)/.test(rel))continue;
   if(fs.existsSync(file)&&fs.statSync(file).isDirectory())file=path.join(file,'index.html');
   if(!types[path.extname(file)]||!fs.existsSync(file)||!fs.statSync(file).isFile())continue;
   res.writeHead(200,{'Content-Type':types[path.extname(file)],'Cache-Control':'no-store'});
@@ -20,5 +20,7 @@ http.createServer((req,res)=>{
   else fs.createReadStream(file).pipe(res);
   return;
  }
- res.writeHead(404).end('Not found');
+ const notFound=path.join(built,'404.html');
+ res.writeHead(404,{'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-store'});
+ res.end(fs.existsSync(notFound)?fs.readFileSync(notFound,'utf8').replace(/<script\b[^>]*id="mapmyvisitors"[^>]*><\/script>/g,'<small>Visitor map paused in local preview</small>'):'Not found');
 }).listen(4174,'127.0.0.1',()=>console.log('Jekyll sample: http://127.0.0.1:4174/zh/joining/ (English: /joining/)'));
