@@ -32,7 +32,7 @@ for(const lang of ['en','zh'])for(const base of routes){
   assert.deepEqual(shape(findClass(fresh,c)),shape(findClass(reference,c)),lang+': '+c+' structure changed');
  }
  const styles=doc=>walk(doc).filter(n=>n.tagName==='link'&&attr(n,'rel')==='stylesheet').map(n=>attr(n,'href'));
- assert.deepEqual(styles(fresh),[...styles(old),'/assets/css/migration-layout.css?v=1'],'Unexpected styles changed');
+ assert.deepEqual(styles(fresh),[...new Set([...styles(old),'/assets/css/migration-layout.css?v=1'])],'Unexpected styles changed');
  assert.equal(walk(fresh).filter(n=>n.tagName==='h1').length,1);
  const canonical=walk(fresh).find(n=>attr(n,'rel')==='canonical');
  const originalCanonical=walk(old).find(n=>attr(n,'rel')==='canonical');
