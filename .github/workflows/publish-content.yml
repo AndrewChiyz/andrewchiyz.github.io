@@ -5,6 +5,8 @@ on:
     paths:
       - 'migration/jekyll/**'
       - 'migration/tools/**'
+      - 'images/members/**'
+      - 'assets/css/members.css'
       - '.github/workflows/publish-content.yml'
   workflow_dispatch:
 permissions:
@@ -36,6 +38,7 @@ jobs:
           npm ci --prefix migration/tools --ignore-scripts
           node migration/tools/package-site.mjs
           node migration/tools/check-routes.mjs
+          node migration/tools/check-members.mjs
       - name: Update generated pages on existing publishing branch
         run: |
           node migration/tools/update-published.mjs

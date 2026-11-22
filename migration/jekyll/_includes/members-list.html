@@ -1,0 +1,41 @@
+{% assign members = site.members | where: 'visible', true | sort: 'order' %}
+{% assign groups = 'current,alumni' | split: ',' %}
+{% for group in groups %}
+{% assign people = members | where: 'status', group %}
+{% if people.size > 0 or group == 'current' %}
+<section class="members-section" aria-labelledby="members-{{ group }}">
+  <h2 id="members-{{ group }}">{% if group == 'current' %}{% if page.lang == 'zh' %}在组成员{% else %}Current Members{% endif %}{% else %}{% if page.lang == 'zh' %}毕业成员{% else %}Alumni{% endif %}{% endif %}</h2>
+  {% if people.size == 0 %}
+  <p class="members-empty">{% if page.lang == 'zh' %}成员信息将陆续更新。{% else %}Member profiles will be added soon.{% endif %}</p>
+  {% else %}
+  <div class="members-grid">
+    {% for member in people %}{% assign info = member[page.lang] %}
+    <article class="member-card{% if group == 'alumni' %} member-card--alumni{% endif %}">
+      <header class="member-card__header">
+        {% if member.photo and member.photo != '' %}<img class="member-card__photo" src="{{ member.photo | escape }}" alt="{{ info.name | escape }}" width="64" height="64" loading="lazy" decoding="async">{% else %}<span class="member-card__avatar" aria-hidden="true">{{ info.name | slice: 0 | escape }}</span>{% endif %}
+        <div class="member-card__identity">
+          <h3>{% if member.website and member.website != '' %}<a href="{{ member.website | escape }}">{{ info.name | escape }}<span aria-hidden="true"> ↗</span></a>{% else %}{{ info.name | escape }}{% endif %}</h3>
+          {% if page.lang == 'zh' and member.en.name != '' %}<p class="member-card__romanized" lang="en">{{ member.en.name | escape }}</p>{% endif %}
+          <p class="member-card__meta">{% if member.year %}{{ member.year }}{% if page.lang == 'zh' %}级 · {% else %} entry · {% endif %}{% endif %}{% if member.degree == 'phd' %}{% if page.lang == 'zh' %}博士研究生{% else %}PhD student{% endif %}{% elsif member.degree == 'master' %}{% if page.lang == 'zh' %}硕士研究生{% else %}Master's student{% endif %}{% else %}{% if page.lang == 'zh' %}本科科研生{% else %}Undergraduate researcher{% endif %}{% endif %}</p>
+        </div>
+      </header>
+      <span class="member-card__status">{% if group == 'current' %}{% if page.lang == 'zh' %}在组{% else %}Current{% endif %}{% else %}{% if member.graduation_year %}{{ member.graduation_year }} {% endif %}{% if page.lang == 'zh' %}已毕业{% else %}Graduated{% endif %}{% endif %}</span>
+      <dl>
+        {% if info.research and info.research != '' %}<div><dt>{% if page.lang == 'zh' %}研究方向{% else %}Research{% endif %}</dt><dd>{{ info.research | escape }}</dd></div>{% endif %}
+        {% if info.highlights and info.highlights != '' %}<div><dt>{% if page.lang == 'zh' %}主要成果{% else %}Highlights{% endif %}</dt><dd>{{ info.highlights | escape }}</dd></div>{% endif %}
+        {% if info.destination and info.destination != '' %}<div class="member-card__destination"><dt>{% if group == 'current' %}{% if page.lang == 'zh' %}预计去向{% else %}Next destination{% endif %}{% else %}{% if page.lang == 'zh' %}毕业去向{% else %}Destination{% endif %}{% endif %}</dt><dd>{{ info.destination | escape }}</dd></div>{% endif %}
+      </dl>
+      <div class="member-card__links">
+        {% if member.website and member.website != '' %}
+        <a class="member-card__homepage" href="{{ member.website | escape }}">{% if page.lang == 'zh' %}个人主页{% else %}Homepage{% endif %} <span aria-hidden="true">↗</span></a>
+        {% else %}
+        <span class="member-card__homepage member-card__homepage--pending" role="link" aria-disabled="true" title="{% if page.lang == 'zh' %}个人主页尚未建立{% else %}Homepage not yet available{% endif %}">{% if page.lang == 'zh' %}个人主页{% else %}Homepage{% endif %} <span aria-hidden="true">↗</span></span>
+        {% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+  {% endif %}
+</section>
+{% endif %}
+{% endfor %}

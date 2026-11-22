@@ -15,3 +15,5 @@ chinese_url: /zh/sitemap/
 - [News](/news/)
 - [Talks](/talks/)
 - [CV](/cv/)
+
+- [Group Members](/members/)

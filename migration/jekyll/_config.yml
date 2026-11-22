@@ -23,3 +23,6 @@ collections:
     output: false
   news:
     output: false
+
+  members:
+    output: false

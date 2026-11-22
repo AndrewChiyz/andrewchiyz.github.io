@@ -15,3 +15,5 @@ chinese_url: /zh/sitemap/
 - [动态](/zh/news/)
 - [学术报告](/zh/talks/)
 - [个人履历](/zh/cv/)
+
+- [研究组成员](/zh/members/)

@@ -22,7 +22,7 @@ for(const [from,to] of aliases){
 }
 // Every original generated HTML route must exist without falling back to the old site.
 const files=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?files(path.join(dir,e.name)):e.name.endsWith('.html')?[path.join(dir,e.name)]:[]);
-const originals=['index.html','404.html','about.html','markdown.html',...['zh','about','resume','markdown','md','joining','publications','publication','teaching','news','talks','cv','sitemap'].flatMap(files)];
+const originals=['members/index.html','index.html','404.html','about.html','markdown.html',...['zh','about','resume','markdown','md','joining','publications','publication','teaching','news','talks','cv','sitemap'].flatMap(files)];
 for(const file of originals)assert(fs.existsSync(path.join(root,file)),'Missing old route: '+file);
 let links=0;
 for(const file of originals){

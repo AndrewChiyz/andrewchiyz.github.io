@@ -1,0 +1,26 @@
+.members-section{margin:1.4rem 0 1.8rem}
+.page__content .members-section>h2{font-size:1.25rem;margin:0 0 .85rem;padding-bottom:.45rem;border-bottom:1px solid #dce5ef}
+.members-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;align-items:start}
+.member-card{min-width:0;padding:1rem;border:1px solid #dce5ef;border-top:3px solid #658aad;border-radius:10px;background:#fff;box-shadow:0 3px 12px #25406c08}
+.member-card--alumni{border-top-color:#88a598;background:#fcfdfc}
+.member-card__header{display:flex;gap:.8rem;align-items:center}
+.member-card__identity{min-width:0}
+.page__content .member-card__photo,.member-card__avatar{width:64px;height:64px;flex:0 0 64px;border-radius:12px;margin:0}
+.page__content .member-card__photo{object-fit:cover}
+.member-card__avatar{display:flex;align-items:center;justify-content:center;font-size:1.55rem;color:#527798;background:#edf3f9;font-weight:600}
+.page__content .member-card h3{margin:0;font-size:1.12rem;line-height:1.4;overflow-wrap:anywhere}
+.page__content .member-card h3 a{text-decoration:none}
+.page__content .member-card__romanized{margin:.15rem 0 0;color:#64778a;font-size:.82rem;line-height:1.4}
+.page__content .member-card__meta{margin:.25rem 0 0;color:#64778a;font-size:.78rem;line-height:1.5;text-align:left}
+.member-card__status{display:inline-block;margin:.8rem 0 .3rem;padding:.1rem .55rem;border-radius:20px;background:#eef4fa;color:#446b90;font-size:.74rem}
+.member-card--alumni .member-card__status{background:#edf4ef;color:#547463}
+.page__content .member-card dl{margin:.4rem 0 0;font-size:.86rem;line-height:1.7}
+.member-card dl>div+div{margin-top:.65rem}
+.member-card dt{font-weight:600;color:#415970;margin:0}
+.member-card dd{margin:.15rem 0 0;color:#536475;overflow-wrap:anywhere}
+.member-card__destination{border-top:1px solid #e6ecf2;padding-top:.65rem}
+.member-card__links{margin-top:.8rem;padding-top:.65rem;border-top:1px solid #e6ecf2;font-size:.8rem}
+.member-card__homepage{display:inline-flex;align-items:center;gap:.25rem;white-space:nowrap}
+.member-card__homepage--pending{color:#77838f;cursor:default}
+.page__content .members-empty{border:1px dashed #cfdae7;border-radius:10px;background:#f8fafc;padding:1.3rem;color:#65788c;font-size:.95rem}
+@media(max-width:680px){.members-grid{grid-template-columns:minmax(0,1fr)}.member-card{padding:.85rem}}

@@ -145,3 +145,24 @@ node migration/tools/preview.mjs
 ## 自动更新故障排查
 
 修改 `_news/` 后，首页自动显示按 `order` 排序的前 5 条，动态页显示全部；中英文内容分别维护。推送 master 后在 Actions 查看 `Build and publish content`，随后查看 `pages build and deployment`。构建失败时不会覆盖现有生成页；如构建期间 master 有新提交，推送会安全失败，重新运行该流程即可，不会强制覆盖新提交。机器人生成 HTML 的提交不重复触发内容构建。发布使用现有 master 根目录和 `.nojekyll`，不更改 Pages 配置。
+
+## 研究组成员怎么更新
+
+页面地址：/zh/members/（中文）、/members/（英文）。导航位于“加入我们”之后。
+
+1. 复制 `_members/example.md`，改名为学生的拼音或英文名，例如 `zhang-san.md`。每位成员仅需一份文件。
+2. 填写 `zh` 和 `en` 两组信息，完成后将 `visible: false` 改为 `visible: true`。示例默认隐藏，不会当作真实学生发布。
+3. 提交并推送 master，自动构建会同时更新中英文页面。不要编辑根目录的生成 HTML。
+
+- `order`：排序数字，小的在前；同状态成员按此排序。
+- `status`：`current` 在组，`alumni` 已毕业。毕业时只改原成员文件，不另复制卡片。
+- `degree`：`phd` 博士、`master` 硕士、`undergraduate` 本科科研生。
+- `year`：入学年级；`graduation_year`：毕业年份，可留 null。
+- `photo`：可选，照片放到 `images/members/`，填写如 `/images/members/zhang-san.jpg`。没有照片时使用姓名首字占位。
+- `website`：可选，完整 https:// 个人主页地址。
+- `name`：中英文姓名必填；`research`、`highlights`、`destination` 可留空，空字段不显示。均使用普通文字，不写 HTML。
+- 在组成员的 destination 显示为“预计去向”，毕业成员显示为“毕业去向”。没有毕业成员时不显示空的毕业分组。
+
+正文引言在 `_pages/members/zh.md` 和 `en.md`；布局集中在 `_includes/members-list.html`，无需逐张修改卡片。新增照片也会触发自动构建。
+
+成员研究方向可留空（尚未确定或未提供时不显示）；年级为入学年级，并非毕业年份。同一位同学的本科科研与硕士经历可使用两个独立文件保存。
