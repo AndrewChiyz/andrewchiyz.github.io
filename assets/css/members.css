@@ -23,8 +23,8 @@
 .member-card__homepage{display:inline-flex;align-items:center;gap:.25rem;white-space:nowrap}
 .member-card__homepage--pending{color:#77838f;cursor:default}
 .page__content .members-empty{border:1px dashed #cfdae7;border-radius:10px;background:#f8fafc;padding:1.3rem;color:#65788c;font-size:.95rem}
-.member-card:hover{z-index:1;transform:translateY(-5px) scale(1.025);border-color:var(--member-accent);box-shadow:0 0 0 1px var(--member-glow),0 0 18px var(--member-glow),0 10px 24px #25406c14}
-.member-card:focus-within{z-index:1;transform:translateY(-5px) scale(1.025);border-color:var(--member-accent);box-shadow:0 0 0 1px var(--member-glow),0 0 18px var(--member-glow),0 10px 24px #25406c14}
+.member-card:hover{z-index:1;transform:translateY(-5px) scale(1.015);border-color:var(--member-accent);box-shadow:0 0 0 1px var(--member-glow),0 0 18px var(--member-glow),0 10px 24px #25406c14}
+.member-card:focus-within{z-index:1;transform:translateY(-5px) scale(1.015);border-color:var(--member-accent);box-shadow:0 0 0 1px var(--member-glow),0 0 18px var(--member-glow),0 10px 24px #25406c14}
 @media(max-width:1100px){.members-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:420px){.members-grid{grid-template-columns:minmax(0,1fr)}}
 @media(prefers-reduced-motion:reduce){.member-card{transition:none}}
