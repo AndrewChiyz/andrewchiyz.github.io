@@ -29,5 +29,10 @@
 @media(max-width:420px){.members-grid{grid-template-columns:minmax(0,1fr)}}
 @media(prefers-reduced-motion:reduce){.member-card{transition:none}}
 
-.member-card__topic{display:inline-block;padding:.15rem .4rem;margin:.1rem .2rem .1rem 0;border-radius:5px;background:var(--member-tint);color:var(--member-accent);font-size:.75rem;line-height:1.5}
+.member-card__topic{display:inline-block;padding:.15rem .4rem;margin:.1rem .2rem .1rem 0;border-radius:5px;background:#f1f3f5;color:#536475;font-weight:500;font-size:.75rem;line-height:1.5}
 .member-card__topic-pending{color:#77838f;font-size:.75rem}
+
+.member-card__topic--multimodal{background:#f3effa;color:#65468b}
+.member-card__topic--spatial{background:#fff4e5;color:#8b5b20}
+.member-card__topic--motion{background:#eaf2fc;color:#355f91}
+.member-card__topic--medical{background:#e9f5ef;color:#326b50}
