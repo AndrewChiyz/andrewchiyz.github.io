@@ -6,7 +6,7 @@ on:
       - 'migration/jekyll/**'
       - 'migration/tools/**'
       - 'images/members/**'
-      - 'assets/css/members.css'
+      - 'assets/css/members*.css'
       - '.github/workflows/publish-content.yml'
   workflow_dispatch:
 permissions:
