@@ -7,6 +7,7 @@ year: 2022
 graduation_year: null
 photo: ""
 website: ""
+topics: []
 zh:
   name: "龙志全"
   research: ""

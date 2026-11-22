@@ -7,6 +7,7 @@ year: 2024
 graduation_year: null
 photo: ""
 website: ""
+topics: ["medical"]
 zh:
   name: "余嘉祺"
   research: "Medical image segmentation"

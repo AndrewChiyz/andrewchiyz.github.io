@@ -7,6 +7,7 @@ year: 2024
 graduation_year: null
 photo: ""
 website: ""
+topics: []
 zh:
   name: "胡植善"
   research: ""

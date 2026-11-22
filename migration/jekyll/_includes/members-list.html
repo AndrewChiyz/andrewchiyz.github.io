@@ -21,6 +21,7 @@
       </header>
       <span class="member-card__status">{% if group == 'current' %}{% if page.lang == 'zh' %}在组{% else %}Current{% endif %}{% else %}{% if member.graduation_year %}{{ member.graduation_year }} {% endif %}{% if page.lang == 'zh' %}已毕业{% else %}Graduated{% endif %}{% endif %}</span>
       <dl>
+        <div class="member-card__topics"><dt>{% if page.lang == 'zh' %}研究主题{% else %}Research themes{% endif %}</dt><dd>{% if member.topics.size > 0 %}{% for topic in member.topics %}{% assign topic_info = site.data.member_topics[topic] %}<span class="member-card__topic">{{ topic_info[page.lang] | escape }}</span>{% endfor %}{% else %}<span class="member-card__topic-pending">{% if page.lang == 'zh' %}待补充{% else %}To be updated{% endif %}</span>{% endif %}</dd></div>
         {% if info.research and info.research != '' %}<div><dt>{% if page.lang == 'zh' %}研究方向{% else %}Research{% endif %}</dt><dd>{{ info.research | escape }}</dd></div>{% endif %}
         {% if info.highlights and info.highlights != '' %}<div><dt>{% if page.lang == 'zh' %}主要成果{% else %}Highlights{% endif %}</dt><dd>{{ info.highlights | escape }}</dd></div>{% endif %}
         {% if info.destination and info.destination != '' %}<div class="member-card__destination"><dt>{% if group == 'current' %}{% if page.lang == 'zh' %}预计去向{% else %}Next destination{% endif %}{% else %}{% if page.lang == 'zh' %}毕业去向{% else %}Destination{% endif %}{% endif %}</dt><dd>{{ info.destination | escape }}</dd></div>{% endif %}

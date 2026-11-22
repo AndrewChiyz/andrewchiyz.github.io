@@ -7,6 +7,7 @@ year: 2023
 graduation_year: null
 photo: ""
 website: ""
+topics: []
 zh:
   name: "曾润佳"
   research: ""

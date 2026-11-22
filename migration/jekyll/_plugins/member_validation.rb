@@ -6,6 +6,9 @@ module AcademicMigration
         d=member.data
         raise "Member visible must be true/false: #{member.path}" unless [true,false].include?(d['visible'])
         next unless d['visible']
+        topics=d.fetch('topics', [])
+        allowed=site.data.fetch('member_topics').keys
+        raise "Invalid member topics: #{member.path}" unless topics.is_a?(Array) && topics.all? { |topic| allowed.include?(topic) } && topics.uniq == topics
         raise "Invalid member status: #{member.path}" unless %w[current alumni].include?(d['status'])
         raise "Invalid member degree: #{member.path}" unless %w[phd master undergraduate].include?(d['degree'])
         raise "Member order must be an integer: #{member.path}" unless d['order'].is_a?(Integer)

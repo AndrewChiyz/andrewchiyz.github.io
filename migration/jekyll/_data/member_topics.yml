@@ -1,0 +1,18 @@
+{
+  "multimodal": {
+    "zh": "多模态视觉鲁棒表征",
+    "en": "Robust Multimodal Visual Representation"
+  },
+  "spatial": {
+    "zh": "三维空间感知",
+    "en": "3D Spatial Perception"
+  },
+  "motion": {
+    "zh": "人体运动分析与合成",
+    "en": "Human Motion Analysis and Synthesis"
+  },
+  "medical": {
+    "zh": "医学视觉计算",
+    "en": "Medical Visual Computing"
+  }
+}

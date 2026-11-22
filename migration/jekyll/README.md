@@ -166,3 +166,6 @@ node migration/tools/preview.mjs
 正文引言在 `_pages/members/zh.md` 和 `en.md`；布局集中在 `_includes/members-list.html`，无需逐张修改卡片。新增照片也会触发自动构建。
 
 成员研究方向可留空（尚未确定或未提供时不显示）；年级为入学年级，并非毕业年份。同一位同学的本科科研与硕士经历可使用两个独立文件保存。
+
+### 成员研究主题
+每位成员的 `topics` 可填写一个或多个主题代码，例如 `topics: [multimodal, spatial]`。四类代码为 `multimodal`（多模态视觉鲁棒表征）、`spatial`（三维空间感知）、`motion`（人体运动分析与合成）、`medical`（医学视觉计算）。中英文名称统一维护在 `_data/member_topics.yml`。`topics: []` 显示“待补充”，具体研究方向仍写在 `zh.research` / `en.research`。

@@ -7,14 +7,15 @@ year: 2025
 graduation_year: null
 photo: ""
 website: ""
+topics: [medical]
 zh:
   name: "王明亮"
-  research: "Gaze-Driven VLA/WAM"
+  research: "医学图像分割"
   highlights: ""
   destination: ""
 en:
   name: "Mingliang Wang"
-  research: "Gaze-Driven VLA/WAM"
+  research: "Medical image segmentation"
   highlights: ""
   destination: ""
 ---

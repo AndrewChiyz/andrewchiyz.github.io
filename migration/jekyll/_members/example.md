@@ -9,6 +9,7 @@ year: 2026 # 入学年级 / entry year (not graduation year)
 graduation_year: null
 photo: "" # e.g. /images/members/student-name.jpg
 website: "" # Optional https:// personal homepage
+topics: []
 zh:
   name: "学生姓名"
   research: "研究方向"

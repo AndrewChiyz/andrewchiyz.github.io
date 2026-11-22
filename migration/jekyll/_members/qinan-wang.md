@@ -7,6 +7,7 @@ year: 2025
 graduation_year: null
 photo: ""
 website: ""
+topics: ["multimodal"]
 zh:
   name: "王启南"
   research: "(Open-set) multi-modal object tracking"

@@ -7,6 +7,7 @@ year: 2026
 graduation_year: null
 photo: ""
 website: ""
+topics: []
 zh:
   name: "杨潇韩"
   research: ""

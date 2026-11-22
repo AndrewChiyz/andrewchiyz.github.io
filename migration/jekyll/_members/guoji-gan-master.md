@@ -7,6 +7,7 @@ year: 2026
 graduation_year: null
 photo: ""
 website: ""
+topics: [motion]
 zh:
   name: "甘国基"
   research: ""
